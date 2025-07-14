@@ -1,0 +1,909 @@
+/* BangaloreLocations.css */
+
+/* Base Styles */
+
+/* Welcome Section Styles */
+
+
+.bangalore-welcome-heading {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+/* .bangalore-welcome-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #4CAF50;
+  border-radius: 2px;
+} */
+
+.bangalore-welcome-text {
+  color: black; /* Changed to black */
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .bangalore-welcome-section {
+    padding: 32px 16px;
+  }
+
+  .bangalore-welcome-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .bangalore-welcome-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bangalore-welcome-section {
+    padding: 24px 12px;
+  }
+
+  .bangalore-welcome-heading {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .bangalore-welcome-text {
+    font-size: 15px;
+  }
+}
+
+.bangalore-page-wrapper {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px;
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+/* Sidebar Styles */
+.bangalore-side-nav {
+  flex: 0 0 250px;
+  background: #E8F5E9;
+  padding: 1.25rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+  height: fit-content;
+  position: fixed;
+  top: 120px;
+  left: 16px;
+  z-index: 1000;
+  width: 250px;
+}
+
+.bangalore-side-title {
+  color: #2E7D32; /* Green color for heading */
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #4CAF50;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.bangalore-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bangalore-nav-btn {
+  padding: 0.75rem 1rem;
+  color: black; 
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: #E8F5E9;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+/* Green Button Styles */
+/* Green Button Styles */
+.bangalore-nav-btn {
+  font-size: 14px; /* Adjust font size as needed */
+  padding: 10px 20px;
+  border: 2px solid #2E7D32;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #1B5E20, #4CAF50); /* Gradient background from dark green to light green */
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.bangalore-nav-btn:hover {
+  background: linear-gradient(135deg, #4CAF50, #81C784); /* Hover effect with lighter green gradient */
+  border-color: #4CAF50;
+  transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.bangalore-nav-btn:active {
+  background-color: #1B5E20;
+  border-color: #1B5E20;
+}
+
+.bangalore-nav-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.5);
+}
+
+/* Responsive Adjustments for Green Button */
+@media (max-width: 1024px) {
+  .bangalore-nav-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bangalore-nav-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bangalore-nav-btn {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+/*  */
+.bangalore-main-content {
+  margin-left: 290px; /* sidebar width + gap */
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .bangalore-side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-radius: 0;
+    background-color: #E8F5E9;
+  }
+
+  .bangalore-nav-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  
+  .bangalore-nav-btn{
+    
+    font-size: 16px; /* Adjust font size for mobile screens if needed */
+    padding: 8px 12px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    background-color: #2E7D32;
+    color: #fff;
+   
+ 
+  }
+  .bangalore-nav-btn::after{
+    content: "▼";
+    margin-left: 8px;
+    font-size: 20px;
+    
+  }
+
+  /* Optionally add an active state for better mobile tap feedback */
+  .bangalore-nav-btn:active {
+    transform: translateX(5px);
+    background-color: rgb(36, 164, 57);
+  }
+  
+
+  .bangalore-main-content {
+    margin-top: 60px;
+    padding: 10px;
+  }
+  
+
+ 
+
+
+
+
+  .bangalore-main-content {
+    margin-left: 0;
+    margin-top: 100px; /* Height of fixed header */
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bangalore-side-nav {
+    padding: 12px;
+    transform: translateX(4px);
+
+  }
+
+  .bangalore-side-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .bangalore-nav-btn{
+    
+    font-size: 16px; /* Adjust font size for mobile screens if needed */
+    padding: 8px 12px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    background-color: #2E7D32;
+    color: #fff;
+   
+ 
+  }
+  .bangalore-nav-btn::after{
+    content: "▼";
+    margin-left: 8px;
+    font-size: 20px;
+    
+  }
+
+  /* Optionally add an active state for better mobile tap feedback */
+  /* .bangalore-nav-btn:active {
+    transform: translateX(5px);
+    background-color: rgb(36, 164, 57);
+  } */
+  
+
+  .bangalore-main-content {
+    margin-top: 60px;
+    padding: 10px;
+  }
+}
+
+/* Main Content Styles */
+
+/* Main Header Styles */
+.bangalore-main-header {
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+  padding: 32px 24px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.bangalore-clinic-title {
+  /* color: #2E7D32;  */
+  font-size: 32px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.bangalore-clinic-tagline {
+  font-size: 1rem;
+  opacity: 0.9;
+  color: white; /* Changed to black */
+}
+
+/* Welcome Section */
+.bangalore-welcome-section {
+  text-align: center;
+  max-width: 1200px; /* Updated for proper alignment */
+  margin: 1.5rem auto;
+  padding: 1.25rem;
+  background: #E8F5E9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.bangalore-welcome-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features Grid */
+.bangalore-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.bangalore-feature-card {
+  padding: 20px;
+  background-color: #E8F5E9;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Services Grid */
+.bangalore-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.bangalore-service-card {
+  padding: 20px;
+  background-color: #E8F5E9;
+  border-radius: 8px;
+}
+
+.bangalore-service-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.bangalore-service-item {
+  padding: 6px 0;
+  color: black; /* Changed to black */
+  border-bottom: 1px solid rgba(46, 125, 50, 0.1);
+}
+
+/* Doctors Grid */
+.bangalore-doctors {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.bangalore-doctors-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  position: relative;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.bangalore-doctors-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bangalore-doctor-tab {
+  padding: 12px 20px;
+  background-color: #E8F5E9;
+  border: none;
+  border-radius: 6px;
+  color: #1B5E20; /* Changed to black */
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.bangalore-doctor-tab.active {
+  background-color: #4CAF50;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.bangalore-doctor-tab:hover:not(.active) {
+  background-color: #C8E6C9;
+}
+
+.bangalore-doctors-content {
+  background-color: #E8F5E9;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.bangalore-doctor-details {
+  animation: fadeIn 0.3s ease;
+}
+
+.bangalore-doctor-name {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.bangalore-doctor-specialty {
+  color: #1B5E20; /* Changed to black */
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.bangalore-doctor-description {
+  color: black; /* Changed to black */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.bangalore-doctor-experience {
+  color: #2E7D32; /* Green color for heading */
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.bangalore-expertise-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.bangalore-expertise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.bangalore-expertise-item {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #1B5E20; /* Changed to black */
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 768px) {
+  .bangalore-doctors {
+    padding: 16px;
+  }
+
+  .bangalore-doctors-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .bangalore-doctor-tab {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .bangalore-doctors-content {
+    padding: 20px;
+  }
+
+  .bangalore-doctor-name {
+    font-size: 22px;
+  }
+
+  .bangalore-expertise-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+  .bangalore-doctors {
+    padding: 12px;
+  }
+
+  .bangalore-doctors-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .bangalore-doctors-tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .bangalore-doctor-tab {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .bangalore-doctors-content {
+    padding: 16px;
+  }
+
+  .bangalore-doctor-name {
+    font-size: 20px;
+  }
+
+  .bangalore-doctor-specialty {
+    font-size: 16px;
+  }
+
+  .bangalore-doctor-description {
+    font-size: 14px;
+  }
+
+  .bangalore-expertise-list {
+    grid-template-columns: 1fr;
+  }
+
+  .bangalore-expertise-item {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+/*  */
+/* ClinicLocations.css */
+.clinic-locations {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #f8f9fa;
+}
+
+.section-title {
+  color: #2E7D32;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #2E7D32;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.location-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+}
+
+.location-content {
+  padding: 20px;
+}
+
+.location-media {
+  display: grid;
+  gap: 20px;
+}
+
+.image-section {
+  width: 100%;
+}
+
+.location-name {
+  color: #2E7D32;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+  text-align: left;
+}
+
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.map-container {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.address-container {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #2E7D32;
+}
+
+.address-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #2E7D32;
+  font-weight: bold;
+}
+
+.address-text {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .locations-grid {
+    gap: 20px;
+  }
+  
+  .image-carousel {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .location-media {
+    grid-template-columns: 1fr;
+  }
+  
+  .image-carousel {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .location-content {
+    padding: 15px;
+  }
+
+  .image-carousel {
+    height: 300px;
+  }
+
+  .map-container {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clinic-locations {
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .image-carousel {
+    height: 250px;
+  }
+
+  .location-name {
+    font-size: 1.3rem;
+  }
+
+  .address-text {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* AppointmentCTA.css */
+/* CTA Section */
+.bng-cta-section {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin: 1.5rem 0;
+  background: #E8F5E9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+  max-width: 1200px; /* Updated for proper alignment */
+  margin-left: auto; /* Align right */
+  margin-right: auto; /* Align left */
+}
+
+.bng-cta-title {
+  color: #2E7D32; /* Changed to black */
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.bng-cta-text {
+  color: black; /* Changed to black */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.bng-cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #4CAF50;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.bng-cta-button:hover {
+  background: #2E7D32;
+  transform: translateY(-2px);
+}
+@media (max-width: 480px) {
+  .appointment-cta {
+    padding: 1.5rem 1rem;
+  }
+
+  .appointment-cta__title {
+    font-size: 1.6rem;
+  }
+
+  .appointment-cta__button {
+    width: 100%;
+    padding: 0.9rem;
+  }
+}
+
+/* Section Titles */
+.bangalore-section-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.bangalore-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #4CAF50;
+}
+
+/* Typography */
+.bangalore-feature-title,
+.bangalore-service-title,
+.bangalore-doctor-name {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #2E7D32; /* Green color for heading */
+}
+
+.bangalore-feature-description,
+.bangalore-service-item,
+.bangalore-doctor-specialty {
+  font-size: 15px;
+  line-height: 1.5;
+  color: black; /* Changed to black */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .bangalore-page-wrapper {
+    padding: 12px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bangalore-page-wrapper {
+    flex-direction: column;
+  }
+
+  .bangalore-sidebar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .bangalore-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .bangalore-main-header {
+    padding: 24px 16px;
+  }
+
+  .bangalore-clinic-title {
+    font-size: 26px;
+  }
+
+  .bangalore-features-grid,
+  .bangalore-services-grid,
+  .bangalore-doctors-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bangalore-page-wrapper {
+    padding: 8px;
+  }
+
+  .bangalore-main-header {
+    padding: 20px 12px;
+  }
+
+  .bangalore-clinic-title {
+    font-size: 22px;
+  }
+
+  .bangalore-feature-card,
+  .bangalore-service-card,
+  .bangalore-doctor-card {
+    padding: 16px;
+  }
+}

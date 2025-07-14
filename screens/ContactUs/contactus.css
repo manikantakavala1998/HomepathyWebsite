@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    /* margin: 0 auto; */
+    width: 100vw; 
+    /* max-width: 800px; Reduced max width of the contact container */
+   max-width: 100%; /* Use a percentage for better responsiveness */
+
+}
+
+.contact-container .contact-info h1 {
+    color: #ffffff;
+    /* align-items: start; */
+    text-align: start;
+   position: fixed;
+   overflow: hidden;
+}
+
+.contact-info {
+    font-size: large;
+    background-image: url('../../../assets/images/contact-us bg1.png'); /* Updated to relative path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%; /* Make sure it occupies full width */
+    height: 12vh;
+    margin: auto;
+    min-height: 20px;
+    
+}
+.info-item a{
+    color: #45a049  ;
+}
+.info-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
+    padding-top: 1%;
+    width: 100%; /* Full width */
+    
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0; /* Add vertical spacing */
+    font-size: large; /* Reduced font size for icons and text */
+    color: rgb(47, 46, 46);
+}
+.info-item .bold{
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 1.5rem; /* Slightly larger for better visibility */
+    margin-bottom: 5px; /* Increased space between icon and text */
+}
+
+.image-appointment-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    justify-content: space-between;
+    padding-top: 1%;
+    width: 100%;
+}
+.formcontainer{
+    /* border: 2px solid black; */
+    width: 50%;
+    margin: auto;
+}
+
+.appointment-form {
+    /* background-color:rgb(246, 243, 243); Light grey color for the form background */
+    border-radius: 8px;
+    width: 75%; /* Full width */
+    padding: 15px; /* Added padding for a better look */
+    background: rgba(246, 243, 243, 0.4); /* Light grey with transparency */
+    backdrop-filter: blur(10px); /* Apply blur for the frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+    align-self: center;
+}
+
+.appointment-form h2 {
+    font-size: medium;
+    text-align: center;
+    color: black;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    padding-bottom: 3%;
+}
+.appointment-form .formheading h2{
+   font-size: 200%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Changed to column for centering */
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-size: medium; /* Reduced font size for labels */
+}
+
+.form-group input
+,.form-group textarea {
+    padding: 15px; /* Adjusted padding */
+    border: 1px solid #ccc;  
+    border-radius: 4px; /* Rounded corners for input fields */
+    outline: none;
+    font-size: x-small; /* Smaller font size for inputs and textareas */
+}
+
+.form-group input{
+    background-color: #e0dcdc;
+}
+.form-group select{
+    width: 60px;
+}
+
+.form-group input::placeholder{
+    color: rgb(113, 111, 111);
+}
+
+.form-group textarea::placeholder{
+    font-size: large;
+    color:black;
+}
+.form-group textarea{
+    height: 10vh;
+}
+
+
+.form-group input,
+.form-group textarea::placeholder{
+    font-size: medium;
+    color:black;
+}
+.form-group textarea::placeholder{
+    font-size: large;
+    color: rgb(86, 82, 82);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #7bc47f; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(123, 196, 127, 0.5); /* Subtle shadow on focus */
+}
+
+.error-message {
+    color: red; /* Error message color */
+    font-size: xx-small; /* Font size for error message */
+    margin-top: 5px; /* Space above error message */
+}
+
+.appointment-btn {
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin-top: 15px; /* Add some space above the button */
+}
+
+.appointment-btn button {
+    padding: 8px 15px;
+    font-size: large; /* Reduced font size for button */
+    background-color: #4CAF50; /* Changed button color to a different green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition for button hover effect */
+    width:100%;
+    font-weight: bold;
+}
+
+.appointment-btn button:hover {
+    background-color: #35d33d; /* Change color on hover */
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: small;
+    color: #555;
+    padding: 10px 0; /* Add some padding for visual appeal */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .info-wrapper {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .info-item {
+        margin: 10px 0; /* Space between info items */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: small; /* Larger font size for easier reading */
+    }
+
+    .appointment-btn button {
+        font-size: small; /* Adjust button size */
+      
+    }
+}
+
+@media (max-width: 480px) {
+    .form-group input,
+    .form-group textarea {
+        font-size: x-small; /* Smaller for extra small screens */
+    }
+
+    .appointment-btn button {
+        font-size: xx-small; /* Smaller button size */
+        padding: 5px 10px; /* Adjust padding for small screens */
+    }
+
+    .icon {
+        font-size: 1.5rem; /* Keep icons visible */
+    }
+
+    .info-wrapper,
+    .image-appointment-wrapper {
+        flex-direction: column; /* Ensure everything stacks */
+        align-items: center; /* Center align */
+    }
+}
+
+.formheading h2 {
+    font-size: larger;
+    text-align: center;
+    margin-top: 3%;
+    color: rgb(37, 36, 36);
+    /* color: #45a049; */
+}
+
+
+    .map-frame {
+        margin: auto; /* Center the map */
+        width: 100%; /* Full width */
+        height: auto; /* Auto height */
+        text-align: center; /* Center align text */
+    }
+    .map-frame h2{
+        font-weight: bold;
+        margin-top: 3%;
+        font-size: 200%;
+        margin-bottom: 1%;
+        color: rgb(58, 56, 56);
+    }
+
+
+
+.map-frame iframe {
+   position: relative;/* Position the iframe absolutely within the container  */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 50%; /* Full height */
+    border: 0; /* Remove border */
+
+}
+.formcontainer span{
+    color: red;
+}

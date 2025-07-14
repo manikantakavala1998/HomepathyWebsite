@@ -1,0 +1,1526 @@
+.image-container1 {
+  position: relative;
+  width: 100%;
+  height:85vh; /* Adjust based on the height you need */
+  /* background-image: url('./../../../assets/images/aboutlogo13.png'); */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  
+}
+.image-container1 img {
+  width: 100%; /* Make sure it takes full width */
+  height: 100%; /* Maintain aspect ratio */
+
+}
+
+
+.background-image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure the background is behind the content */
+}
+
+.second-image-overlay1 {
+  position: absolute;
+  top: 12%; /* Adjust as needed */
+  left: 55%; /* Adjust as needed */
+  z-index: 0;
+  
+}
+.second-image-overlay1 img{
+  width: 95%;
+}
+
+.overlay-image1 {
+  width: 80%; /* Adjust size */
+  height: auto;
+  object-fit: contain;
+}
+
+.content-overlay1 {
+  position: absolute;
+  top: 37%;
+  left: 4%;
+  color: rgb(29, 28, 28); /* For better contrast */
+  z-index: 1;
+  /* font-family: 'Times New Roman'; */
+  font-size: 35px;
+}
+.content-overlay1{
+  /* border: 2PX solid black; */
+  width: 48%;
+}
+
+.content-overlay1 h6{
+ margin-top: 3%;
+  width: 93%;
+ 
+  /* font-family: montserrat; */
+  /* font-size: 25px; */
+  font-weight:normal;
+  color: black;
+}
+
+.content-overlay1 h3{
+  line-height: normal !important;
+  margin-bottom: 1% !important;
+  font-size: 2.5rem !important;
+ 
+
+
+
+}
+
+.abouthead1 h2{
+  color: white;
+}
+.content-overlay1 button{
+  padding: 15px;
+  display: block;
+  margin: auto;
+  border: none;
+  box-shadow: inset 3px 3px 15px green;
+  border-radius: 25px;
+  margin-top: 4%;
+  cursor: pointer;
+}
+.content-overlay1 a{
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (max-width: 1024px) {
+  .onlinedocimage1{
+    display: block;
+  }
+  .image-container1 {
+    height: 60vh; /* Reduce height for tablets */
+  }
+
+  .content-overlay1 {
+    top: 30%; /* Adjust positioning */
+    left: 5%; /* Ensure proper spacing on smaller screens */
+    font-size: 28px; /* Reduce font size */
+  }
+
+  .content-overlay1 p {
+    font-size: 20px; /* Smaller paragraph text */
+    width: 100%; /* Adjust width for better readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container1 {
+    height: 38vh; /* Further reduce height for smaller devices */
+  }
+
+  .content-overlay1 {
+    top: 25%; /* Adjust vertical alignment */
+    font-size: 22px; /* Smaller font for compact view */
+    /* border: 2px solid black; */
+  }
+
+  .content-overlay1 p {
+    font-size: 18px; /* Smaller paragraph text for mobile */
+  }
+  .image-container1 img{
+    width: 100%;
+    /* height: auto; */
+   
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container1 {
+    height: 20vh; /* Compact height for very small devices */
+    width: 100%;
+    /* border: 2px solid black; */
+  }
+
+  .content-overlay1 {
+    top: 20%; /* Align content appropriately */
+    font-size: 13px; /* Adjust font size */
+  }
+
+  .content-overlay1 h6 {
+   
+    margin-bottom: 5%;
+    color: black !important;
+  }
+  .content-overlay1 button{
+      margin-top: 0%;
+      padding: 5px;
+      font-size: 1vh;
+
+  }
+  
+  .image-container1 img{
+    width: 100%;
+    /* height: auto; */
+  }
+
+}
+
+.onlineheader h1 {
+  width:90%;
+  margin:0% auto;
+  font-size: 5vh;
+  /* font-family: lorem; */
+}
+
+.aboutonline {
+  
+  margin-top: 0%;
+  flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.aboutonline .onlinecontent {
+  width: 50%;
+  padding-left: 6%;
+}
+
+.aboutonline .onlinedocimage {
+  width: 50%;
+}
+
+.aboutonline .onlinedocimage img {
+  width: 60%;
+  height: 50vh;
+  display: block;
+  margin: auto;
+}
+
+.onlinecontent {
+  padding-left: 6%;
+}
+
+.onlinecontent h2 {
+  width: 65%;
+  margin-left: 10%;
+  color: rgb(60, 59, 59);
+  font-size: 4vh;
+  text-align: center;
+  line-height: 5vh !important;
+  overflow: hidden;
+  /* border: 2px solid black */
+}
+
+.onlinecontent .ondoc p {
+  text-align: center;
+  width:85%;
+  /* margin-left: 10%; */
+  /* padding-top: 2%; */
+  /* margin-bottom: 2%; */
+  /* border: 2px solid black */
+ 
+}
+
+.onlinecontent .search {
+  padding-left: 10%;
+}
+
+.search1 img {
+  height: 2.5vh;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.search h4 {
+  font-size: 3.5vh;
+  color: rgb(41, 40, 40);
+  padding-bottom: 2%;
+}
+
+.search p {
+  margin-left: 5%;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 30px;
+  background-color: rgb(59, 58, 58);
+  margin-left: 1%;
+}
+
+.para {
+  display: flex;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .onlineheader h1 {
+      font-size: 3.5vh;
+      width: 90%;
+      color: rgb(43, 43, 43);
+      text-align: center;
+  }
+
+  .aboutonline {
+      flex-direction: column; /* Stack the content vertically on small screens */
+      text-align: center;
+  }
+
+  .aboutonline .onlinecontent,
+  .aboutonline .onlinedocimage {
+      width: 100%; /* Take full width on smaller screens */
+  }
+
+  .onlinecontent h2 {
+      width: 100%;
+      margin-left: 0;
+  }
+   
+  .onlinecontent .ondoc p,
+  .onlinecontent .search h4 {
+      padding-left: 0;
+      margin-left: 0;
+      
+  }
+
+  .search1 img {
+      height: 2.3vh;
+      margin-left: 10%;
+  }
+
+  .search p {
+      margin-left: 0;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .onlinecontent .search {
+      padding-left: 0;
+      text-align: start;
+    
+  }
+  .onlinedocimage1{
+    display: none;
+  }
+  .onlinedocimage{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .onlineheader h1 {
+
+      font-size: 2.5vh;
+      margin-top: 10%;
+  }
+
+  .search h4 {
+    font-size: 18px !important; /* Force the style to apply */
+    font: weight 1px;;
+  }
+
+  .search h4 {
+      font-size: 2vh;
+      /* border: 2px solid black; */
+  }
+  .onlinecontent h2 {
+    line-height: 2.5vh !important;
+    /* border: 2px solid black; */
+    width: 80% !important;
+}
+
+  .onlinecontent h2 {
+      font-size: 3vh;
+      /* border: 2px solid black; */
+  }
+
+  .onlinecontent .ondoc p {
+      font-size: 1.5vh;
+      margin-left: 4%;
+      color: rgb(56, 54, 54);
+  }
+
+  .search1 img {
+      height: 1.5vh;
+    
+  }
+  .para p{
+    /* border: 2px solid black; */
+    text-align:center;
+  }
+  
+
+  .vertical-line {
+     display: none;
+  }
+  .onlinedocimage{
+    display: none;
+  }
+ 
+}
+
+/* Hide .onlinedocimage1 by default */
+.onlinedocimage1 {
+display: none;
+}
+
+/* Show .onlinedocimage1 only on screens smaller than 768px (mobile) */
+@media (max-width: 768px) {
+.onlinedocimage1 {
+    display: block; /* Make it visible on mobile screens */
+    width: 100%;    /* Adjust width if necessary */
+    text-align: center; /* Center the image if needed */
+}
+
+.onlinedocimage1 img {
+    width: 40%;  /* Adjust image size for mobile screens */
+    height: auto;
+    display: block;
+    margin: auto;
+}
+}
+
+/* Ensure it stays hidden on larger screens (1024px or bigger) */
+@media (min-width: 1024px) {
+.onlinedocimage1 {
+    display: none;
+}
+}
+
+
+
+.finalabout1 {
+display: flex;
+height: auto;
+/* border: 2px solid black; */
+width: 80%;
+margin:5% auto;
+
+
+}
+
+.finalaboutimg1 {
+width: 40%;
+/* border: 2px solid black; */
+margin-left: 10%;
+
+}
+.finalaboutimg1 img{
+  width:90% !important;
+  /* border: 2px solid black; */
+  height: auto !important;
+}
+
+.finalaboutcontent1 {
+width: 40%;
+/* border: 2px solid black; */
+margin: auto;
+}
+.finalaboutcontent1 h2{
+font-size: 5vh;
+/* border: 2px solid black; */
+width: 70%;
+text-align: center;
+color: rgb(50, 48, 48);
+}
+
+.finalaboutimg1 img {
+height: 60vh;
+width: 100%;
+}
+
+.finalaboutcontent1 h3, .finalaboutcontent1 h4 {
+margin-top: 2%;
+}
+.commitment-list1{
+/* border: 2px solid black; */
+width: 100%;
+display: block;
+margin: auto;
+
+}
+.commitment-item1{
+line-height: 6vh;
+}
+
+.commitment-list1 {
+list-style-type: none; /* Remove default list bullets */
+padding: 0;
+}
+.commitment-list1 li{
+font-size: 20px;
+/* border: 2px solid black; */
+}
+
+.commitment-item1 {
+display: flex;
+align-items: center;
+margin-bottom: 10px; /* Space between list items */
+}
+
+.circle1 {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 20px; /* Adjust size of the circle */
+height: 20px; /* Adjust size of the circle */
+border-radius: 50%; /* Makes the div a circle */
+background-color: green; /* Circle color */
+color: white; /* Icon color */
+margin-right: 10px; /* Space between circle and text */
+}
+
+.fa-check1 {
+font-size: 14px; /* Adjust size of the check mark */
+}
+.laptop1 {
+display: none; /* Default hidden */
+}
+.freeconsulation button{
+padding: 10px;
+display: block;
+/* margin: auto; */
+/* margin-left: 10%; */
+background-color: darkgreen;
+border: none;
+color: white;
+border-radius: 10px;
+text-decoration: none;
+border: none;
+}
+.freeconsulation button a{
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+.laptop1 {
+  display: block; /* Show only on smaller screens */
+}
+}
+
+
+@media (max-width: 768px) {
+.finalabout1 {
+  flex-direction: column; /* Stack items vertically */
+  /* border: 2px solid  black; */
+}
+
+
+ 
+.finalaboutcontent1 {
+  width: 100%; /* Take full width */
+  /* border: 2px solid  black; */
+  padding-left: 10%;
+}
+.finalaboutimg1{
+  width: 70%;
+  padding-left: 10%;
+}
+
+.finalaboutimg1 img {
+  height: auto; /* Adjust image height dynamically */
+  margin-top: 2%;
+}
+.finalaboutcontent1 h4{
+  display: none;
+}
+.finalaboutcontent1 h2{
+  display: none;
+}
+.finalabout1 h4{
+  font-size: 2vh;
+  padding-left: 10%;
+}
+.finalabout1 h2{
+  font-size: 3vh;
+  padding-left: 10%;
+}
+
+
+}
+
+@media (max-width: 480px) {
+  .finalaboutcontent1 {
+    width: 100%; /* Take full width */
+    /* border: 2px solid  black; */
+    padding-left: 0%;
+  }
+  .finalaboutimg1{
+    width: 70%;
+    padding-left: 10%;
+  }
+  
+.finalabout1 {
+  padding: 10px; /* Add spacing for smaller screens */
+}
+.finalabout1 h4{
+
+  padding-left: 0%;
+}
+.finalabout1 h2{
+ 
+  padding-left: 0%;
+}
+
+
+.circle1{
+  width: 22px;
+  height: 24px;
+  font-size: 10px; /* Smaller icon */
+}
+
+.commitment-item1 {
+  font-size: 15px; /* Smaller text for better readability */
+}
+
+.finalaboutcontent1 h2 {
+  font-size: 18px; /* Adjust heading size */
+  padding-left: 5%;
+}
+
+}
+
+
+.meetconsulation{
+/* border: 2px solid black; */
+margin:1% auto;
+width: 90%;
+}
+.meetconsulation h2{
+/* border: 2px solid black; */
+color: black;
+text-align: center;
+
+margin-bottom: 0%;
+margin-bottom: 0%;
+
+
+}
+
+.meeth1 h3{
+  color: rgb(32, 31, 31);
+  font-size: 2vh;
+  margin-left: 25%;
+  margin-top: 0%;
+  line-height: 3vh !important;
+  /* border: 2px solid black; */
+  margin-bottom: 3%;
+
+}
+.grid{
+display: grid;
+grid-template-columns: auto auto auto auto;
+margin: auto;
+/* border: 2px solid black; */
+justify-content: space-around;
+
+}
+.meet img {
+  height: 20vw; /* Adjusts dynamically based on viewport width */
+  width: 20vw;  /* Ensures the image remains a square */
+  max-height: 150px; /* Optional: Set a maximum size for larger screens */
+  max-width: 150px;  /* Optional: Set a maximum size for larger screens */
+  border: 2px solid rgb(36, 35, 35);
+  background-color: white;
+  border-radius: 50%;
+  object-fit: cover; /* Maintains aspect ratio and fills the circle */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .meet img {
+    height: 20vw; /* Slightly larger for smaller screens */
+    width: 20vw;
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  .meet img {
+    height: 30vw; /* Larger size for very small screens */
+    width: 30vw;
+  }
+}
+.meetimg h3,.meetimg h6{
+/* border: 2px solid black; */
+width: 70%;
+margin: auto;
+line-height: 3vh !important;
+}
+.meetimg h6{
+font-weight: lighter;
+line-height: 2vh !important;
+width: 70%;
+}
+
+
+
+
+
+
+.onlinecontent{
+/* border: 2px solid black; */
+text-align: start;
+}
+.onlinecontent h2{
+margin-bottom:1%;
+margin-top: 3%;
+}
+.onlinecontent p{
+text-align: start;
+/* border: 2px solid black; */
+width: 100%;
+font-style: lorem;
+font-size: 3vh;
+line-height: 6vh;
+
+}
+
+.onlinevideo{
+/* border: 2px solid black; */
+background-color:rgb(25, 105, 25);
+display: flex;
+width: 100%;
+margin-left: -4%;
+}
+.videocontent{
+width: 100%;
+}
+.onlinevideo h2{
+color: white;
+/* border: 2px solid black; */
+font-size: 5vh;
+margin-top: 15%;
+width: 76%;
+margin-left: 15%;
+text-align: start;
+color: white !important;
+
+}
+.youtubevideo{
+ /* border: 2px solid white; */
+ margin: auto;
+ width: 100%;
+
+}
+.youtubevideo video{
+height: auto;
+width: 100%;
+display: block;
+margin:10% auto;
+/* border: 2px solid black; */
+/* margin-bottom: 10%; */
+}
+.youtubevideo iframe {
+border: none;
+height: 60vh;
+width: 100%;
+background-color: none;
+}
+
+
+@media (max-width:768px){
+.meetimg img{
+  height: 15vh;
+}
+.videocontent{
+  width: 90%;
+}
+.videocontent h2{
+  font-size: 3.5vh;
+}
+.onlinevideo .youtubevideo{
+/* border: 2px solid white; */
+width: 100%;
+}
+.onlinevideo .youtubevideo video{
+  width: 95%;
+}
+.onlinecontent p{
+  /* border: 2px solid black; */
+  line-height: 3vh;
+  font-size: x-large;
+}
+.youtubevideo iframe {
+border: none;
+height: 30vh;
+width: 100%;
+background-color: none;
+}
+.meeth1 h3{
+margin-left: 13%;
+}
+
+
+}
+
+@media(max-width:480px){
+
+.meeth1 h3{
+  margin-left: 13%;
+}
+.onlinecontent{
+  /* border: 2px solid black; */
+  line-height: normal;
+}
+.onlinecontent h2{
+  /* border: 2px solid black; */
+  margin-bottom: 0%;
+}
+.ondoc p{
+  /* border: 2px solid black; */
+  line-height: normal;
+ 
+}
+.search h4{
+  font-size: 2.5vh;
+}
+.search img{
+  height: 2.1vh;
+}
+.para p{
+  font-size: large;
+  line-height: 3vh;
+}
+.finalabout1 .laptop1{
+  margin-bottom: 5%;
+}
+.commitment-item1{
+  /* border: 2px solid black; */
+  margin-left: 0%;
+  line-height: normal;
+}
+.onlinecontent p{
+      /* border: 2px solid black; */
+      line-height: 3vh;
+      font-size: large;
+}
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  /* border: 2px solid black; */
+  padding-left: 10%;
+}
+.meetimg img{
+  height: 13vh;
+}
+.meetimg h3{
+  font-size:small;
+}
+.videocontent{
+  width: 90%;
+}
+.videocontent h2{
+  font-size: 2.5vh;
+}
+.onlinevideo .youtubevideo{
+/* border: 2px solid white; */
+width: 100%;
+}
+.onlinevideo .youtubevideo video{
+  width: 95%;
+  height: 20vh;
+}
+.commitment-list1 li{
+  font-size:large;
+  /* border: 2px solid black; */
+}
+.meetconsulation h2{
+  color: blue;
+  font-size: 4vh;
+
+}
+
+.meeth1 h2{
+    color: black;
+    font-size: 2vh;
+}
+.meetconsulation{
+  /* border: 2px solid black; */
+  margin:5% auto;
+  width: 90%;
+}
+.youtubevideo iframe {
+  border: none;
+  height: auto;
+  width: 100%;
+  background-color: none;
+}
+
+
+}
+
+.connectcare h2 {
+color: rgb(45, 44, 44);
+font-size: 8vh; /* Keep font size proportional to viewport height */
+margin-top: 5%;
+text-align: center;
+}
+
+.connect h2 {
+color: green;
+font-size: 5vh; /* Same proportional sizing */
+margin-top: 0%;
+text-align: center;
+}
+
+.vertical-line1 {
+width: 60%;
+height: 1px;
+background-color: green;
+margin-left: 20%;
+margin-bottom: 2%;
+}
+
+.connectcare p {
+margin: auto;
+width: 70%;
+text-align: center;
+}
+
+/* Media Query for Tablets and Smaller Devices */
+@media (max-width: 768px) {
+.connectcare h2 {
+  font-size: 6vh; /* Slightly reduce size */
+  margin-top: 3%; /* Adjust spacing */
+}
+
+.connect h2 {
+  font-size: 4vh; /* Adjust font size */
+}
+
+.vertical-line1 {
+  width: 80%; /* Extend line for better fit */
+  margin-left: 10%;
+}
+
+.connectcare p {
+  width: 90%; /* Reduce width for smaller screens */
+  padding: 0 5%; /* Add padding for better readability */
+}
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+.connectcare h2 {
+  font-size: 4vh; /* Further reduce for very small screens */
+  margin-top: 2%;
+}
+
+.connect h2 {
+  font-size: 3vh; /* Adjust smaller font size */
+}
+
+.vertical-line1 {
+  width: 90%; /* Almost full width */
+  margin-left: 5%;
+}
+
+.connectcare p {
+  width: 100%; /* Use full width */
+  padding: 0 10%; /* Add more padding */
+  font-size: 0.9rem; /* Adjust font size for readability */
+  
+}
+}
+
+.onlinecareacross {
+text-align: center;
+padding: 2% 5%;
+background-color: #f9f9f9;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* border: 2px solid black; */
+}
+
+.onlinecareacross h2 {
+margin-top: 2%;
+color: #333;
+font-size: 2rem;
+font-weight: 600;
+}
+
+.onlinecareacross h3 {
+color: rgb(43, 42, 42);
+width: 100% !important;
+margin: 1% auto;
+font-size: 1.5rem;
+font-weight: 500;
+}
+
+.onlinecareacross p {
+display: block;
+/* border: 2px solid black; */
+width: 100% !important;
+margin: 1% auto;
+/* color: #555; */
+line-height: 1.6;
+/* font-size: 1rem; */
+/* font-family: 'Times New Roman', serif; Set the same font style */
+font-size: 2.5vh; /* Reduce the font size for p */
+color: rgb(29, 28, 28); /* Ensure text color is consistent */
+
+}
+
+@media (max-width: 768px) {
+.onlinecareacross {
+  padding: 5%;
+}
+
+.onlinecareacross h2 {
+  font-size: 1.8rem;
+}
+
+.onlinecareacross h3 {
+  font-size: 1.3rem;
+  width: 90%;
+}
+
+.onlinecareacross p {
+  font-size: 0.95rem;
+  width: 90%;
+}
+}
+
+@media (max-width: 480px) {
+.onlinecareacross h2 {
+  font-size: 1.5rem;
+}
+
+.onlinecareacross h3 {
+  font-size: 1rem;
+}
+
+.onlinecareacross p {
+  font-size: 0.9rem;
+  text-align: start;
+  margin: 2%;
+}
+}
+
+
+/* General font styles for p, h2, h3 */
+
+.totalonline  p {
+    line-height: 1.6; /* Set consistent line height for all paragraphs */
+    /* font-family: 'Times New Roman', serif; Set the same font style */
+    font-size: 2.5vh !important; /* Set the font size for p */
+    color: rgb(29, 28, 28); /* Ensure text color is consistent */
+    overflow: hidden;
+  }
+  .totalonline li{
+    /* font-family: 'Times New Roman', serif; Set the same font style */
+    font-size: 3vh !important; /* Set the font size for p */
+    color: rgb(29, 28, 28); /* Ensure text color is consistent */
+    overflow: hidden;
+  }
+ .totalonline h2 {
+    /* font-family: 'Times New Roman', serif; Set the same font style */
+    font-size: 4vh !important; /* Increase the font size for h2 */
+    color: rgb(29, 28, 28); /* Ensure text color is consistent */
+    line-height: 6vh; /* Maintain increased line height for h2 */
+    overflow: hidden;
+  }
+  
+
+
+.totalonline h2 {
+  /* font-family: 'Times New Roman', serif; Set the same font style */
+  font-size: 4vh !important; /* Increase the font size for h2 */
+  color: rgb(29, 28, 28); /* Ensure text color is consistent */
+  line-height: 7vh; /* Maintain increased line height for h2 */
+  overflow: hidden;
+}
+
+.totalonline h3 {
+  /* font-family: 'Times New Roman', serif; Set the same font style */
+  font-size: 2.5vh ; /* Keep the font size for h3 */
+  color: rgb(29, 28, 28); /* Ensure text color is consistent */
+  line-height: 6vh; /* Maintain consistent line height for h3 */
+  font-weight: bold !important;
+  overflow: hidden;
+}
+.totalonline h4 {
+  /* font-family: 'Times New Roman', serif; Set the same font style */
+  font-size: 3vh !important; /* Keep the font size for h3 */
+  color: rgb(29, 28, 28); /* Ensure text color is consistent */
+  line-height: 3vh; /* Maintain consistent line height for h3 */
+  font-weight: bold !important;
+  overflow: hidden;
+}
+
+/* Responsive font size adjustments for small screens */
+@media (max-width: 768px) {
+.totalonline p {
+  font-size: 1.8vh !important; /* Reduced font size for p on small screens */
+  line-height: 1.4; /* Reduced line height for p on small screens */
+}
+.totalonline h2 {
+  font-size: 2.3vh !important; /* Slightly smaller h2 font size for small screens */
+  line-height: 5vh; /* Reduced line height for h2 on small screens */
+}
+.totalonline h3 {
+  font-size: 2.1vh !important; /* Slightly reduced font size for h3 on small screens */
+  line-height: 5vh; /* Adjusted line height for h3 */
+}
+.totalonline h4 {
+  font-size: 2vh !important; /* Slightly reduced font size for h4 on small screens */
+  line-height: 4vh; /* Adjusted line height for h4 */
+}
+.totalonline li {
+  font-size: 2vh !important; /* Slightly reduced font size for h4 on small screens */
+  line-height: 4vh; /* Adjusted line height for h4 */
+}
+.totalonline h2 {
+  font-size: 2.5vh !important; /* Smaller h1 font size for very small screens */
+  line-height: 3vh; /* Adjusted line height for h1 */
+}
+}
+
+@media (max-width: 480px) {
+.totalonline p {
+  font-size: 1.5vh ; /* Further reduced font size for p on very small screens */
+  line-height: 1.3; /* Reduced line height for p on very small screens */
+}
+.totalonline h2 {
+  font-size: 1.8vh !important; /* Smaller h2 font size for very small screens */
+  line-height: 4vh; /* Reduced line height for h2 */
+}
+.totalonline h3 {
+  font-size: 1.3vh; /* Reduced font size for h3 on very small screens */
+  line-height: 4vh; /* Adjusted line height for h3 */
+}
+.totalonline h2 {
+  font-size: 2vh !important; /* Smaller h1 font size for very small screens */
+  line-height: 3vh; /* Adjusted line height for h1 */
+}
+.totalonline li {
+  font-size: 1.5vh !important; /* Smaller h1 font size for very small screens */
+  line-height: 3vh; /* Adjusted line height for h1 */
+}
+
+}
+
+/* Enhance .boxx design */
+.boxx {
+/* Uncommented the border for better visibility (optional) */
+border: 2px solid rgb(82, 79, 79);
+box-shadow: 2px 2px 8px black;
+height: 20vh;
+width: 20%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 10px; /* Adds smooth corners */
+background-color: #f9f9f9; /* Light background */
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+
+/* Main container adjustments */
+.mainbox {
+display: flex;
+justify-content: space-evenly;
+margin-bottom: 3%;
+gap: 20px; /* Adds spacing between boxes */
+flex-wrap: wrap; /* Makes boxes stack on smaller screens */
+}
+.plus{
+  border: 2px solid black;
+  height: 30vh;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+.boxx {
+  width: 40%; /* Adjust width for tablets */
+  height: 15vh; /* Adjust height for smaller devices */
+}
+}
+
+@media (max-width: 480px) {
+.boxx {
+  width: 80%; /* Adjust width for phones */
+  height: 12vh; /* Reduce height for compact screens */
+}
+
+.mainbox {
+  justify-content: center; /* Align boxes centrally */
+}
+}
+
+
+/* .benefitpoints{
+  display: flex;
+  justify-content: space-evenly;
+} */
+.benefits h2{
+  margin-bottom: 0%;
+  text-align: center;
+}
+.benefits p{
+ 
+  text-align: center;
+}
+.benefitpoints {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  cursor: pointer;
+  margin: 1px 0;
+  overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  white-space: nowrap; /* Ensure text stays on one line */
+}
+
+.benefitpoints h3 {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  flex-shrink: 0; /* Prevent shrinking */
+  background-color: #f9f9f9; /* Subtle background for better visibility */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.benefitpoints h3:hover {
+  color: #ffffff; /* White text on hover */
+  background-color: lightgreen; /* Blue background on hover */
+  border: none;
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.benefitpoints h3.active {
+  color: #ffffff; /* White text for active state */
+  font-weight: bold;
+  background-color: rgb(22, 147, 22) ; /* Darker blue for active state */
+  border: none;
+}
+
+.benefit-description {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  animation: fadeIn 0.5s ease-in-out;
+  padding: 20px; /* Add more padding for better spacing */
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+  border: 1px solid #ddd; /* Subtle border for definition */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Specific styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Scrollbar styles for tablet devices */
+  .benefitpoints {
+    scrollbar-width: thin; /* Make the scrollbar thinner */
+  }
+
+  .benefitpoints::-webkit-scrollbar {
+    height: 0.2px; /* Even thinner scrollbar */
+  }
+
+  .benefitpoints::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 123, 255, 0.5); /* Lighter blue thumb */
+    border-radius: 10px;
+  }
+
+  .benefitpoints::-webkit-scrollbar-track {
+    background-color: rgba(224, 224, 224, 0.6); /* Lighter gray track */
+    border-radius: 10px;
+  }
+
+  /* Reduce boldness for tablet hover effect */
+  .benefitpoints h3:hover {
+    font-weight: normal; /* Normal weight on hover */
+  }
+}
+
+
+.bookonline button {
+  padding: 15px;
+  display: block;
+  margin: 10px auto;
+  background-color: rgb(17, 163, 17);
+  font-weight: bold;
+  font-size: large;
+  width: 30%;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.bookonline a {
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .bookonline button {
+    width: 40%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bookonline button {
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bookonline button {
+    width: 70%;
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .bookonline button {
+    width: 80%;
+    padding: 6px;
+    font-size: 12px;
+  }
+
+}
+
+
+.aboutonline {
+  margin-top: 0%;
+  width: 100% !important;
+  text-align: center;
+  padding: 0% 5%; /* Reduced padding for compactness */
+  background-color: #f4f4f4; /* Soft light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
+}
+
+.onlinecontent {
+  width: 100% !important;
+}
+
+.heading {
+  font-size: 3.5vh !important; /* Optimized font size */
+  margin-bottom: 0%;
+  color: #333 !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Subtle shadow for text depth */
+  font-weight: bold;
+}
+
+.doc-info {
+  font-size: 1.4vh !important; /* Reduced font size for readability */
+  color: #777 !important;
+  margin-bottom: 2%;
+  font-weight: lighter;
+}
+
+/* Default styles */
+.search {
+  margin-top: 0% !important; /* Reduced top margin */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2% 3%; /* Reduced padding for space efficiency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  border: 1x solid rgb(31, 31, 31); /* Black border */
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .search {
+    width: 100% !important; /* Full width for tablets */
+    margin-left: 0 !important; /* Remove any left margin to ensure full width */
+    margin-right: 0 !important; /* Remove any right margin to ensure full width */
+  }
+
+  .search-icon {
+    margin-top:3h !important; /* Move the icon lower on tablets */
+    margin-left: 5% !important; /* Move the icon to the left */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .search {
+    width: 100% !important; /* Full width for mobiles */
+    margin-left: 0 !important; /* Remove any left margin to ensure full width */
+    margin-right: 0 !important; /* Remove any right margin to ensure full width */
+  
+  }
+
+  .search-icon {
+    margin-left: 5% !important; /* Move the icon to the left */
+    margin-right: auto !important; /* Remove the right margin */
+    display: inline-block !important; /* Ensure the icon aligns properly */
+    margin-top: 2.9 !important; /* Move the icon a little lower on mobiles */
+    /* border: 2px solid black */
+  }
+
+  /* Adjust the image alignment in the search-item */
+  .search-item {
+    text-align: left !important; /* Align text and icon to the left */
+  }
+}
+
+.search-item {
+  font-size: 2.5vh !important; /* Adjusted font size for readability */
+  color: #2e2e2e !important;
+  margin-bottom: 0%;
+  text-align: left !important;
+  padding: 1% 0 !important; /* Reduced padding */
+}
+
+.search-icon {
+  height: 3vh !important; /* Adjusted height for better proportions */
+  margin-right: 2% !important;
+}
+
+.para {
+  width: 100% !important;
+  margin-bottom: 0% !important; /* Reduced bottom margin */
+}
+
+.vertical-line {
+  width: 2px !important;
+  height: 25px !important; /* Adjusted height */
+  background-color: #bbb !important;
+  margin-right: 3% !important;
+}
+
+.para-text {
+  font-size: 2vh !important; /* Optimized font size */
+  color: #585858 !important;
+  text-align: center !important;
+  max-width: 80% !important;
+  margin: 0 auto !important;
+  line-height: 1.5 !important; /* Reduced line height for compactness */
+  letter-spacing: 0.5px; /* Slightly adjusted letter spacing */
+}
+
+/* Responsive Design: Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .aboutonline {
+    padding: 2% 4% !important; /* Reduced padding */
+  }
+
+  .heading {
+    font-size: 4vh !important; /* Reduced font size */
+  }
+
+  .search-item {
+    font-size: 3vh !important; /* Reduced font size */
+  }
+
+  .search-icon {
+    height: 2.8vh !important; /* Adjusted height */
+  }
+
+  .para-text {
+    font-size: 1.8vh !important; /* Reduced font size */
+  }
+
+  .vertical-line {
+    display: none !important;
+  }
+}
+
+/* Responsive Design: Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 3vh !important; /* Adjusted font size */
+  }
+
+  .search-item {
+    font-size: 2.8vh !important; /* Adjusted font size */
+  }
+
+  .search-icon {
+    height: 2.2vh !important; /* Adjusted height */
+  }
+
+  .para-text {
+    font-size: 1.6vh !important; /* Adjusted font size */
+  }
+}
+.doc-info {
+  display: block; /* Default display for both versions */
+}
+
+/* Hide large text on mobile and tablet */
+.large-text {
+  display: none;
+}
+
+/* Hide mobile text on large screens */
+.mobile-text {
+  display: block;
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .mobile-text {
+    display: block;
+  }
+
+  .large-text {
+    display: none;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .mobile-text {
+    display: block;
+  }
+
+  .large-text {
+    display: none;
+  }
+}
+
+/* For large screens (min-width: 769px) */
+@media (min-width: 769px) {
+  .mobile-text {
+    display: none;
+  }
+
+  .large-text {
+    display: block;
+  }
+}
+
+
+.search-item,
+.para-text {
+  line-height: 1.2 !important; /* Adjusted line height for all main text */
+}
+.heading {
+  line-height: 0.5 !important; /* Reduced line height for compactness */
+}
+.doc-info {
+  line-height: 1.4 !important; /* Adjusted line height for readability */
+}

@@ -1,0 +1,1179 @@
+/* CorporateHealthCamps.css */
+.corp-main-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+ 
+}
+
+.corp-header-banner {
+  background: linear-gradient(135deg, #1a5f7a, #2c88b0);
+  padding: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.corp-main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.corp-content-wrapper {
+  display: flex;
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+
+
+}
+
+.corp-gallery-wrapper {
+  width: 100%;
+  display: block;
+  margin-top: 4rem;
+  overflow: hidden;
+}
+
+
+.corp-left-section {
+  flex: 1;
+  width: 50%;
+}
+
+.corp-intro-block {
+  margin-bottom: 2rem;
+}
+
+.corp-section-title {
+  color: #1a5f7a;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.corp-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #2c88b0;
+  border-radius: 2px;
+}
+
+.corp-intro-text {
+  color: #4a5568;
+  line-height: 1.8;
+  font-size: 1.1rem;
+
+}
+
+.corp-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 3rem;
+}
+
+.corp-stat-card {
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.corp-stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.corp-stat-icon {
+  font-size: 2.5rem;
+  color: #063e10;
+  margin-bottom: 1rem;
+
+}
+
+.corp-stat-number {
+  font-size: 2.5rem;
+  color: #035209;
+  color: black;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.corp-stat-label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.corporate-health-form-container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.corp-form-section {
+  flex: 1;
+  width: 50%;
+  position: sticky;
+  top: 2rem;
+}
+
+.corp-form-container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.corp-form-title {
+  color: #1a5f7a;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.corp-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.corp-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.corp-input:focus {
+  border-color: #2c88b0;
+  outline: none;
+}
+
+.corp-submit-btn {
+  width: 100%;
+  padding: 1.5rem;
+  background: #1a5f7a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.corp-submit-btn:hover {
+  background: #2c88b0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .corp-content-wrapper {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .corp-content-wrapper {
+    padding: 1rem;
+  }
+
+  .corporate-health-form-container {
+    padding: 1.5rem;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .corp-content-wrapper {
+    flex-direction: column;
+  }
+
+  .corp-left-section,
+  .corp-form-section {
+    width: 100%;
+  }
+
+  .corp-main-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .corp-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .corp-section-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .corp-content-wrapper {
+    padding: 1rem;
+  }
+
+  .corp-main-title {
+    font-size: 1.5rem;
+  }
+
+  .corp-form-container {
+    padding: 1.5rem;
+  }
+  .corporate-health-form-container {
+    padding: 1rem;
+  }
+
+  .corporate-health-form-two-col {
+    grid-template-columns: 1fr;
+  }
+  
+}
+/* Form specific styles */
+.corp-form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1a5f7a;
+  font-weight: 500;
+}
+
+.corp-required-star {
+  color: #dc2626;
+  font-size: 0.5rem;
+  vertical-align: super;
+  margin-left: 2px;
+}
+
+.corp-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.corp-form-col {
+  flex: 1;
+}
+
+.corp-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.corp-input:focus {
+  border-color: #2c88b0;
+  box-shadow: 0 0 0 2px rgba(44, 136, 176, 0.1);
+  outline: none;
+}
+
+.corp-input:invalid {
+  border-color: #dc2626;
+}
+
+.corp-submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #1a5f7a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.corp-submit-btn:hover {
+  background: #2c88b0;
+  transform: translateY(-2px);
+}
+
+.corporate-health-form-two-col {
+  display: flex;
+  flex-wrap: wrap; /* Allows inputs to wrap on smaller screens */
+  gap: 1rem; /* Space between inputs */
+}
+
+.corporate-health-form-two-col > input {
+  flex: 1 1 calc(50% - 1rem); /* Inputs take half the width minus the gap */
+  min-width: 150px; /* Ensures inputs don't shrink too much */
+}
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+  .corporate-health-form-two-col > input {
+    flex: 1 1 100%; /* Stacks inputs vertically for tablets */
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+  .corporate-health-form-two-col {
+    flex-direction: column; /* Stacks all elements vertically */
+  }
+
+  .corporate-health-form-two-col > input {
+    width: 100%; /* Full width for inputs */
+    margin-bottom: 0.5rem; /* Add spacing between stacked inputs */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .corp-content-wrapper {
+    flex-direction: column;
+  }
+
+  .corp-left-section,
+  .corp-form-section {
+    width: 100%;
+    
+  }
+  .corp-form-section {
+    position: static;
+  }
+}
+
+@media (max-width: 576px) {
+  .corp-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+.corp-health-camps-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.corp-health-camps-header-wrapper {
+  background: linear-gradient(135deg, #1a5f7a, #2c88b0);
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.corp-health-camps-title {
+  color: #ffffff;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.corp-health-camps-flex-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.corp-health-camps-left-content {
+  flex: 1;
+  width: 50%;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.corp-health-camps-right-content {
+  flex: 1;
+  width: 50%;
+  position: sticky;
+  top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .corp-health-camps-flex-container {
+    gap: 1.5rem;
+  }
+
+  .corp-health-camps-left-content,
+  .corp-health-camps-right-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .corp-health-camps-flex-container {
+    flex-direction: column;
+  }
+
+  .corp-health-camps-left-content,
+  .corp-health-camps-right-content {
+    width: 100%;
+  }
+
+  .corp-health-camps-right-content {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .corp-health-camps-page {
+    padding: 1rem;
+  }
+
+  .corp-health-camps-left-content,
+  .corp-health-camps-right-content {
+    padding: 1rem;
+  }
+}
+/* Add to your existing CSS file */
+
+.corp-gallery-section {
+  padding: 4rem 0;
+  background: #f8fafc;
+  margin-top: 1px;
+  padding-top: 0;
+}
+
+.corp-gallery-title {
+  text-align: center;
+  color: #1a5f7a;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+
+}
+
+.corp-gallery-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #2c88b0;
+  border-radius: 2px;
+}
+
+.infinite-scroll {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: fit-content;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.corp-gallery-container {
+  overflow: hidden;
+}
+
+/* Pause animation on hover (optional) */
+.infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+.corp-gallery-carousel {
+  display: flex;
+  width: calc(200%);
+  animation: scrollGallery 20s linear infinite;
+  gap: 2rem;
+}
+
+.corp-gallery-carousel:hover {
+  animation-play-state: paused;
+}
+
+/*  */
+/*  */
+
+.scrolling-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  width: calc(200% + 10px);
+  animation: scroll 20s linear infinite;
+}
+.scrolling-wrapper {
+  display: flex;
+  /* Total width: two copies of the images */
+  width: calc(var(--scroll-distance) * 2);
+  animation: scroll 20s linear infinite;
+  }
+
+.scrolling-container:hover .scrolling-wrapper {
+  animation-play-state: paused;
+}
+
+.corp-gallery-card {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.corp-gallery-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.corp-gallery-image-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+.corp-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* transition: transform 0.5s ease; */
+}
+
+.corp-gallery-card:hover .corp-gallery-image {
+  transform: scale(1.1);
+}
+
+.corp-gallery-info {
+  padding: 1.5rem;
+}
+
+.corp-gallery-info h3 {
+  color: #1a5f7a;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.corp-gallery-info p {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Modal Styles */
+.corp-gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: modalFadeIn 0.3s ease;
+  /* height: 50%; */
+  /* border: 2px solid black; */
+}
+
+.corp-gallery-modal-content {
+  max-width: 90%;
+  max-height: 90vh;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  position: relative;
+  animation: modalSlideIn 0.3s ease;
+}
+
+.corp-gallery-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #1a5f7a;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.corp-gallery-close-btn:hover {
+  transform: rotate(90deg);
+}
+
+.corp-gallery-modal-image {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+/* Animations */
+@keyframes scrollGallery {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes cardFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .corp-gallery-card {
+    flex: 0 0 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .corp-gallery-title {
+    font-size: 1.8rem;
+  }
+  
+  .corp-gallery-card {
+    flex: 0 0 250px;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .corp-gallery-title {
+    font-size: 1.5rem;
+  }
+  
+  .corp-gallery-card {
+    flex: 0 0 220px;
+  }
+  
+  .corp-gallery-modal-content {
+    padding: 1rem;
+  }
+}
+
+
+/* Responsive adjustments */
+@media (min-width: 1200px) {
+  .corp-gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .corp-gallery-card {
+    flex: 0 0 280px;
+    min-width: 280px;
+  }
+}
+/* form error and succes */
+/* In your corporates.css file */
+
+.corporate-health-form-error {
+  background-color: #fee6e6;
+  border: 1px solid #ff8080;
+  color: #d63030;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.corporate-health-form-success {
+  background-color: #e6ffe6;
+  border: 1px solid #80ff80;
+  color: #30d630;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.corporate-health-form-submit {
+  background-color: #1a5f7a;
+  height: 30px;
+  width: 100%;
+  color: white;
+  
+}
+.form-error-message {
+  background-color: #fee6e6;
+  border: 1px solid #ff8080;
+  color: #d63030;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-success-message {
+  background-color: #e6ffe6;
+  border: 1px solid #80ff80;
+  color: #30d630;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* new code */
+/* Why Section */
+.corp-why-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.corp-why-title {
+  color: #1a5f7a;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.corp-why-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #4a5568;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Services Section */
+.corp-services-section {
+  padding: 4rem 2rem;
+  background: #f8fafc;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.corp-services-title {
+  color: #1a5f7a;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.corp-services-list {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.corp-services-list li {
+  font-size: 1.1rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Benefits Section */
+.corp-benefits-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.corp-benefits-title {
+  color: #1a5f7a;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.corp-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.corp-benefit-card {
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.corp-benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Steps Section */
+.corp-steps-section {
+  padding: 4rem 2rem;
+  background: #f8fafc;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 0px;
+
+}
+
+.corp-steps-title {
+  color: #1a5f7a;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.corp-steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.corp-step-card {
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.corp-step-number {
+  width: 40px;
+  height: 40px;
+  background: #1a5f7a;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-weight: bold;
+}
+
+/* Testimonials Section */
+.corp-testimonials-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.corp-testimonials-title {
+  color: #1a5f7a;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.corp-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.corp-testimonial-card {
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Contact Section */
+/* .corp-contact-section {
+  padding: 4rem 2rem;
+  background: #1a5f7a;
+  color: #ffffff;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+} */
+.corp-testimonial-card p{
+  text-align: center;
+}
+
+/* .corp-contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+} */
+/* .corp-contact-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #ffffff;
+  color: #1a5f7a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  text-decoration: none;
+
+} */
+
+.corp-contact-button:hover {
+  transform: translateY(0px);
+}
+
+.corp-contact-section {
+  background: #1a5f7a;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 40px;
+  color: #ffffff;
+  border: 2px solid black;
+  }
+  
+  .contact-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  }
+  
+  .corp-contact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+  }
+  
+  .corp-contact-content {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: white;
+  line-height: 1.6;
+  }
+  
+  .corp-contact-button {
+    background: #ffffff;
+  color: #1a5f7a;
+  border: none;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .corp-contact-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  }
+/* FAQ Section */
+.corp-faq-section {
+  padding: 4rem 2rem;
+  background: #f8fafc;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.corp-faq-title {
+  color: #1a5f7a;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.corp-faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.corp-faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.corp-faq-item:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.corp-faq-question {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corp-faq-question h3 {
+  color: #1a5f7a;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+  flex: 1;
+}
+
+.corp-faq-icon {
+  color: #1a5f7a;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.corp-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #f8fafc;
+}
+
+.corp-faq-item.active .corp-faq-answer {
+  max-height: 300px; /* Adjust based on content */
+  transition: max-height 0.5s ease-in;
+}
+
+.corp-faq-answer p {
+  padding: 1.5rem;
+  margin: 0;
+  color: #4a5568;
+  line-height: 1.6;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Hover effect */
+.corp-faq-item:hover .corp-faq-question {
+  background-color: rgba(26, 95, 122, 0.05);
+}
+
+/* Active state styles */
+.corp-faq-item.active .corp-faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .corp-faq-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .corp-faq-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .corp-faq-section {
+    padding: 2rem 1rem;
+  }
+
+  .corp-faq-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .corp-faq-question h3 {
+    font-size: 1.1rem;
+  }
+
+  .corp-faq-question {
+    padding: 1.25rem;
+  }
+
+  .corp-faq-answer p {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .corp-faq-title {
+    font-size: 1.5rem;
+  }
+
+  .corp-faq-question h3 {
+    font-size: 1rem;
+  }
+
+  .corp-faq-question {
+    padding: 1rem;
+  }
+
+  .corp-faq-answer p {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .corp-benefits-grid,
+  .corp-steps-container,
+  .corp-testimonials-grid,
+  .corp-faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .corp-why-title,
+  .corp-services-title,
+  .corp-benefits-title,
+  .corp-steps-title,
+  .corp-testimonials-title,
+  .corp-contact-title,
+  .corp-faq-title {
+    font-size: 2rem;
+  }
+
+  .corp-why-content,
+  .corp-services-list li {
+    font-size: 1rem;
+  }
+}

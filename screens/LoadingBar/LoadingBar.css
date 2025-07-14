@@ -1,0 +1,217 @@
+/* Full-screen overlay with background */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease-out; /* Fade-in for smooth appearance */
+  overflow: hidden;
+}
+
+/* Loading bar container */
+.loading-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  animation: slideUp 0.5s ease-out; /* Slide-up effect */
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container for rotating rings with logo inside */
+.loading-ring-container {
+  position: relative;
+  width: 100px;  /* Reduced size of container */
+  height: 100px; /* Reduced size of container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Styling for the rotating rings */
+.loading-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: conic-gradient(
+   #32cd32 0%,   /* Lime green */
+    #228b22 50%,  /* Forest green */
+    #ffff00 100%  /* Yellow */
+  
+  
+  );
+  animation: rotateRing 2s linear infinite; /* Smooth rotation */
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); Subtle shadow effect */
+  z-index: 1;
+}
+
+/* Smaller rotating rings for layered effect */
+.loading-ring:nth-child(2) {
+  width: 65px; /* Slightly smaller ring */
+  height: 65px;
+  animation: rotateRing 2.5s linear infinite reverse; /* Reverse direction */
+}
+
+.loading-ring:nth-child(3) {
+  width: 50px; /* Smaller ring */
+  height: 50px;
+  animation: rotateRing 3s linear infinite;
+}
+
+.loading-ring:nth-child(4) {
+  width: 35px; /* Smallest ring */
+  height: 35px;
+  animation: rotateRing 3.5s linear infinite reverse;
+}
+
+
+
+/* Keyframe for smooth rotation */
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Logo centered inside the rotating ring */
+.loading-logo {
+  width: 90px;  /* Resize logo to fit better */
+  height: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 4px solid white;
+  transform: translate(-50%, -50%);  /* Centering the logo */
+  z-index: 10; /* Ensure the logo is above the rotating ring */
+  overflow: hidden;
+}
+
+/* Loading message style */
+.loading-message {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  opacity: 0.9;
+  animation: fadeInText 0.8s ease-out; /* Fade-in text */
+  overflow: hidden;
+}
+
+/* Keyframe for rotating ring */
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Keyframe for sliding-up effect */
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Fade-in effect for the overlay */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Smooth fade-in animation for the loading text */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Keyframe for thank-you message with bounce */
+@keyframes bounceIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Styling for the thank-you message */
+.thank-you-message {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4CAF50;  /* Green color for success message */
+  animation: bounceIn 1s ease-out; /* Bounce-in animation for the thank-you message */
+}
+/* Import animate.css or define your custom animation */
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+
+/* Custom Toast Styling */
+.custom-toast {
+  background: linear-gradient(to right, #00c851, #007e33);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  overflow: hidden;
+}
+
+.bounceIn {
+  animation: bounceIn 0.6s;
+  overflow: hidden;
+}
+
+.bounceOut {
+  animation: bounceOut 0.3s;
+  overflow: hidden;
+}
+
+/* Ensure it appears in the middle of the page */
+.Toastify__toast-container {
+  top: 50% !important;
+  transform: translateY(-50%);
+  overflow: hidden;
+}

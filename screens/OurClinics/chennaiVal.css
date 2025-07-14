@@ -1,0 +1,969 @@
+.val-page-layout {
+  display: flex;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  position: relative;
+}
+
+/* Navigation */
+.val-branch-nav {
+  flex: 0 0 250px;
+  background: #E8F5E9;
+  padding: 1.25rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+  height: fit-content;
+  position: fixed;
+  top: 120px;
+  left: 16px;
+  z-index: 1000;
+  width: 250px;
+}
+
+.val-nav-title {
+  color: #2E7D32; /* Green color for heading */
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #4CAF50;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.val-branch-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.val-branch-link {
+  padding: 0.75rem 1rem;
+  color: black; /* Changed to black */
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: #E8F5E9;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+/* Green Button Styles */
+.val-branch-link {
+  font-size: 14px; /* Adjust font size as needed */
+  padding: 10px 20px;
+  border: 2px solid #2E7D32;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #1B5E20, #4CAF50); /* Gradient background from dark green to light green */
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.val-branch-link:hover {
+  background: linear-gradient(135deg, #4CAF50, #81C784); /* Hover effect with lighter green gradient */
+  border-color: #4CAF50;
+  transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.val-branch-link:active {
+  background-color: #1B5E20;
+  border-color: #1B5E20;
+}
+
+.val-branch-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.5);
+}
+
+/* Responsive Adjustments for Green Button */
+@media (max-width: 1024px) {
+  .val-branch-link {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .val-branch-link {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .val-branch-link {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+/* .val-branch-link:hover {
+  background: #C8E6C9;
+  transform: translateX(4px);
+} */
+
+/* Main Content */
+.val-main-content {
+  flex: 1;
+  margin-left: 270px; 
+  padding: 0.5rem;
+}
+
+/* .val-clinic-wrapper {
+  width: 100%;
+  background: #ffffff;
+  min-height: 100vh;
+} */
+
+/* Header Section */
+.val-branch-header {
+  text-align: center;
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+  border-radius: 8px;
+  color: #ffffff; /* White color for header text */
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.val-branch-heading {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color:#ffffff; /* Green color for heading */
+}
+
+.val-branch-tagline {
+  font-size: 1rem;
+  opacity: 0.9;
+  color: #ffffff; /* Green color for heading */
+
+}
+
+/* Welcome Section */
+.val-welcome-block {
+  text-align: center;
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 1.25rem;
+  background: #E8F5E9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.val-welcome-heading {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.val-welcome-text {
+  color: black; /* Changed to black */
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+/* Why Choose Section */
+.val-why-choose-section {
+  padding: 1.5rem 0;
+  margin: 1rem 0;
+}
+
+.val-why-choose-section h2 {
+  color: #2E7D32; /* Green color for heading */
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.val-features-list {
+  color: black; /* Changed to black */
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.val-features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.val-features-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.val-feature-item {
+  background: #E8F5E9;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.val-feature-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
+}
+
+.val-feature-icon1 {
+  color: #2E7D32; /* Green color for icon */
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.val-feature-item h3 {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.val-feature-item p {
+  color: black; /* Changed to black */
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Treatments Section */
+.val-treatments-block {
+  padding: 1.5rem 0;
+  margin: 1rem 0;
+}
+
+.val-treatments-headings {
+  color: #2E7D32; /* Green color for heading */
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.val-treatments-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.val-treatment-box {
+  background: #E8F5E9;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.val-treatment-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
+}
+
+.val-treatment-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.val-treatment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.val-treatment-item {
+  color: black; /* Changed to black */
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(46, 125, 50, 0.1);
+  font-size: 0.9rem;
+}
+
+/* Doctors Section */
+.val-doctors-section {
+  padding: 1.5rem 0;
+  margin: 1rem 0;
+}
+
+.val-benefits2 {
+  background: #E8F5E9;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.val-benefits2 h2 {
+  color: #2E7D32; /* Green color for heading */
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.val-benefitpoints2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.val-benefitpoints2 h3 {
+  padding: 0.75rem 1.25rem;
+  background: #ffffff;
+  border-radius: 6px;
+  color: black; /* Changed to black */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);
+}
+
+.val-benefitpoints2 h3.active {
+  background: #4CAF50;
+  color: #ffffff;
+}
+
+.val-benefitpoints2 h3:hover {
+  background: #C8E6C9;
+}
+
+.val-benefit-description2 {
+  color: black; /* Changed to black */
+  background: #ffffff;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.1);
+}
+
+/* Clinic Slider */
+/* .val-clinic-section {
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.val-clinic-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: #2E7D32;
+
+}
+
+.val-clinic-slider {
+  position: relative;
+  width: 100%;
+  height: clamp(250px, 50vw, 500px);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  height: 300px;
+  
+}
+
+.val-slider-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.val-slider-image {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.val-slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: clamp(30px, 5vw, 40px);
+  height: clamp(30px, 5vw, 40px);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(16px, 2.5vw, 24px);
+  color: #333;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.val-slider-button.left {
+  left: clamp(10px, 2vw, 20px);
+}
+
+.val-slider-button.right {
+  right: clamp(10px, 2vw, 20px);
+}
+
+.val-slider-button:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+
+@media screen and (max-width: 768px) {
+  .val-clinic-section {
+      padding: 1rem 0.5rem;
+  }
+
+  .val-clinic-slider {
+      height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .val-clinic-slider {
+      height: 250px;
+  }
+
+  .val-slider-button {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+  }
+} */
+
+/* Map and Contact */
+/* Map and Contact Section Styles */
+/* Map Section Styles */
+/* Map and Contact Section Styles */
+.val-map-contact {
+  width: 100%;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.val-map-container {
+  width: 100%;
+  height: 250px; /* Default height for larger screens */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.val-google-map {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive styles for different screen sizes */
+@media screen and (max-width: 1024px) {
+  .val-map-container {
+      height: 350px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .val-map-contact {
+      padding: 0.5rem;
+  }
+
+  .val-map-container {
+      height: 300px;
+      border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .val-map-contact {
+      padding: 0.5rem;
+      margin: 1rem 0;
+  }
+
+  .val-map-container {
+      height: 250px;
+      border-radius: 4px;
+  }
+}
+
+/* Ensure iframe is responsive */
+.val-google-map {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  display: block;
+}
+
+
+/* Best Section */
+.val-best-section {
+  padding: 1.5rem;
+  background: #E8F5E9;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.val-best-heading {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.val-best-description {
+  color: black; /* Changed to black */
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.val-cta-section {
+  text-align: center;
+  padding: 1.5rem;
+  background: #E8F5E9;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.val-cta-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.val-cta-text {
+  color: black; /* Changed to black */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.val-cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #4CAF50;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.val-cta-button:hover {
+  background: #2E7D32;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+
+
+
+@media screen and (max-width: 768px) {
+  .val-branch-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-radius: 0;
+    background-color: #E8F5E9;
+  }
+
+  .val-main-content {
+    margin-left: 0;
+    margin-top: 80px;
+    padding: 0.5rem;
+  }
+
+
+
+ 
+
+
+  .val-benefitpoints2 h3 {
+    width: calc(50% - 0.75rem);
+  }
+  .val-branch-links{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .val-branch-link {
+    font-size: 16px; /* Adjust font size for mobile screens if needed */
+    padding: 8px 12px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    background-color: #2E7D32;
+    color: #fff;
+  }
+  .val-branch-link::after{
+    content: "▼";
+    margin-left: 8px;
+    font-size: 15px;
+
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .val-branch-nav {
+    padding: 12px;
+  }
+
+  .val-nav-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+
+
+  .val-branch-link {
+    font-size: 16px; /* Adjust font size for mobile screens if needed */
+    padding: 8px 12px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    background-color: #2E7D32;
+    color: #fff;
+  }
+  .val-branch-link::after{
+    content: "▼";
+    margin-left: 8px;
+    font-size: 15px;
+
+  }
+
+  .val-main-content {
+    margin-top: 70px;
+    padding: 0.375rem;
+  }
+
+  
+
+  .val-address-card {
+    padding: 1rem;
+  }
+
+  .val-address-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .val-contact-details,
+  .val-contact-timing {
+    font-size: 0.9rem;
+  }
+
+  .val-benefitpoints2 h3 {
+    width: 100%;
+  }
+
+  .val-cta-button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  
+
+
+
+  .val-main-content {
+    margin-top: 65px;
+  }
+
+
+
+ 
+
+  .val-address-card {
+    padding: 0.875rem;
+  }
+
+  .val-contact-details,
+  .val-contact-timing {
+    font-size: 0.85rem;
+  }
+
+  .val-location-details,
+  .val-feature-text,
+  .val-treatment-item {
+    font-size: 0.85rem;
+  }
+
+  .val-cta-text,
+  .val-best-description {
+    font-size: 0.85rem;
+  }
+}
+.bangalore-doctors {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.bangalore-doctors-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  position: relative;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.bangalore-doctors-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bangalore-doctor-tab {
+  padding: 12px 20px;
+  background-color: #E8F5E9;
+  border: none;
+  border-radius: 6px;
+  color: #1B5E20; /* Changed to black */
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.bangalore-doctor-tab.active {
+  background-color: #4CAF50;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.bangalore-doctor-tab:hover:not(.active) {
+  background-color: #C8E6C9;
+}
+
+.bangalore-doctors-content {
+  background-color: #E8F5E9;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.bangalore-doctor-details {
+  animation: fadeIn 0.3s ease;
+}
+
+.bangalore-doctor-name {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.bangalore-doctor-specialty {
+  color: #1B5E20; /* Changed to black */
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.bangalore-doctor-description {
+  color: black; /* Changed to black */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.bangalore-doctor-experience {
+  color: #2E7D32; /* Green color for heading */
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.bangalore-expertise-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.bangalore-expertise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.bangalore-expertise-item {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #1B5E20; /* Changed to black */
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 768px) {
+  .bangalore-doctors {
+    padding: 16px;
+  }
+
+  .bangalore-doctors-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .bangalore-doctor-tab {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .bangalore-doctors-content {
+    padding: 20px;
+  }
+
+  .bangalore-doctor-name {
+    font-size: 22px;
+  }
+
+  .bangalore-expertise-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+  .bangalore-doctors {
+    padding: 12px;
+  }
+
+  .bangalore-doctors-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .bangalore-doctors-tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .bangalore-doctor-tab {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .bangalore-doctors-content {
+    padding: 16px;
+  }
+
+  .bangalore-doctor-name {
+    font-size: 20px;
+  }
+
+  .bangalore-doctor-specialty {
+    font-size: 16px;
+  }
+
+  .bangalore-doctor-description {
+    font-size: 14px;
+  }
+
+  .bangalore-expertise-list {
+    grid-template-columns: 1fr;
+  }
+
+  .bangalore-expertise-item {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+/* chennaiVal.css */
+
+.val-clinic-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #E8F5E9;
+  border-radius: 8px;
+}
+
+.val-clinic-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1B5E20;
+}
+
+.val-clinic-image {
+  text-align: center;
+}
+
+.val-clinic-single-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .val-clinic-section h2 {
+    font-size: 22px;
+  }
+
+  .val-clinic-single-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .val-clinic-section h2 {
+    font-size: 20px;
+  }
+
+  .val-clinic-single-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .val-clinic-section h2 {
+    font-size: 18px;
+  }
+
+  .val-clinic-single-image {
+    max-width: 100%;
+    height: auto;
+  }
+}

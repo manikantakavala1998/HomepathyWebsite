@@ -1,0 +1,760 @@
+/* General styles */
+.treatment-detail {
+    /* font-family: 'Arial', sans-serif; */
+    /* max-width: 1000px; Reduced max-width for a tighter layout */
+    margin: 0 auto;
+    padding: 0px; /* Increased padding for better spacing */
+    background-color: #f7f7f7; /* Slightly lighter background for a softer look */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  }
+  
+  .treatment-detail h2 {
+    font-size: 2.8rem; /* Larger heading */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: capitalize;
+    letter-spacing: 1px; /* Added some letter spacing for style */
+  }
+  
+  .treatment-detail img {
+    width: 100%; /* Ensures the image fills the available width */
+    height: auto;
+    border-radius: 8px;
+    margin: 0px 0;
+    display: block;
+    object-fit: contain; /* Changed object-fit to 'contain' to preserve aspect ratio */
+    /* max-height: 500px; Restrict the height to reduce the image size */
+  }
+  
+  /* Reduce image size on smaller screens */
+  @media (max-width: 768px) {
+    .treatment-detail h2 {
+        font-size: 2.2rem; /* Adjust heading size */
+    }
+  
+    .treatment-detail p {
+        font-size: 1.1rem; /* Adjust paragraph text */
+    }
+  
+    .treatment-detail img {
+        max-height: 400px; /* Reduced image size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .treatment-detail {
+        padding: 0px; /* Adjusted padding for mobile view */
+    }
+  
+    .treatment-detail h2 {
+        font-size: 1.8rem; /* Further reduced heading size */
+    }
+  
+    .treatment-detail p {
+        font-size: 0.95rem; /* Adjusted paragraph text */
+    }
+  
+    .treatment-detail img {
+        max-height: 300px; /* Further reduced image size */
+    }
+  }
+  
+  /* Add a subtle hover effect for the images */
+  .treatment-detail img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hides the images on smaller screens */
+  /* @media (max-width: 768px) {
+    .treatment-detail img {
+        display: none; 
+    }
+  } */
+  
+  
+  /* eczema disease */
+  .eczemabeforeafter{
+    display:  flex;
+    /* justify-content: space-around; */
+  }
+  .eczemabefore,.eczemaafter{
+    padding: 5%;
+     /* border: 2px solid black; */
+    
+  }
+  
+  
+  .treatment-container {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .treatment-banner {
+      width: 100%;
+      height: auto;
+    }
+    
+    .treatment-text {
+      position: absolute;
+      top: 80%; /* Position the text at 80% from the top */
+      left: 75%; /* Position the text at 75% from the left */
+      transform: translate(-50%, -50%);
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 2.5vw; /* Responsive font size */
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+      white-space: nowrap; /* Ensures text stays on a single line */
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .treatment-text {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+        padding: 8px 12px;
+        top: 65%; /* Adjust for smaller screens */
+        left: 80%; /* Adjust position */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .treatment-text {
+        font-size: 4vw; /* Larger font for very small screens */
+        padding: 6px 10px;
+        top: 60%; /* Further adjust for very small screens */
+        left: 75%; /* Ensure it fits well */
+      }
+    }
+  
+    .book-appointment-button {
+      position: absolute;
+      top: 88%; /* Position the button just below the treatment text */
+      left: 74%; /* Center the button horizontally */
+      transform: translateX(-50%); /* Centering fix */
+      z-index: 2;
+    }
+    
+    /* Button Styling */
+    .book-appointment-button button {
+      background-color: green;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+      overflow: hidden;
+    }
+    
+    /* Button Hover Effect */
+    .book-appointment-button button:hover {
+      background-color: lightgreen;
+     
+    }
+    
+    .book-appointment-button button:focus {
+      outline: none; /* Remove the default focus outline */
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .book-appointment-button {
+        top: 78%; /* Adjust the button's vertical position for smaller screens */
+        left: 75%;
+      }
+    
+      .book-appointment-button button {
+        padding: 5px 10px; /* Reduce padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .book-appointment-button {
+        top: 72%; /* Adjust the button's position further for very small screens */
+        left: 68%;
+      }
+    
+      .book-appointment-button button {
+        padding: 0px 5px; /* Further reduce padding for very small screens */
+        font-size: 0.65rem; /* Reduce font size for smaller screens */
+      }
+    }
+    
+  
+  
+  .treatmentdiseaseheading {
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add spacing around the heading */
+  
+    border-radius: 10px; /* Rounded corners for aesthetics */
+  
+  }
+  
+  .treatmentdiseaseheading h1 {
+    font-size: 3vw; /* Responsive font size */
+    color: #2c3e50; /* Dark color for contrast */
+    font-weight: 700; /* Bold font */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .treatmentdiseaseheading h1 {
+      font-size: 4.5vw; /* Slightly larger font on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .treatmentdiseaseheading h1 {
+      font-size: 6vw; /* Larger font for mobile devices */
+    }
+  }
+  
+  
+ /* Keyframes for animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); }
+  to { transform: scale(1); }
+}
+
+/* Treatment Precautions Section */
+.treatmentprecautions {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.treatmentprecautions h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #244f3d;
+  padding: 0.8rem;
+  background: linear-gradient(to right, #c8e6c9, #ffffff); /* Lighter green effect */
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.treatmentprecautions h4 {
+  font-size: 1.4rem;
+  color: #1b7b50;
+  padding: 0.8rem 1.5rem;
+  margin: 1rem 0;
+  background: #f8fff9;
+  border-left: 4px solid #ffd700;
+  border-radius: 8px;
+}
+
+.treatmentprecautions p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2d4841;
+  padding: 1rem 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e0f7ea;
+}
+
+/* Treatment Infection Section */
+.treatmentinfectionmain {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.treatmentinfection1 {
+  flex: 1;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(27,123,80,0.1);
+  border-top: 2px solid #e0f7fa;
+}
+
+/* Image Styling - Slightly Increased Sizes */
+.treatmentinfectionimage {
+  flex: 1;
+  text-align: center;
+  max-width: 100%;
+}
+
+.treatmentinfectionimage img {
+  width: 100%;
+  max-width: 280px; /* Increased size */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.treatmentinfectionimage:hover img {
+  transform: scale(1.08);
+}
+
+/* Treatment Infection Content - Button Styling */
+.treatmentinfectioncontent-overlay button {
+    cursor: pointer;
+    margin-top: 2%;
+    padding: 2.0%; /* Reduced button size */
+    border-radius: 20%;
+    background: linear-gradient(to right, #4CAF50, #66BB6A); /* Green gradient */
+    color: white;
+    border: 2px solid black;
+    font-size: 0.9rem; /* Slightly smaller font */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5); /* Enhanced glow */
+    
+}
+
+
+
+/* Book Appointment Button - Enhanced Glow */
+.bookAppointmentBtn {
+  display: block;
+  width: max-content;
+  padding: 0.8rem 1.6rem;
+  margin: 1rem auto;
+  background: linear-gradient(45deg, #ffd700, #ffae00);
+  color: #1b7b50;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.8); /* Enhanced glow */
+}
+
+.bookAppointmentBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px rgba(255, 215, 0, 1); /* Stronger glow on hover */
+  filter: brightness(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .treatmentinfectionmain {
+    flex-direction: column;
+  }
+  
+  .treatmentprecautions h3 {
+    font-size: 1.6rem;
+  }
+  
+  .treatmentinfection1 {
+    padding: 1.2rem;
+  }
+
+  /* Slightly Reduced Image Size */
+  .treatmentinfectionimage img {
+    max-width: 250px;
+  }
+
+  .treatmentinfectioncontent-overlay button {
+    padding: 2%;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .treatmentprecautions h3 {
+    font-size: 1.4rem;
+  }
+  
+  .treatmentprecautions h4 {
+    font-size: 1.2rem;
+  }
+
+  .bookAppointmentBtn {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+  }
+
+  /* Smallest Image Size */
+  .treatmentinfectionimage img {
+    max-width: 200px;
+  }
+
+  .treatmentinfectioncontent-overlay button {
+    padding: 1.8%;
+    font-size: 0.8rem;
+  }
+}
+  
+  .treatmentimagecontainer {
+  display: flex;
+  overflow-x: auto; /* Makes images scrollable */
+  scroll-snap-type: x mandatory; /* Optional, for smooth scrolling */
+  -ms-overflow-style: none;  /* Hides scrollbar in Internet Explorer */
+  scrollbar-width: none;  /* Hides scrollbar in Firefox */
+  }
+  
+  .treatmentimagecontainer::-webkit-scrollbar {
+  display: none;  /* Hides scrollbar in Webkit browsers like Chrome */
+  }
+  
+  .treatmentimagecontainer img {
+  padding-left: 2%;
+  scroll-snap-align: start; /* Optional, for aligning images */
+  }
+  .treatmenthighlight {
+    font-weight: 600; /* Semi-bold for better readability */
+    color: #111827; /* Modern dark gray */
+    font-size: 120%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    
+    border-radius: 12px; /* Softer rounded corners */
+    background: linear-gradient(135deg, #e8f5e9 0%, #f8fbf8 100%); /* Diagonal gradient */
+    box-shadow: 0 4px 20px -6px rgba(32, 107, 67, 0.2);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid rgba(27, 123, 80, 0.15); /* Subtle border */
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+/* Checkmark styling with animation */
+.treatmenthighlight::before {
+    content: "✔";
+    color: #1b7b50;
+    font-size: 1.4rem;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: rgba(27, 123, 80, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Subtle shine effect on hover */
+.treatmenthighlight::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 25%,
+        rgba(255, 255, 255, 0.15) 50%,
+        transparent 75%
+    );
+    transform: translateX(100%);
+    transition: transform 0.6s ease;
+}
+
+/* Hover Effects */
+.treatmenthighlight:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px -8px rgba(32, 107, 67, 0.3);
+    background: linear-gradient(135deg, #d4ede1 0%, #f4f9f6 100%);
+}
+
+.treatmenthighlight:hover::before {
+    transform: scale(1.1);
+    background: rgba(27, 123, 80, 0.15);
+}
+
+.treatmenthighlight:hover::after {
+    transform: translateX(0%);
+}
+
+/* Focus state */
+.treatmenthighlight:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(27, 123, 80, 0.4);
+}
+
+/* Active state */
+.treatmenthighlight:active {
+    transform: translateY(1px);
+    transition-duration: 0.1s;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .treatmenthighlight {
+        padding: 0.6rem 1.2rem;
+        font-size: 115%;
+    }
+    
+    .treatmenthighlight::before {
+        font-size: 1.2rem;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .treatmenthighlight {
+        padding: 0.5rem 1rem;
+        font-size: 105%;
+        border-radius: 10px;
+    }
+    
+    .treatmenthighlight::before {
+        font-size: 1.1rem;
+        margin-right: 8px;
+        width: 22px;
+        height: 22px;
+    }
+    
+    /* Mobile tap effect */
+    .treatmenthighlight:active {
+        transform: scale(0.98);
+    }
+}
+  
+  @media (max-width: 768px) {
+  .treatmentimagecontainer {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+    /* border: 2px solid black; */
+    padding-top: 0%;
+  }
+  
+  .treatmentimagecontainer img {
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 0%;
+    height: auto;
+    width: 70%;
+  }
+  }
+  .treatmentheading {
+  text-align: center;
+  margin: 0px 0px !important;
+  padding: 0px;
+  
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* font-family: 'Arial', sans-serif; */
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .treatmentheading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0px 0px !important;
+  padding: 0px;
+  }
+  
+  .treatmentheading:hover {
+  
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+  .treatmentheading {
+    padding: 5px;
+    margin: 0px 0;
+  }
+  
+  .treatmentheading h1 {
+    font-size: 2rem;
+  }
+  }
+
+  /* General Styles (for large screens) */
+  .why-choose-section {
+  width: 100%; /* Center the section with 80% width */
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  }
+  
+  .why-choose-section h2 {
+  font-size: 2rem;
+  color: #244f3d;
+  margin-bottom: 15px;
+  }
+  
+  .why-choose-section p {
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  }
+  
+  .why-choose-section .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  }
+  
+  .why-choose-section .features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  }
+  
+  .why-choose-section .features-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  }
+  
+  .why-choose-section .feature-item {
+  flex: 1 1 calc(50% - 20px); /* Two items per row by default for more width */
+  max-width: 600px; /* Increased width for larger feature items */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px; /* Default padding for large screens */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .why-choose-section .feature-item .feature-icon1 {
+  font-size: 2rem;
+  color: #28a745; /* Green color for icons */
+  margin-bottom: 10px;
+  }
+  
+  .why-choose-section .feature-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  }
+  
+  .why-choose-section .feature-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+  .why-choose-section .feature-item {
+    flex: 1 1 100%; /* Single item per row for tablets */
+    padding: 10px; /* Reduced padding for tablets */
+    height: auto; /* Adjust height for compact view */
+    margin-bottom: 10px; /* Optional: Adjust spacing between items */
+    border: 1px solid rgb(73, 70, 70);
+  }
+  
+  .why-choose-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .why-choose-section p {
+    font-size: 0.95rem;
+  }
+  }
+  
+  @media (max-width: 480px) {
+  .why-choose-section .feature-item {
+    flex: 1 1 100%; /* Single item per row for mobile */
+    padding: 5px; /* Further reduced padding for mobile */
+    height: auto; /* Adjust height for mobile view */
+    margin-bottom: 5px; /* Optional: Adjust spacing between items */
+  }
+  
+  .why-choose-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .why-choose-section p {
+    font-size: 0.9rem;
+  }
+  }
+
+
+  .corp-benefits-title1 {
+    color: #045017;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  
+  /* Responsive Grid Layout */
+  .corp-benefits-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Benefit Card Styling */
+  .corp-benefit-card1 {
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1e7dd;
+  }
+  
+  /* Hover Effect */
+  .corp-benefit-card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* === Responsive Design === */
+  
+  /* Tablets (768px and up) */
+  @media (max-width: 1024px) {
+    .corp-benefits-title1 {
+      font-size: 1.8rem;
+    }
+  
+    .corp-benefits-grid1 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+  
+    .corp-benefit-card1 {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Mobile Screens (480px and below) */
+  @media (max-width: 480px) {
+    .corp-benefits-title1 {
+      font-size: 1.6rem;
+    }
+  
+    .corp-benefits-grid1 {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Single column */
+      padding: 0.5rem;
+    }
+  
+    .corp-benefit-card1 {
+      padding: 1.2rem;
+      border-radius: 10px;
+    }
+  }
+  
+  
+  

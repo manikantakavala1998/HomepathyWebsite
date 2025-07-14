@@ -1,0 +1,1179 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  height:80vh; /* Adjust based on the height you need */
+  /* background-image: url('./../../../assets/images/aboutlogo13.png'); */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%; /* Make sure it takes full width */
+  height: 100%; /* Maintain aspect ratio */
+}
+
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure the background is behind the content */
+}
+
+.second-image-overlay {
+  position: absolute;
+  top: 12%; /* Adjust as needed */
+  left: 55%; /* Adjust as needed */
+  z-index: 0;
+  
+}
+.second-image-overlay img{
+  width: 95%;
+  /* border: 2px solid black; */
+  height: auto;
+}
+
+.overlay-image {
+  width: 80%; /* Adjust size */
+  height: auto;
+  object-fit: contain;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 37%;
+  left: 4%;
+  color: rgb(29, 28, 28); /* For better contrast */
+  z-index: 1;
+  /* font-family: 'Times New Roman'; */
+  font-size: 35px;
+}
+
+.content-overlay p{
+ 
+  width: 63%;
+ 
+  /* font-family: montserrat; */
+  font-size: 25px;
+}
+
+/* Default: Show the <p> tag */
+.hidden-mobile {
+  display: block;
+}
+
+/* Hide only on mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .hidden-mobile {
+      display: none;
+  }
+}
+
+
+.content-overlay h3{
+  line-height: normal !important;
+  margin-bottom: 1% !important;
+  font-size: 2.5rem !important;
+ 
+
+
+
+}
+
+.abouthead h2{
+  color: white;
+}
+
+
+/* Default: Hide the abouthead */
+.abouthead {
+  display: none;
+}
+
+/* Show only on mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .abouthead {
+      display: block;
+  }
+}
+
+
+.addingcontentinabout{
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.contentimage img{
+  height: 60vh;
+  width: 50vw;
+}
+.addingcontent{
+  width: 50%;
+
+}
+.addingcontent p{
+  /* border: 2px solid black; */
+  /* justify-content: space-evenly; */
+  text-align: justify;
+  margin-top: 3%;
+ line-height: 25px  ;
+}
+.contentimage {
+  width: 50%;
+
+}
+.addingcontent h1{
+  margin-bottom: 0%;
+  /* border: 2px solid black; */
+  margin-top: 9%;
+}
+.addingcontent table{
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.addingcontent table tr td{
+  padding: 20px;
+}
+
+
+
+
+
+
+
+.addingcontentinabout1 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  position: relative;  /* Set relative positioning to the parent container */
+  margin-top: 4%;
+
+  /* border: 2px solid black; */
+  
+}
+
+.addingcontentinabout1 .box1 {
+  height: 30vh;
+  width: 50%;
+  position: absolute;  
+  top: 30%;  
+  left: 0;  
+  background-color: grey;
+  border-radius: 0px 25px 25px 25px;
+  color: white;
+  text-align: start;
+  padding-left: 3%;
+  overflow: hidden;
+  
+}
+
+
+
+.addingcontentinabout1 .box1 p, .addingcontentinabout1 .box p {
+  color: white;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  /* margin-top: 10%; */
+  width: 70%;
+  line-height: 3.5vh;
+  overflow: hidden;
+
+}
+.addingcontentinabout1 .box p {
+  margin-left: 30%;
+  text-align: start;
+  width: 68%;
+  margin-top: 1%;
+  overflow: hidden;
+}
+.addingcontentinabout1 .box h2{
+    color: yellow;
+    margin-left: 30%;
+}
+.addingcontentinabout1 .box1 h2{
+  color: yellow ;
+  padding-left: -5%;
+  margin-left: 0%;
+}
+.addingcontentinabout1 .box1 p {
+  margin-top: 1%;
+  margin-left: 0%;
+  width: 40%;
+  text-align:initial;
+  line-height: 3.5vh;
+}
+.box1content{
+  width: 150%;
+ 
+
+}
+
+.addingcontentinabout1 .box {
+  height: 40vh;
+  width: 70%;
+  position: relative;
+  margin-left: 30%;
+  background-color: rgb(56, 54, 54);
+  border-radius: 25px 0px 25px 25px;
+  overflow: hidden;
+}
+
+.addingcontentinabout1 .box3 {
+  position: absolute;  /* Positioned on top of box and box1 */
+  top: 4%;  /* Adjust top position as needed */
+  left: 32%; /* Center it over both boxes */
+  width: 15%; /* Width of the overlay */
+  height: 40vh;
+  background-color: white;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.addingcontentinabout1 .box3 img{
+  height: 40vh;
+}
+
+.addingcontentinabout1 .box1content .box1p{
+  
+  width: 40% !important;
+  margin-bottom: 0%;
+ 
+ 
+
+ }
+ .addingcontentinabout1 .box1content .box12p{
+
+  margin-top: 0%;
+ }
+
+
+
+@media screen and (max-width: 768px) {
+  .addingcontentinabout1 .box {
+    width: 80%; /* Reduce width for tablets */
+   
+  }
+  .addingcontentinabout1 .box1{
+    width: 50%;
+    /* border: 2px solid black; */
+
+  }
+  .addingcontentinabout1 .box1 h2{
+    font-size: 3vh;
+    width: 50%;
+  }
+  .addingcontentinabout1 .box1content .box1p{
+   font-size: 14px !important;
+   /* border: 2px solid black; */
+ 
+   /* border: 2px solid black; */
+   width: 45% !important;
+   margin-bottom: 0%;
+  
+  
+
+  }
+  .addingcontentinabout1 .box1content .box12p{
+    font-size: 14px !important;
+   /* border: 2px solid black; */
+ 
+   /* border: 2px solid black; */
+   width: 65% !important;
+   margin-top: 0%;
+  }
+
+  .addingcontentinabout1 .box h2{
+    font-size: 3vh;
+  }
+  .addingcontentinabout1 .box p{
+    font-size: 14px !important;
+    line-height: 3vh;
+  }
+
+  .addingcontentinabout1 .box3 {
+    width: 60%; /* Adjust box3 size for tablets */
+  }
+
+  .addingcontent h1{
+    color: green;
+    font-size: x-large !important;
+  }
+}
+.whyhcura{
+ width: 90%;
+ margin: auto;
+}
+.hcurawhy{
+  width: 100%;
+  text-align: start;
+  /* margin-left: 5%; */
+  /* border: 2px solid black; */
+}
+.hcurawhy h2{
+  text-align: start;
+  font-size: 60px;
+  /* margin-top: 5%; */
+  margin-bottom: 0%;
+
+}
+.hcurawhy p{
+  font-size: 20px;
+}
+.whyhcuraimg{
+  width: 50%;
+  
+}
+.whyhcuraimg img{
+  
+  width: 75%;
+  height: 70vh;
+  margin-left: 20%;
+
+}
+.whyhcuraimg1 {
+  display: none;
+  /* border: 2px solid black; */
+}
+.whyhcuraimg {
+  display: block;
+}
+.addingcontent .contentimage1{
+  display: none;
+}
+.formobile {
+  display: none;
+}
+.formobile h2{
+  color: rgb(42, 41, 41);
+  margin-top: 2%;
+}
+.addingcontent h1{
+  font-size: xx-large;
+}
+
+
+
+
+
+/* Tablet and smaller screen sizes */
+@media (max-width:1024px) {
+
+  
+  .content-overlay {
+    top: 20%;
+    left: 10%;
+    font-size: 18px;
+  }
+
+  .second-image-overlay {
+    top: 10%;
+    left: 5%;
+   
+  }
+
+  .overlay-image {
+    width: 150px;
+  }
+
+  .addingcontentinabout .contentimage img {
+    height: 50vh;
+    width: 40vw;
+  }
+
+  .addingcontent h1 {
+    font-size: 22px;
+  }
+
+  .addingcontent table {
+    font-size: 14px;
+  }
+
+  .addingcontentinabout1 .box1 {
+    height: 35vh;
+  }
+
+  .addingcontentinabout1 .box1 p {
+    font-size: 16px;
+  }
+
+  .addingcontentinabout1 .box h2 {
+    font-size: 18px;
+  }
+  .whyhcuraimg1 {
+    display: block;
+    /* border: 2px solid black; */
+  }
+  .whyhcuraimg {
+    display: none;
+  }
+  
+.formobile{
+  display:none;
+ 
+  
+}
+
+
+}
+
+  
+
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .formobile {
+    display: none;
+  }
+  .image-container {
+    height: 40vh; /* Reduce height for mobile screens */
+    
+  }
+
+  .second-image-overlay {
+    top: 10%; /* Adjust overlay position for mobile */
+    left: 35%; /* Adjust left position */
+  }
+
+  .overlay-image {
+    width: 50%; /* Make the image smaller */
+  }
+
+
+  .abouthead h2{
+    font-weight: bold;
+    font-size:4vh !important;color: green !important;
+    margin-bottom: 0% !important;
+  }
+  
+
+  .content-overlay {
+    top: 35%;
+    left: 6%;
+    font-size: 14px;
+  }
+  .content-overlay h3{
+    font-size: 30vh !important;
+    /* font-family: lorem; */
+    
+  }
+  .content-overlay p{
+    width: 40%;
+    font-size: large;
+    /* font-family: montserrat; */
+    color: white;
+  }
+
+  .second-image-overlay {
+    top: 7%;
+    left: 40%;
+    height: 40vh;
+    overflow: hidden;
+ 
+    
+   
+  }
+
+  .overlay-image {
+    width: 80px;
+  }
+
+  .addingcontentinabout .contentimage img {
+    height: 40vh;
+    width: 50vw;
+    margin-top: 22%;
+  }
+  
+
+  .addingcontent h2 {
+    font-size: 35px;
+    /* border: 2px solid black; */
+    width: 200%;
+    overflow:visible;
+  }
+
+  .addingcontent{
+    width: 50%;
+  }
+  
+
+  .addingcontentinabout1{
+    height: auto;
+    /* border: 2px solid black; */
+  }
+
+  .addingcontentinabout1 .box1 {
+    height: auto;
+  }
+
+  .addingcontentinabout1 .box1 p {
+    font-size: 16px;
+    /* margin-top: 40%; */
+    line-height:2.2vh;
+    /* border: 2px solid black; */
+    width: 60%;
+  }
+  .addingcontentinabout1 .box1{
+    font-size: large;
+  }
+  
+  .addingcontentinabout1 .box {
+    height: 35vh;
+  }
+
+  .addingcontentinabout1 .box h2 {
+    font-size: 16px;
+  }
+
+  .addingcontentinabout1 .box3 {
+    width: 19%;
+    height: 18vh;
+    top: 10%;
+    left: 31%;
+  }
+  .addingcontentinabout1 .box3 img{
+    height: auto;
+    width: 100%;
+  }
+  .whyhcuraimg1 {
+    display:block;
+  }
+  .hcurawhy p{
+      /* border: 2px solid black; */
+      width: 90%;
+  }
+  .whyhcuraimg {
+    display: none;
+  }
+  .whyhcura{
+    width: 100%;
+    display: block;
+    /* border: 2px solid black; */
+  }
+  .hcurawhy{
+    display: block;
+    width: 100%;
+  }
+  .whyhcuraimg1 img{
+    height: 50vh;
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+ .contentimage img{
+    height: auto;
+    width: 100%;
+    /* border: 2px solid black; */
+  }
+ 
+
+  
+
+}
+
+
+
+
+
+
+
+/* Smaller mobile screens */
+@media (max-width: 480px) {
+  
+  .formobile {
+    display: block;
+  }
+
+  .image-container {
+    height: 25vh; /* Reduce height for mobile screens */
+    
+  }
+
+  .second-image-overlay {
+    top: 10%; /* Adjust overlay position for mobile */
+    left: 35%; /* Adjust left position */
+    /* border: 2px solid black; */
+    margin-left: 40%;
+  }
+  .second-image-overlay img{
+    height: 30vh;
+    width: 45vw;
+   
+  }
+
+  .overlay-image {
+    width: 50%; /* Make the image smaller */
+  }
+
+
+  .abouthead h2{
+    font-weight: bold;
+     color: green;
+     font-size: 3vh;
+    margin-bottom: 8%;
+    margin-top: 7%;
+  }
+  
+  .content-overlay {
+    top: 14%;
+    left: 8%;
+    font-size: 12px;
+  }
+  .content-overlay h3{
+    font-size: 10rem !important;
+    margin-top:50%;
+   
+  }
+  .content-overlay p{
+    font-size: 3vh !important;
+    /* border: 2px solid black; */
+    width: 32%;
+  }
+
+  .second-image-overlay {
+    top: 5%;
+    left: 5%;
+    overflow: hidden;
+  }
+
+  .overlay-image {
+    width: 100px;
+   
+  }
+
+  .addingcontentinabout {
+    display: block; /* Change from flex to block or any other property you need */
+    width: 100%;
+  }
+  .addingcontentinabout .addingcontent{
+    width: 100%;
+  }
+
+  .addingcontentinabout .contentimage img {
+    height: 35vh;
+    width: 50vw;
+    display: none;
+   
+    
+    
+  }
+
+  .addingcontent h2 {
+    font-size: 16px;
+  }
+
+  .addingcontent table {
+    font-size: 10px;
+  }
+
+  .addingcontentinabout1{
+    display: none;
+  }
+
+  .addingcontentinabout1 .box1 {
+    height: 25vh;
+  }
+
+  .addingcontentinabout1 .box1 p {
+    font-size: 12px;
+  }
+
+  .addingcontentinabout1 .box h2 {
+    font-size: 14px;
+  }
+
+  .addingcontentinabout1 .box3 {
+    width: 40%;
+    height: 25vh;
+    top: 10%;
+    left: 5%;
+  }
+  .whyhcura{
+    display:block;
+    width: 100%;
+  }
+  .whyhcura h2{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: block;
+    font-size: large;
+    margin: auto;
+  }
+  .whyhcura .hcurawhy{
+    width: 100%;
+  }
+  .whyhcura .whyhcuraimg{
+    width: 100%;
+  }
+  .whyhcura .whyhcuraimg1 img{
+    width: 100%;
+    height: 30vh;
+    margin: auto;
+  }
+  .whyhcura .whyhcuraimg{
+   display: none;
+  }
+  
+   .whyhcuraimg1 {
+    display:block;
+  }
+  .whyhcuraimg {
+    display: none;
+  }
+  .addingcontent .contentimage1{
+    display: block;
+  }
+  .addingcontent .contentimage1 img{
+    height: 30vh;
+  }
+ 
+  .addingcontentinabout .addingcontent h2{
+    /* color: green; */
+    margin-top: 2%;
+    font-size: x-large;
+    
+  }
+  .addingcontentinabout .addingcontent p{
+    text-align: start;
+    margin-top: 0%;
+    /* border: 2px solid black; */
+    margin-bottom: 4%;
+  }
+  .abouthead h2{
+    /* border: 2px solid black; */
+    margin-bottom: 1.5%;
+   
+  }
+  .formobile h2{
+    font-size: large;
+    margin-bottom: 1%;
+  }
+  .hcurawhy h2{
+    font-size: x-large;
+    margin-top: 8%;
+    margin-bottom: 4%;
+  }
+  .addingcontent h1{
+    display: none;
+    /* border: 2px solid black; */
+  }
+  .formobile h2{
+    display: block;
+  }
+  
+
+ 
+}
+
+
+.adding5s {
+  display: flex;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  width: 100%;
+  margin-top: 2%;
+}
+
+.adding5s .simage {
+  width: 40%; /* Default width for larger screens */
+  overflow: hidden;
+}
+
+.simage img {
+  width: 100%; /* Ensure image scales to its container */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 0; /* Center alignment */
+}
+
+.scontent {
+  width: 60%; /* Default width for larger screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 0;
+}
+
+.scontent .slist {
+  width: 100%;
+}
+
+.scontent .slist h2 {
+  text-align: start;
+  color: rgb(44, 42, 42);
+  font-size: x-large;
+  /* font-size: 150%; */
+  margin: 0% 0 0 0;
+  margin-left: 5%;
+  
+}
+
+.scontent .slist .listsss {
+  text-decoration: none;
+  list-style: none;
+  font-size: 2rem;
+  margin: 10% auto;
+  text-align: center;
+  background-color: darkgreen;
+  color: white ;
+  padding: 10px 5px;
+  width: auto;
+  border-radius: 25px;
+  /* font-family: 'Arial, sans-serif'; */
+  /* border: 2px solid black; */
+}
+.scontent .slist .listsss li{
+  color: white;
+}
+
+.slist .listsss::first-letter {
+  color: yellow;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+  .adding5s {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .adding5s .simage {
+    width: 100%; /* Image takes full width */
+    margin-bottom: 2%; /* Space between image and content */
+  }
+
+  .scontent {
+    width: 100%; /* Content takes full width */
+    margin-top: 0;
+  }
+
+  .scontent .slist h2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .scontent .slist .listsss {
+    font-size: 1.8rem;
+    margin-top: 5%; /* Reduce spacing */
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  .simage img {
+    height: auto; /* Scale down for smaller screens */
+  }
+
+  .scontent .slist h2 {
+    font-size: 1.2rem; /* Smaller text for mobiles */
+  }
+
+  .scontent .slist .listsss {
+    font-size: 1.5rem;
+    padding: 8px 5px; /* Adjust padding */
+  }
+  
+}
+
+/* For small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .adding5s {
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .adding5s .simage {
+    width: 100%; /* Image takes full width */
+    margin-bottom: 1rem; /* Add spacing below the image */
+  }
+
+  .simage img {
+    width: 100%; /* Image scales to full width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* No margin on smaller screens */
+  }
+
+  .scontent {
+    width: 100%; /* Content takes full width */
+    margin-top: 0;
+  }
+    .listsss {
+      /* border: 2px solid red; */
+      width: 60% !important;
+     
+
+    }
+  .scontent .slist {
+    width: 100%;
+    /* border: 2px solid black; */
+  }
+
+  .scontent .slist h2{
+    font-size:0.9rem; /* Smaller font size for titles */
+    /* border: 2px solid black; */
+    margin: 2% 0;
+    width: 18%;
+    margin-left: 0%;
+  }
+
+  .scontent .slist .listsss {
+    font-size: 1rem; /* Smaller font size for items */
+    /* margin: ; */
+    padding: 8px 0px; /* Adjust padding for better fit */
+    text-align: center;
+  }
+
+  .slist .listsss::first-letter {
+    color: yellow;
+  }
+}
+
+.finalabout {
+  /* display: flex; */
+  height: auto;
+  /* border: 2px solid black; */
+  width: 80%;
+  background-color:rgb(237, 243, 231);
+  margin:2% auto;
+  
+}
+
+
+
+/* .finalaboutimg img {
+  height: 40vh;
+  width: 100%;
+} */
+
+.finalaboutcontent h3, .finalaboutcontent h4 {
+  margin-top: 2%;
+  /* padding-left: 10%; */
+}
+.commitment-item{
+  line-height: 5vh;
+}
+
+.commitment-list {
+  list-style-type: none; /* Remove default list bullets */
+  /* padding: 0; */
+  /* padding-left: 10%; */
+}
+
+.commitment-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px; /* Adjust size of the circle */
+  height: 20px; /* Adjust size of the circle */
+  border-radius: 50%; /* Makes the div a circle */
+  background-color: green; /* Circle color */
+  color: white; /* Icon color */
+  margin-right: 10px; /* Space between circle and text */
+}
+
+.fa-check {
+  font-size: 14px; /* Adjust size of the check mark */
+}
+.laptop {
+  display: none; /* Default hidden */
+}
+
+@media (max-width: 1024px) {
+  .laptop {
+    display: block; /* Show only on smaller screens */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .finalabout {
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+
+  .finalaboutimg, 
+  .finalaboutcontent {
+    width: 100%; /* Take full width */
+  }
+
+  .finalaboutimg img {
+    height: auto; /* Adjust image height dynamically */
+  }
+  .finalaboutcontent h4{
+    display: none;
+  }
+  .finalaboutcontent h2{
+    display: none;
+  }
+  .finalabout h4{
+    font-size: 2vh;
+  }
+  .finalabout h2{
+    font-size: 3vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .finalabout {
+    padding: 10px; /* Add spacing for smaller screens */
+  }
+
+  .circle {
+    width: 40px;
+    height: 32px;
+    font-size: 10px; /* Smaller icon */
+  }
+
+  .commitment-item {
+    font-size: 15px; /* Smaller text for better readability */
+  }
+
+  .finalaboutcontent h2 {
+    font-size: 18px; /* Adjust heading size */
+  }
+}
+
+
+.Magazinetitle h2{
+  margin-top: 2%;
+  font-size: 2rem;
+}
+
+.Magazine {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Siliconindia, .IndustryInsights {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.start h3,
+.IndustryInsights h3 {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.startupimg, .industryimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.startupimg img,
+.industryimg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.industryimg1, .industryimg2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .Magazine {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Siliconindia, .IndustryInsights {
+    width: 45%;
+  }
+
+  .start h2,
+  .IndustryInsights h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .start h2,
+  .IndustryInsights h2 {
+    font-size: 2rem;
+  }
+
+  .startupimg img,
+  .industryimg img {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .startupimg,
+  .industryimg {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 10px;
+  }
+
+  .startupimg img,
+  .industryimg img {
+    flex: 100x 20px auto; /* Prevent shrinking */
+    max-width: 100%; /* Adjust width as needed for better mobile view */
+  }
+}
+
+
+
+.custom-list {
+  margin: 20px;
+  padding: 0;
+  /* font-family: Arial, sans-serif; */
+  list-style-type: disc; /* Ensure bullet points are displayed */
+  margin-left: 20px; /* Add margin to properly align the bullets */
+}
+
+.custom-item {
+  margin-bottom: 12px; /* Reduced margin for better spacing */
+  line-height: 1.4; /* Adjust line height for readability */
+  color: #555; /* Reduced font color for remaining text */
+  font-size: 0.8em; /* Reduced font size for regular text */
+}
+.custom-item p{
+  /* border: 2px solid black; */
+  display: inline;
+}
+
+.highlight-text {
+  font-weight: bold;
+  color: rgb(30, 30, 30); /* Highlighted color for titles */
+  font-size: 0.95em; /* Slightly larger font size for titles */
+}
+
+.custom-item::marker {
+  color: black; /* Change bullet point color */
+}
+/* Media query for mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .custom-list .custom-item {
+    line-height: 1.6; /* Reduced line-height for list items on mobile */
+  }
+}

@@ -1,0 +1,204 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Page container */
+.BookAppointment-page-container {
+    display: flex;
+    background-image: url('../../../assets/images/BookConsultation.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 0%;
+}
+
+/* Form container styles */
+.BookAppointment-form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.BookAppointment-form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form groups */
+.BookAppointment-form-group {
+    margin-bottom: 15px;
+}
+
+.BookAppointment-required {
+    color: red;
+}
+
+/* Input fields - All except email */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    text-transform: uppercase; /* Convert input text to uppercase */
+}
+
+/* Specific rule for email input field */
+input[type="email"] {
+    text-transform: none; /* No transformation, will keep email in lowercase */
+}
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(7, 106, 227);
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+/* Gender options */
+.BookAppointment-gender-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Phone and WhatsApp rows */
+.BookAppointment-phone-row,
+.BookAppointment-whatsapp-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.BookAppointment-phone-inputs,
+.BookAppointment-whatsapp-inputs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.BookAppointment-country-code {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.BookAppointment-phone-inputs input,
+.BookAppointment-whatsapp-inputs input {
+    width: 75%;
+}
+
+.BookAppointment-consultation-type label {
+    margin-right: 10px;
+}
+
+/* Branch selection */
+.BookAppointment-form-group select {
+    margin-top: 5px;
+}
+
+/* Submit button */
+.BookAppointment-submit-buttonbtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.BookAppointment-submit-buttonbtn:hover {
+    background-color: #218838;
+}
+.BookAppointment-consultation-type-options {
+    display: flex;
+    justify-content: center;  /* Center the content horizontally */
+    align-items: center;      /* Align the content vertically */
+    gap: 20px;                /* Space between radio buttons */
+}
+
+.BookAppointment-consultation-type-options label {
+    display: flex;            /* Flexbox for label and radio button */
+    align-items: center;      /* Vertically align the radio button with the text */
+    gap: 5px;                 /* Space between the radio button and label */
+}
+
+.BookAppointment-consultation-type-options input[type="radio"] {
+    margin: 0;  /* Remove default margin */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .BookAppointment-form-container {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .BookAppointment-phone-inputs,
+    .BookAppointment-whatsapp-inputs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .BookAppointment-country-code {
+        width: 30%;
+    }
+
+    .BookAppointment-phone-inputs input,
+    .BookAppointment-whatsapp-inputs input {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .BookAppointment-phone-inputs,
+    .BookAppointment-whatsapp-inputs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .BookAppointment-country-code {
+        width: 40%;
+    }
+
+    .BookAppointment-phone-inputs input,
+    .BookAppointment-whatsapp-inputs input {
+        width: 55%;
+    }
+}
+/* Custom Toast Styling */
+.custom-toast {
+    background: linear-gradient(to right, #00c851, #007e33);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
+  
+  .bounceIn {
+    animation: bounceIn 0.6s;
+  }
+  
+  .bounceOut {
+    animation: bounceOut 0.3s;
+  }
+  
+  /* Ensure it appears in the middle of the page */
+  .Toastify__toast-container {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+  

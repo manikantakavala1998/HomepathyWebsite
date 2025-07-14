@@ -1,0 +1,452 @@
+/* Base Styles */
+.treatmentheading {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.treatmentheading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  margin-top: 2%;
+  color: #333;
+}
+
+.treatmentheading h4 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2%;
+  line-height: 1.5;
+}
+
+.ourtreatments1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-left: 0; /* Remove left margin */
+  margin-right: 0; /* Remove right margin */
+  /* border: 2px solid black; */
+}
+
+.treatment1 {
+  width: 30%; /* Three items per row on small screens */
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  word-wrap: break-word; /* Allow text to break and wrap */
+  white-space: normal; /* Allow the text to wrap */
+  overflow: visible; /* Ensure full text is visible */
+}
+
+.treatment1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.treatment1 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular image */
+  /* border: 2px solid black; */
+}
+
+.treatment1 h1 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #333;
+  height: auto; /* Ensure the full name is displayed */
+  text-overflow: clip; /* Ensure no truncation */
+}
+
+.treatment1 button {
+  padding: 10px 20px;
+  background-color: #519F45;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.treatment1 button:hover {
+  background-color: #3d7e36;
+}
+
+/* Base Styles for Category Buttons */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.category-buttons button {
+  width: 22%; /* Four buttons per row on larger screens */
+  margin: 10px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  background-color: #519F45;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #3d7e36;
+}
+
+/* Focused Button Style (when clicked) */
+.category-buttons button:focus {
+  background-color: #3d7e36; /* Darker background for the active button */
+  outline: none; /* Remove the default focus outline */
+  border: 2px solid #fff; /* Optional: Add a border to indicate it's active */
+}
+
+/* Reset background color when button is clicked but not focused */
+.category-buttons button:active {
+  background-color: #3d7e36; /* Same as focus */
+  border: 2px solid #fff; /* Optional: Add a border to indicate it's active */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .treatment1 {
+    width: 30%; /* Three items per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .treatment1 {
+    width: 45.8%; /* Three items per row on extra small screens */
+    padding: 5px;
+    text-align: start;
+    /* border: 2px solid black; */
+    align-items: start;
+  }
+
+  .treatmentheading h1 {
+    font-size: 1.5rem;
+  }
+
+  .treatmentheading h4 {
+    font-size: 1rem;
+  }
+
+  .treatment1 img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .treatment1 h1 {
+    font-size: 0.9rem;
+    height: auto;
+    white-space: normal; /* Allow full text to wrap */
+    overflow: visible; /* Ensure full text is visible */
+    text-overflow: clip; /* Ensure no truncation */
+    text-align: start; /* Align text to the start */
+  }
+
+  /* Category Buttons Layout */
+  .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .category-buttons button {
+    width: 30%; /* Three buttons in a row */
+    margin: 5px;
+    padding: 12px 15px;
+    font-size: 0.9rem; /* Slightly smaller text for better fit */
+  }
+
+  .category-buttons button:hover {
+    background-color: #3d7e36;
+  }
+
+  /* "Read More" Button Adjustments */
+  .treatment1 button {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 8px 16px; /* Smaller button size */
+  }
+}
+
+
+/* Base Styling */
+.treatmentslap {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* max-width: 800px; */
+  margin: 20px auto;
+  /* font-family: 'Arial', sans-serif; */
+  line-height: 1.6;
+  /* border: 2px solid black; */
+}
+
+.treatmentslap h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+  /* border: 2px solid black; */
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+
+.treatmentslap p{
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 0px;
+  /* border: 2px solid black; */
+}
+
+/* Ordered List Styling */
+.treatmentslap ol {
+  padding-left: 20px;
+  counter-reset: custom-counter;
+  /* border: 2px solid black; */
+}
+
+.treatmentslap ol li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  font-size: 1rem;
+  color: #333;
+  list-style: none; /* Remove default numbering */
+  counter-increment: custom-counter;
+}
+
+/* Custom Number Styling */
+/* .treatmentslap ol li::before {
+  content: counter(custom-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #519F45;
+  border: 2px solid black;
+} */
+
+.treatmentslap ol li small {
+  display: block;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.treatmentslap ol li p {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .treatmentslap {
+    padding: 15px;
+  }
+
+  .treatmentslap h2 {
+    font-size: 1.5rem;
+  }
+
+  .treatmentslap p,
+  .treatmentslap ol li p {
+    font-size: 0.9rem;
+  }
+}
+/* Styling for the main container */
+.treatmentslap1 {
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* max-width: 900px; */
+  margin: 20px auto;
+  /* font-family: 'Arial', sans-serif; */
+  line-height: 1.6;
+  color: #333;
+}
+
+.treatmentslap1 h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+.treatmentslap1 p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 20px;
+  /* border: 2px solid black; */
+}
+
+/* Styling the unordered list with bullets */
+.highlighted-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.highlighted-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.highlighted-list li::before {
+  content: "•";
+  color: #519F45; /* Custom bullet color */
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Styling the ordered list */
+.treatment-list {
+  padding-left: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.treatment-list li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.treatment-list li::before {
+  content: counter(custom-counter) ".";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #519F45;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .treatmentslap1 {
+    padding: 20px;
+  }
+
+  .treatmentslap1 h2 {
+    font-size: 1.6rem;
+  }
+
+  .treatmentslap1 p {
+    font-size: 1rem;
+  }
+
+  .highlighted-list, .treatment-list {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+.connectcare h2 {
+  color: rgb(45, 44, 44);
+  font-size: 8vh; /* Keep font size proportional to viewport height */
+  margin-top: 5%;
+  /* font-family: 'Times New Roman', serif; Set the same font style */
+  font-size: 4vh !important; /* Increase the font size for h2 */
+  color: rgb(29, 28, 28); /* Ensure text color is consistent */
+  line-height: 7vh; /* Maintain increased line height for h2 */
+  }
+  
+  .connect h2 {
+  color: green;
+  /* Same proportional sizing */
+  margin-top: 0%;
+  /* font-family: 'Times New Roman', serif; Set the same font style */
+  font-size: 4vh !important; /* Increase the font size for h2 */
+  color: rgb(29, 28, 28); /* Ensure text color is consistent */
+  line-height: 7vh; /* Maintain increased line height for h2 */
+  }
+  
+  .vertical-line1 {
+  width: 60%;
+  height: 1px;
+  background-color: green;
+  margin-left: 20%;
+  margin-bottom: 2%;
+  }
+  
+  .connectcare p {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  line-height: 1.6; /* Set consistent line height for all paragraphs */
+  /* font-family: 'Times New Roman', serif; Set the same font style */
+  font-size: 2.5vh !important; /* Set the font size for p */
+  color: rgb(29, 28, 28); /* Ensure text color is consistent */
+  overflow: hidden;
+  }
+  
+  /* Media Query for Tablets and Smaller Devices */
+  @media (max-width: 768px) {
+  .connectcare h2 {
+    font-size: 6vh; /* Slightly reduce size */
+    margin-top: 3%; /* Adjust spacing */
+  }
+  
+  .connect h2 {
+    font-size: 4vh; /* Adjust font size */
+  }
+  
+  .vertical-line1 {
+    width: 80%; /* Extend line for better fit */
+    margin-left: 10%;
+  }
+  
+  .connectcare p {
+    width: 90%; /* Reduce width for smaller screens */
+    padding: 0 5%; /* Add padding for better readability */
+  }
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+  .connectcare h2 {
+    font-size: 4vh; /* Further reduce for very small screens */
+    margin-top: 2%;
+  }
+  
+  .connect h2 {
+    font-size: 3vh; /* Adjust smaller font size */
+  }
+  
+  .vertical-line1 {
+    width: 90%; /* Almost full width */
+    margin-left: 5%;
+  }
+  
+  .connectcare p {
+    width: 100%; /* Use full width */
+    padding: 0 10%; /* Add more padding */
+    font-size: 0.9rem; /* Adjust font size for readability */
+    
+  }
+  }

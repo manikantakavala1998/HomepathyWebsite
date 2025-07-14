@@ -1,0 +1,139 @@
+/* General container styling */
+.privacy-policy-container {
+    /* font-family: 'Arial', sans-serif; */
+    background: #f9f9f9;
+    margin: 0;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .privacy-policy-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .privacy-policy-container  p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .privacy-policy-container  strong {
+    color: #2a7b4f;
+  }
+  
+  /* Style for date */
+  .privacy-policy-container p strong {
+    color: #000;
+  }
+  
+  /* Section header styling */
+  .privacy-policy-container  h2 {
+    font-size: 1.8rem;
+    color: #2a7b4f;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  /* List styling inside sections */
+  .privacy-policy-container  ul {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .privacy-policy-container  li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Links */
+  .privacy-policy-container  a {
+    color: #2a7b4f;
+    text-decoration: none;
+  }
+  
+  .privacy-policy-container  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .privacy-policy-container {
+      padding: 15px;
+    }
+  
+    .privacy-policy-container h1 {
+      font-size: 2rem;
+    }
+  
+    .privacy-policy-container h2 {
+      font-size: 1.6rem;
+    }
+  
+    .privacy-policy-container  p, li {
+      font-size: 0.9rem;
+    }
+  
+    .privacy-policy-container  ul {
+      margin-left: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .privacy-policy-container  h1 {
+      font-size: 1.5rem;
+    }
+  
+    .privacy-policy-container  h2 {
+      font-size: 1.4rem;
+    }
+  
+    .privacy-policy-container  p, li {
+      font-size: 0.85rem;
+    }
+  
+    .privacy-policy-container  ul {
+      margin-left: 10px;
+    }
+  }
+  
+  /* Aesthetic Section for background */
+  .privacy-policy-container {
+    background: linear-gradient(to right, #f0f8ff, #ffffff);
+  }
+  
+  /* Add some padding to sections */
+  .privacy-policy-container  section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section header padding */
+  .privacy-policy-container section h2 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #2a7b4f;
+  }
+  
+  /* Ensure better readability with line-height */
+  .privacy-policy-container  ul li {
+    line-height: 1.7;
+  }
+  
+  /* Enhance mobile typography */
+  @media screen and (max-width: 767px) {
+    .privacy-policy-container {
+      padding: 20px;
+    }
+  }
+  

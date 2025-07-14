@@ -1,0 +1,467 @@
+/* Banner Section */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of the screen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(15, 11, 222);
+  text-align: center;
+  padding: 0;
+  animation: lightMovement 2s infinite alternate ease-in-out; /* Animation for light movement */
+}
+
+/* Keyframes for light movement effect */
+@keyframes lightMovement {
+  0% {
+    background-position: center center;
+  }
+  50% {
+    background-position: 60% 40%;
+  }
+  100% {
+    background-position: center center;
+  }
+}
+
+/* Responsive Design */
+
+/* For Desktop and larger screens */
+@media (min-width: 1024px) {
+  .banner {
+    height: 100vh; /* Keep full height for larger screens */
+  }
+
+  .banner h1 {
+    font-size: 3rem; /* Larger font for headings */
+  }
+
+  .banner p {
+    font-size: 1.5rem; /* Larger font for subheadings */
+  }
+}
+
+/* For Tablets (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .banner {
+    width: auto;
+    height: 60vh; /* Adjust the height for smaller screens */
+  }
+
+  .banner h1 {
+    font-size: 2.5rem; /* Slightly smaller heading */
+  }
+
+  .banner p {
+    font-size: 1.2rem; /* Slightly smaller subheading */
+  }
+}
+
+/* For Mobile Devices (480px - 768px) */
+@media (max-width: 768px) and (min-width: 480px) {
+  .banner {
+    width: auto;
+    height: 50vh; /* Further reduce the height for mobile */
+  }
+
+  .banner h1 {
+    font-size: 2rem; /* Smaller font for headings */
+  }
+
+  .banner p {
+    font-size: 1rem; /* Smaller font for subheadings */
+  }
+}
+
+/* For Very Small Screens (below 480px) */
+@media (max-width: 480px) {
+  .banner {
+    height: 30vh; /* Reduce height for very small screens */
+  }
+
+  .banner h1 {
+    font-size: 1.5rem; /* Even smaller heading */
+  }
+
+  .banner p {
+    font-size: 0.9rem; /* Smaller font for subheading */
+  }
+}
+
+
+/* General page styling */
+.doctors-page {
+  padding: 0px 0px;
+  /* background: linear-gradient(135deg, #E3F2FD, #C8E6C9); */
+  background-size: cover;
+  color: #333;
+  /* font-family: 'Times New Roman', serif; */
+  text-align: center;
+  position: relative;
+  animation: backgroundAnimation 10s infinite alternate;
+  overflow: hidden;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2C6B57; /* Dark Green for title */
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Fade-in effect for text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9faff;
+}
+.card-rating{
+  color: rgb(255, 79, 10);
+  margin-right: 80%;
+  top: 20px;
+  font-weight:bolder;
+}
+
+/* For tablets and screens up to 768px */
+@media (max-width: 768px) {
+  .card-rating {
+    margin-right: 50%; /* Adjust the margin for better layout */
+    top: 10px; /* Slightly reduce the top spacing */
+    font-size: 14px; /* Adjust font size for readability */
+  }
+}
+
+/* For mobile screens up to 480px */
+@media (max-width: 480px) {
+  .card-rating {
+     /* Further adjust the margin for smaller screens */
+    top: 10px; /* Reduce the top spacing even more */
+    font-size: 12px; /* Make the font smaller for compact design */
+    /* border:2px solid black; */
+  }
+}
+
+
+/* Individual doctor card */
+.doctor-card {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effects for cards */
+.doctor-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* Actions (buttons) */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 4px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.card-actions button {
+  background:#e6ffe6;
+  color: #035c0d;
+  border: 1px solid #e6ffe6;
+  padding: 5px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  margin: 0 5px; /* Small gap between buttons */
+  text-align: center;
+}
+
+.card-actions button:last-child {
+  margin-right: 0; /* Remove right margin on the last button */
+}
+
+.card-actions button:hover {
+  background: #b9f4ab;
+}
+.card-image1 {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally centers the image */
+  align-items: center; /* Vertically centers the image */
+  overflow: hidden;
+  border-radius: 50%; /* Makes the container round */
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Keep the aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Add shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9; /* Optional: Add a light background to enhance visuals */
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+
+.card-image1 img {
+  width: 90%; /* Ensure image fits nicely within the circle */
+  height: 90%;
+  object-fit: cover; /* Ensures the image covers the container */
+  border-radius: 50%; /* Ensures the image matches the round container */
+  transition: transform 0.3s ease;
+}
+
+.card-image1:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 8px 25px rgba(0, 0, 0, 0.25); /* Enhance shadow on hover */
+}
+
+.card-image1:hover img {
+  transform: scale(1.1); /* Slight image zoom on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-image1 {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-image1 {
+    width: 100px;
+    height: 100px;
+    margin-left:15px;
+  }
+}
+
+
+/* Responsive Design for 768px (Tablets and below) */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .card-actions {
+    padding: 5px 20px;
+  }
+
+  .card-actions button {
+    font-size: 12px; /* Smaller font size on tablets */
+    padding: 10px 12px; /* Adjust padding for better fit */
+    margin: 0 8px; /* Increase gap between buttons for better touch target */
+  }
+  
+}
+
+/* Responsive Design for 480px (Mobile) */
+@media (max-width: 480px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 1 card per row on mobile */
+  
+  }
+
+  .card-actions {
+    padding: 5px 10px;
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .card-actions button {
+    font-size: 14px; /* Keep font size readable on mobile */
+    padding: 12px 15px; /* Increase padding for mobile touch */
+    margin: 5px 0; /* Space between buttons when stacked */
+    width: 100%; /* Buttons take full width */
+  }
+}
+/* Responsive Design for 768px (Tablets and below) */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .card-actions {
+    padding: 5px 20px;
+  }
+
+  .card-actions button {
+    font-size: 12px; /* Smaller font size on tablets */
+    padding: 10px 12px; /* Adjust padding for better fit */
+    margin: 0 8px; /* Increase gap between buttons for better touch target */
+  }
+
+  /* Reduce card height on tablets */
+  .card {
+    height: 280px; /* Reduce card height for better fit on tablet screens */
+  }
+}
+
+/* Responsive Design for 480px (Mobile) */
+@media (max-width: 480px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
+  
+  }
+  
+  .card-actions {
+    padding: 5px 10px;
+    flex-direction: column; /* Stack buttons vertically */
+    
+  }
+
+  .card-actions button {
+    font-size: 14px; /* Keep font size readable on mobile */
+    padding: 12px 15px; /* Increase padding for mobile touch */
+    margin: 5px 0; /* Space between buttons when stacked */
+    width: 100%; /* Buttons take full width */
+  }
+
+  /* Reduce card height on mobile */
+  .card {
+    height: 250px; /* Reduce card height further for mobile screens */
+  }
+}
+
+
+/* Meet Our Homeopathy Doctors Section */
+.meetourdoctors {
+  background-color: white; /* Soft gradient background with light blues and greens */
+  padding: 20px 20px; /* Increased padding for spacious feel */
+  color: #333; /* Dark text color for readability */
+  /* font-family: 'Roboto', sans-serif; Modern, clean font */
+  text-align: center;
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12); /* Softer shadow for depth */
+  margin-bottom: 10px; /* Space below section */
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title Styling */
+.meetourdoctors h2 {
+  font-size: 3rem; /* Larger heading */
+  font-weight: 700; /* Bold for emphasis */
+  color: #2c6b57; /* Dark Green for consistency */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  animation: fadeIn 1s ease-out; /* Fade-in animation for title */
+}
+
+/* Paragraph Styling */
+.meetourdoctors p {
+  font-size: 1.2rem; /* Slightly larger font for better readability */
+  line-height: 1.8; /* Increased line height for readability */
+  color: #555; /* Dark grey for softer readability */
+  /* max-width: 800px; */
+  margin: 0 auto; /* Centered text */
+  padding: 0 15px; /* Padding for smaller screens */
+  font-weight: 400;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Decorative Lines Under the Title */
+.meetourdoctors::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: #2c6b57; /* Match with title color */
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+/* Responsive Design for Tablets (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .meetourdoctors h2 {
+    font-size: 2.5rem; /* Slightly smaller heading */
+  }
+
+  .meetourdoctors p {
+    font-size: 1.1rem; /* Slightly smaller text for tablets */
+  }
+}
+
+/* Responsive Design for Mobile (Below 768px) */
+@media (max-width: 768px) {
+  .meetourdoctors {
+    padding: 20px 15px; /* Adjust padding for mobile screens */
+  }
+
+  .meetourdoctors h2 {
+    font-size: 2rem; /* Smaller font for mobile */
+  }
+
+  .meetourdoctors p {
+    font-size: 1rem; /* Slightly smaller font on mobile */
+    line-height: 1.6;
+  }
+}
+
+.doctorslist{
+  /* border: 2px solid black; */
+  padding-top: 0% !important;
+  box-shadow: inset 2px 2px 53px white;
+}
+
+.doctorsy h2{
+  padding-top: 2%;
+  text-align: start;
+  padding-bottom: 0% !important;
+  margin-bottom: 0%;
+}
+.consultour{
+  padding-top: 2%;
+  background-color: rgb(188, 236, 188);
+}
+.consultour p{
+  padding-bottom: 1%;
+  color: rgb(78, 73, 73);
+  width: 90%;
+  margin: auto;
+  text-align: center !important;
+  font-size: medium;
+}
+.consultour button{
+  padding: 10px;
+  border: none;
+  box-shadow: inset 2px 2px 13px green;
+  margin-bottom: 3%;
+  border-radius: 5px;
+ 
+}
+.consultour button a{
+  text-decoration: none;
+  color:rgb(43, 41, 41);
+  font-weight: bold;
+  
+}

@@ -1,0 +1,1265 @@
+.gfc-hero {
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+/* Mobile devices (max-width: 576px) */
+@media screen and (max-width: 576px) {
+  .gfc-hero {
+    min-height: 50vh; /* Adjust the min-height for mobile devices */
+    padding: 0.5rem; /* Adjust the padding for mobile devices */
+    background-size: contain; /* Adjust background size for mobile devices */
+  }
+}
+
+/* Tablets (min-width: 577px and max-width: 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .gfc-hero {
+    min-height: 60vh; /* Adjust the min-height for tablets */
+    padding: 0.75rem; /* Adjust the padding for tablets */
+    background-size: contain; /* Adjust background size for tablets */
+  }
+}
+
+/* Laptops (min-width: 769px and max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .gfc-hero {
+    min-height: 70vh; /* Default min-height for laptops */
+    padding: 1rem; /* Default padding for laptops */
+    background-size: contain; /* Ensure full image is visible for laptops */
+  }
+}
+
+/* Desktops & Larger Laptops (min-width: 1025px) */
+@media screen and (min-width: 1025px) {
+  .gfc-hero {
+    min-height: 100vh; /* Default min-height for desktops and larger laptops */
+    padding: 1rem; /* Default padding for desktops and larger laptops */
+  }
+}
+  
+  .gfc-hero-content {
+    width: 100%;
+    max-width: 90%;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .gfc-hero-title {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+  }
+  
+  .gfc-hero-text {
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .gfc-cta-button {
+    min-height: 44px;
+    padding: 0.8rem 1.5rem;
+    background: #E74C3C;
+    color: white;
+    
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    touch-action: manipulation;
+    margin: 0;
+  }
+  
+  .gfc-cta-button:hover {
+    background: #d44333;
+  }
+  
+  /* Tablet Styles (min-width: 768px) */
+  @media screen and (min-width: 768px) {
+    .gfc-hero-content {
+      max-width: 80%;
+    }
+    .gfc-hero-title {
+      font-size: 2.5rem;
+    }
+    .gfc-hero-text {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Laptop Styles (min-width: 1024px) */
+  @media screen and (min-width: 1024px) {
+    .gfc-hero-content {
+      max-width: 70%;
+    }
+    .gfc-hero-title {
+      font-size: 3rem;
+    }
+    .gfc-hero-text {
+      font-size: 1.25rem;
+    }
+    .gfc-cta-button {
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+    }
+  }
+  
+  /* Large Screen Styles (min-width: 1440px) */
+  @media screen and (min-width: 1440px) {
+    .gfc-hero-content {
+      max-width: 60%;
+    }
+    .gfc-hero-title {
+      font-size: 3.5rem;
+    }
+  }
+  
+  /* Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .gfc-cta-button {
+      transition: none;
+    }
+  }
+  /* Treatment Section */
+  .gfc-nav-description,
+  .gfc-treatment-description-text,
+  .gfc-treatment-extra-info {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .gfc-treatment-details {
+    list-style: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+  }
+  
+  .gfc-treatment-details li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .gfc-treatment-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+  }
+  
+  .gfc-treatment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    
+  }
+  .gfc-treatment-nav {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .gfc-treatment-nav h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
+    text-align: center;
+  }
+  
+  .gfc-treatment-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .gfc-treatment-nav li {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gfc-treatment-nav li:last-child {
+    border-bottom: none;
+  }
+  
+  .gfc-treatment-nav li strong {
+    font-size: 18px;
+    color: #3498DB; /* Use a gradient or blue color as needed */
+  }
+  
+  .gfc-treatment-nav li p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .gfc-treatment-description-text {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  /* .gfc-treatment-nav li.gfc-active,
+  .gfc-treatment-nav li.active {
+    background: #3498DB;
+    color: white;
+  } */
+  
+  .gfc-treatment-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  .gfc-treatment-content h3 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #2C3E50, #3498DB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  
+  }
+  
+  @media (max-width: 1024px) {
+    .gfc-treatment-content h3 {
+      font-size: 1.75rem; /* Adjust the font size for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gfc-treatment-content h3 {
+      font-size: 1.5rem; /* Adjust the font size for smaller tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gfc-treatment-content h3 {
+      font-size: 1.2rem; /* Adjust the font size for mobile devices */
+    }
+  }
+  .gfc-treatment-description h4 {
+    font-size: 1.75rem; /* Default font size */
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+    text-align: center; /* Center align the text */
+  }
+  
+  @media (max-width: 1024px) {
+    .gfc-treatment-description h4 {
+      font-size: 1.5rem; /* Adjust the font size for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gfc-treatment-description h4 {
+      font-size: 1.25rem; /* Adjust the font size for smaller tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gfc-treatment-description h4 {
+      font-size: 1rem; /* Adjust the font size for mobile devices */
+    }
+  }  .gfc-treatment-images {
+    margin-bottom: 30px;
+  }
+  
+  .gfc-main-treatment-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .gfc-treatment-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .gfc-treatment-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .gfc-treatment-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Enhanced Treatment Description Styles */
+  .gfc-treatment-description {
+    padding: 30px;
+  }
+  
+  /* Highlight Tag & Lead Text */
+  .gfc-highlight-tag {
+    background: #3498DB;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  .gfc-lead-text {
+    font-size: 1.2rem;
+    color: #2C3E50;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* Key Benefits Container */
+  .gfc-key-benefits {
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    
+  }
+  
+  .gfc-key-benefits h5 {
+    font-size: 24px;
+    color: #2C3E50;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .gfc-key-benefits p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* List Styles */
+  .gfc-key-benefits ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .gfc-key-benefits li {
+    display: flex;
+    align-items: flex-start;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .gfc-key-benefits li:hover {
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+  }
+  
+  .gfc-benefit-icon {
+    font-size: 30px;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  
+  .gfc-key-benefits li p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+    line-height: 1.5;
+  }
+  .gfc-key-benefits li strong {
+    background: linear-gradient(45deg, #3498DB, #2980B9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .gfc-key-benefits {
+      margin-left: 10px; /* Adjust value as needed */
+    }
+  }
+  @media (max-width: 576px) {
+    .gfc-treatment-description {
+      padding: 1px;
+    }
+    .gfc-key-benefits h5 {
+      font-size: 20px;
+    }
+    .gfc-key-benefits p {
+      font-size: 14px;
+    }
+    .gfc-key-benefits ul {
+      padding: 0;
+    }
+    /* Stack each benefit item vertically for better mobile layout */
+    .gfc-key-benefits li {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+    }
+    .gfc-benefit-icon {
+      font-size: 26px;
+      margin: 0 0 10px 0;
+    }
+    .gfc-key-benefits li strong {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .gfc-key-benefits li p {
+      font-size: 12px;
+      margin-top: 3px;
+    }
+  }
+  
+  /* LAPTOP View Enhancements (min-width: 1024px) */
+  /* Tablet View Enhancements (min-width: 768px and max-width: 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .gfc-treatment-description {
+      padding: 30px;
+    }
+    .gfc-key-benefits {
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+    }
+    .gfc-key-benefits h5 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .gfc-key-benefits p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .gfc-key-benefits li {
+      padding: 15px;
+      margin-bottom: 10px;
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+    }
+    .gfc-benefit-icon {
+      font-size: 30px;
+      margin-right: 15px;
+    }
+    .gfc-key-benefits li p {
+      font-size: 14px;
+      margin-top: 0;
+    }
+  }
+  
+  /* Laptop View Enhancements (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .gfc-key-benefits li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      margin-bottom: 12px;
+    }
+    .gfc-key-benefits li strong {
+      text-align: left;
+      flex: 0 0 auto;
+      margin-right: 20px;
+    }
+    .gfc-key-benefits li p {
+      text-align: right;
+      flex: 1;
+      margin-top: 0;
+      font-size: 14px;
+    }
+    .gfc-benefit-icon {
+      font-size: 32px;
+      margin-right: 20px;
+    }
+  }
+  
+  /* Responsive Highlights */
+  .gfc-treatment-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+  }
+  
+  .gfc-highlight-box {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .gfc-highlight-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .gfc-highlight-box p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3498DB;
+    margin: 10px 0;
+  }
+  
+  .gfc-subtitle {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  /* Modal Styles */
+  .gfc-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .gfc-modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    animation: slideIn 0.3s ease;
+  }
+  
+  .gfc-close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  /* Consultation Form */
+  .gfc-consultation-form h3 {
+    color: #2C3E50;
+    margin-bottom: 10px;
+  }
+  
+  .gfc-form-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .gfc-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .gfc-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .gfc-form-group input,
+  .gfc-form-group select,
+  .gfc-form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .gfc-form-group input:focus,
+  .gfc-form-group select:focus,
+  .gfc-form-group textarea:focus {
+    border-color: #3498DB;
+    outline: none;
+  }
+  
+  .gfc-submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .gfc-submit-btn:hover {
+    background: #2980b9;
+  }
+  
+  .gfc-form-notice {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Button with Icon Styles */
+  .gfc-book-treatment-btn {
+    position: relative;
+    background: linear-gradient(45deg, #3498DB, #2980b9);
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 15px 35px 15px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+  }
+  
+  .gfc-btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  
+  .gfc-book-treatment-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+    background: linear-gradient(45deg, #2980b9, #3498DB);
+  }
+  
+  .gfc-book-treatment-btn:hover .gfc-btn-icon {
+    animation: bounceX 1s infinite;
+  }
+  
+  .gfc-book-treatment-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);
+  }
+  
+  @keyframes bounceX {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+  }
+  
+  .gfc-book-treatment-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform 0.5s, opacity 1s;
+  }
+  
+  .gfc-book-treatment-btn:active::after {
+    transform: scale(0, 0);
+    opacity: 0.3;
+    transition: 0s;
+  }
+  
+  /* Responsive Design for Treatment Section and Form */
+  @media (max-width: 1200px) {
+    .gfc-treatment-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gfc-book-treatment-btn {
+      width: 100%;
+      padding: 15px 20px;
+    }
+    .gfc-treatment-nav {
+      padding: 20px;
+    }
+    .gfc-treatment-content {
+      padding: 20px;
+    }
+    .gfc-main-treatment-image {
+      height: 250px;
+    }
+    .gfc-treatment-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gfc-treatment-highlights {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gfc-form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .gfc-treatment-gallery {
+      grid-template-columns: 1fr;
+    }
+    .gfc-treatment-highlights {
+      grid-template-columns: 1fr;
+    }
+    .gfc-highlight-box {
+      padding: 15px;
+    }
+    .gfc-modal-content {
+      padding: 20px;
+    }
+  }
+  
+  /* Benefits Section */
+  .gfc-benefits-section {
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  
+  }
+  
+  .gfc-benefits-header {
+    text-align: center;
+    margin-bottom: 30px;
+    
+  }
+  
+  .gfc-section-tag {
+    background: linear-gradient(45deg, #3498DB, #2980b9);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .gfc-benefits-header h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #2C3E50, #3498DB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gfc-section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .gfc-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .gfc-benefit-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border: 1px solid rgba(52, 152, 219, 0.1);
+  }
+  
+  .gfc-benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(52, 152, 219, 0.1);
+  }
+  
+  .gfc-benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .gfc-benefit-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #3498DB, #2980b9);
+    opacity: 0.1;
+    border-radius: 15px;
+  }
+  
+  .gfc-benefit-content h3 {
+    color: #2C3E50;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .gfc-benefit-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .gfc-feature-list {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .gfc-feature-list li {
+    color: #2C3E50;
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.9rem;
+    overflow: hidden;
+  }
+  
+  .gfc-feature-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #3498DB;
+    font-weight: bold;
+  }
+  
+  /* Hover Effects */
+  .gfc-benefit-card:hover .gfc-benefit-icon {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive Design for Benefits Section */
+  @media (max-width: 768px) {
+    .gfc-benefits-header h2 {
+      font-size: 2rem;
+    }
+    .gfc-benefits-grid {
+      grid-template-columns: 1fr;
+    }
+    .gfc-benefit-card {
+      padding: 20px;
+    }
+  }
+  
+  .gfc-benefit-card:nth-child(even) {
+    background: linear-gradient(45deg, #f8f9fa, #ffffff);
+  }
+  
+  .gfc-benefit-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(45deg, #3498DB, #2980b9);
+    animation: slideIn 0.3s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+  
+  /* Process Section */
+  .gfc-process-section {
+    padding: 60px 20px;
+    background: #f8f9ff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Decorative Background Elements */
+  .gfc-process-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(52, 152, 219, 0.05) 0%, transparent 70%);
+    transform: rotate(-45deg);
+  }
+  
+  /* Process Header */
+  .gfc-process-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .gfc-process-tag {
+    background: #3498DB;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+  }
+  
+  .gfc-process-header h2 {
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .gfc-process-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #3498DB;
+    border-radius: 2px;
+  }
+  
+  .gfc-process-subtitle {
+    font-size: 16px;
+    color: #666666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  /* Timeline Container */
+  .gfc-process-timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    position: relative;
+  }
+  
+  /* Process Step Styles */
+  .gfc-process-step {
+    opacity: 0;
+    animation: slideIn 0.8s ease forwards;
+    animation-delay: calc(var(--index) * 0.2s);
+  }
+  
+  .gfc-step-container {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .gfc-step-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #3498DB;
+    border-radius: 2px;
+  }
+  
+  /* Number and Icon Styles */
+  .gfc-step-number-container {
+    text-align: center;
+  }
+  
+  .gfc-step-number {
+    width: 60px;
+    height: 60px;
+    background: #3498DB;
+    color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+    transform: rotate(-45deg);
+  }
+  
+  .gfc-step-number span {
+    transform: rotate(45deg);
+  }
+  
+  .gfc-step-icon {
+    font-size: 28px;
+    color: #3498DB;
+    margin-top: 10px;
+  }
+  
+  /* Content Styles */
+  .gfc-step-content {
+    padding-left: 20px;
+  }
+  
+  .gfc-step-content h3 {
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .gfc-step-description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  /* Details List */
+  .gfc-step-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .gfc-step-details li {
+    font-size: 15px;
+    padding: 12px 20px;
+    background: #f8f9ff;
+    border-radius: 10px;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .gfc-step-details li::before {
+    content: '✓';
+    color: #3498DB;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  /* Hover Effects on Process Step */
+  .gfc-step-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(52, 152, 219, 0.1);
+  }
+  
+  .gfc-step-details li:hover {
+    background: #3498DB;
+    color: #ffffff;
+  }
+  
+  .gfc-step-details li:hover::before {
+    color: #ffffff;
+  }
+  
+  /* Animation for Process Step */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .gfc-treatment-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between tabs */
+    margin: 20px auto;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(17, 72, 28, 0.1);
+    flex-wrap: wrap; /* Ensures wrapping in smaller screens */
+  }
+  
+  /* Individual Tab */
+  .gfc-treatment-tab {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Hover State */
+  .gfc-treatment-tab:hover {
+    background: #f0f0f0;
+  }
+  
+  /* Active Tab Style */
+  .gfc-treatment-tab.gfc-active {
+    background: linear-gradient(45deg, #3498DB, #2980B9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) { /* Tablets */
+    .gfc-treatment-tabs {
+      gap: 15px;
+      padding: 8px;
+    }
+    .gfc-treatment-tab {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) { /* Mobile devices */
+    .gfc-treatment-tabs {
+      justify-content: flex-start;
+      flex-wrap: nowrap; /* Prevents wrapping */
+      overflow-x: auto; /* Enables horizontal scrolling */
+      white-space: nowrap; /* Prevents text from breaking */
+      padding: 10px 5px;
+      gap: 10px;
+      scrollbar-width: none; /* Hides scrollbar in Firefox */
+      -ms-overflow-style: none; /* Hides scrollbar in Edge */
+    }
+  
+    .gfc-treatment-tabs::-webkit-scrollbar {
+      display: none; /* Hides scrollbar in Chrome/Safari */
+    }
+  
+    .gfc-treatment-tab {
+      flex: 0 0 auto; /* Prevents shrinking */
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
+  
+  
+  /* Responsive Design for Process Section */
+  @media screen and (min-width: 768px) {
+    .gfc-process-timeline {
+      grid-template-columns: 1fr;
+    }
+    .gfc-step-container {
+      grid-template-columns: auto 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .gfc-process-header h2 {
+      font-size: 20px;
+      overflow: hidden;
+    }
+    .gfc-step-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 25px;
+    }
+    .gfc-step-number-container {
+      margin: 0 auto 20px;
+    }
+    .gfc-step-content {
+      padding-left: 0;
+    }
+    .gfc-step-details {
+      grid-template-columns: 1fr;
+    }
+    .gfc-step-details li {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .gfc-process-tag {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+    .gfc-process-header h2 {
+      font-size: 24px;
+    }
+    .gfc-step-number {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+    }
+  }
+  

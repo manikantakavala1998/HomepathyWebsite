@@ -1,0 +1,898 @@
+/* Base Layout */
+.jay-page-layout {
+  display: flex;
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  position: relative;
+}
+
+/* Navigation */
+.jay-branch-nav {
+  flex: 0 0 250px;
+  background: #E8F5E9;
+  padding: 1.25rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+  height: fit-content;
+  position: fixed;
+  top: 120px;
+  left: 16px;
+  z-index: 1000;
+  width: 250px;
+}
+
+.jay-nav-title {
+  color: #2E7D32; /* Green color for heading */
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #4CAF50;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.jay-branch-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.jay-branch-link {
+  padding: 0.75rem 1rem;
+  color: black; 
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: #E8F5E9;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+/* Green Button Styles */
+.jay-branch-link {
+  font-size: 14px; /* Adjust font size as needed */
+  padding: 10px 20px;
+  border: 2px solid #2E7D32;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #1B5E20, #4CAF50); /* Gradient background from dark green to light green */
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.jay-branch-link:hover {
+  background: linear-gradient(135deg, #4CAF50, #81C784); /* Hover effect with lighter green gradient */
+  border-color: #4CAF50;
+  transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.jay-branch-link:active {
+  background-color: #1B5E20;
+  border-color: #1B5E20;
+}
+
+.jay-branch-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.5);
+}
+
+/* Responsive Adjustments for Green Button */
+@media (max-width: 1024px) {
+  .jay-branch-link {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jay-branch-link {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jay-branch-link {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+/* Main Content */
+.jay-main-content {
+  flex: 1;
+  margin-left: 270px; /* Adjusted for the navigation width */
+  padding: 0.5rem;
+}
+
+.jay-branch-container {
+  width: 100%;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.jay-branch-header {
+  text-align: center;
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+  border-radius: 8px;
+
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.jay-branch-heading {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color:#ffffff;}
+
+.jay-branch-tagline {
+  font-size: 1rem;
+  opacity: 0.9;
+  color: white; /* Changed to black */
+}
+
+/* Welcome Section */
+.jay-welcome-block {
+  text-align: center;
+  max-width: 1200px; /* Updated for proper alignment */
+  margin: 1.5rem auto;
+  padding: 1.25rem;
+  background: #E8F5E9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.jay-welcome-heading {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.jay-welcome-text {
+  color: black; /* Changed to black */
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+/* Features Section */
+.jay-why-choose-section {
+  padding: 1.5rem 0;
+  margin: 1rem 0;
+}
+
+.jay-why-choose-section h2 {
+  color: #2E7D32; /* Green color for heading */
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.jay-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+  padding: 0.5rem;
+  max-width: 1200px; /* Updated for proper alignment */
+  margin: 0 auto; /* Center align */
+}
+
+.jay-feature-item {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: #E8F5E9;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.1);
+}
+
+.jay-feature-item:hover {
+  transform: translateY(-4px);
+}
+
+.jay-feature-item h3 {
+  color: #2E7D32; /* Green color for heading */
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.jay-feature-item p {
+  color: black; /* Changed to black */
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+/* Treatments Section */
+.jay-treatments-block {
+  padding: 1.5rem 0;
+  margin: 1rem 0;
+}
+
+.jay-treatments-headings {
+  color: #2E7D32; /* Green color for heading */
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.jay-treatments-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+  padding: 0.5rem;
+  max-width: 1200px; /* Updated for proper alignment */
+  margin: 0 auto; /* Center align */
+}
+
+.jay-treatment-box {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: #E8F5E9;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.1);
+}
+
+.jay-treatment-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.jay-treatment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jay-treatment-item {
+  color: black; /* Changed to black */
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(46, 125, 50, 0.1);
+  font-size: 0.9rem;
+}
+
+/* Doctors Section */
+.jay-doctors-section {
+  padding: 1.5rem 0;
+  margin: 1rem 0;
+}
+
+.benefits2 {
+  background: #E8F5E9;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.benefits2 h2 {
+  color: #2E7D32; /* Green color for heading */
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.benefits2 h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: #4CAF50;
+}
+
+.benefitpoints2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.benefitpoints2 h3 {
+  padding: 0.6rem 1rem;
+  background: #ffffff;
+  border-radius: 6px;
+  color: black; /* Changed to black */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.benefitpoints2 h3.active {
+  background: #4CAF50;
+  color: #ffffff;
+}
+
+.benefitpoints2 h3:hover {
+  background: #C8E6C9;
+  transform: translateY(-2px);
+}
+
+.benefit-description2 {
+  color: black; /* Changed to black */
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.1);
+}
+
+/* Image Slider */
+.bng-clinic-slider {
+  width: 95%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+  position: relative;
+  max-width: 1200px; /* Updated for proper alignment */
+}
+
+.bng-slider-wrapper {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  animation: slideShow 15s infinite;
+}
+
+.bng-slider-image {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Map Section */
+.jayanagar-map-contact {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.jayanagar-map-container {
+  width: 95%;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+  margin: 0 auto 1rem;
+  position: relative;
+  max-width: 1200px; /* Updated for proper alignment */
+}
+
+.jayanagar-google-map {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.jayanagar-address-info {
+  width: 95%;
+  max-width: 1200px; /* Updated for proper alignment */
+  margin: 0 auto;
+}
+
+.jayanagar-address-card {
+  background: #E8F5E9;
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.jayanagar-address-card h3 {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.jayanagar-address-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.jayanagar-contact-details,
+.jayanagar-contact-timing {
+  flex: 1;
+}
+
+.jayanagar-contact-details p,
+.jayanagar-contact-timing p {
+  color: black; /* Changed to black */
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+/* Best Section */
+.jay-best-section {
+  padding: 1.5rem 1rem;
+  background: #E8F5E9;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+  width: 95%;
+  max-width: 1200px; /* Updated for proper alignment */
+}
+
+.jay-best-heading {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.jay-best-description {
+  color: black; /* Changed to black */
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* CTA Section */
+.jay-cta-section {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin: 1.5rem 0;
+  background: #E8F5E9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+  max-width: 1200px; /* Updated for proper alignment */
+  margin-left: auto; /* Align right */
+  margin-right: auto; /* Align left */
+}
+
+.jay-cta-title {
+  color: #2E7D32; /* Changed to black */
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.jay-cta-text {
+  color: black; /* Changed to black */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.jay-cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #4CAF50;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.jay-cta-button:hover {
+  background: #2E7D32;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes slideShow {
+  0%, 18% { transform: translateX(0); }
+  20%, 38% { transform: translateX(-20%); }
+  40%, 58% { transform: translateX(-40%); }
+  60%, 78% { transform: translateX(-60%); }
+  80%, 98% { transform: translateX(-80%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .bng-clinic-slider {
+    height: 280px;
+  }
+
+  .jayanagar-map-container {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jay-branch-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-radius: 0;
+    background-color: #E8F5E9;
+  }
+
+  .jay-branch-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .jay-branch-link {
+    font-size: 16px; /* Adjust font size for mobile screens if needed */
+    padding: 8px 12px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    background-color: #2E7D32;
+    color: #fff;
+  }
+  .jay-branch-link::after{
+    content: "▼";
+    margin-left: 8px;
+    font-size: 20px;
+  }
+
+  .jay-main-content {
+    margin-left: 0;
+    margin-top: 80px;
+    padding: 0.5rem;
+  }
+
+  .bng-clinic-slider {
+    height: 240px;
+    width: 92%;
+  }
+
+  .jayanagar-map-container {
+    height: 260px;
+    width: 92%;
+  }
+
+  .jayanagar-address-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .benefitpoints2 h3 {
+    width: calc(50% - 0.5rem);
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .jay-branch-nav {
+    padding: 12px;
+  }
+
+  .jay-nav-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .jay-branch-link {
+    font-size: 16px; /* Adjust font size for mobile screens if needed */
+    padding: 8px 12px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    background-color: #2E7D32;
+    color: #fff;
+  }
+  .jay-branch-link::after{
+    content: "▼";
+    margin-left: 8px;
+    font-size: 20px;
+  }
+
+  .jay-main-content {
+    margin-top: 70px;
+    padding: 0.375rem;
+  }
+
+  .bng-clinic-slider {
+    height: 200px;
+    width: 94%;
+  }
+
+  .jayanagar-map-container {
+    height: 220px;
+    width: 94%;
+  }
+
+  .jayanagar-address-card {
+    padding: 1rem;
+  }
+
+  .jayanagar-address-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .benefitpoints2 h3 {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .jay-cta-button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .jay-main-content {
+    margin-top: 65px;
+  }
+
+  .bng-clinic-slider {
+    height: 180px;
+    width: 96%;
+  }
+
+  .jayanagar-map-container {
+    height: 200px;
+    width: 96%;
+  }
+
+  .jayanagar-contact-details p,
+  .jayanagar-contact-timing p {
+    font-size: 0.85rem;
+  }
+
+  .benefitpoints2 h3 {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .jay-cta-text,
+  .jay-best-description {
+    font-size: 0.85rem;
+  }
+}
+.bangalore-doctors {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.bangalore-doctors-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  position: relative;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.bangalore-doctors-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bangalore-doctor-tab {
+  padding: 12px 20px;
+  background-color: #E8F5E9;
+  border: none;
+  border-radius: 6px;
+  color: #1B5E20; /* Changed to black */
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.bangalore-doctor-tab.active {
+  background-color: #4CAF50;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.bangalore-doctor-tab:hover:not(.active) {
+  background-color: #C8E6C9;
+}
+
+.bangalore-doctors-content {
+  background-color: #E8F5E9;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+}
+
+.bangalore-doctor-details {
+  animation: fadeIn 0.3s ease;
+}
+
+.bangalore-doctor-name {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.bangalore-doctor-specialty {
+  color: #1B5E20; /* Changed to black */
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.bangalore-doctor-description {
+  color: black; /* Changed to black */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.bangalore-doctor-experience {
+  color: #2E7D32; /* Green color for heading */
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.bangalore-expertise-title {
+  color: #2E7D32; /* Green color for heading */
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.bangalore-expertise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.bangalore-expertise-item {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #1B5E20; /* Changed to black */
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 768px) {
+  .bangalore-doctors {
+    padding: 16px;
+  }
+
+  .bangalore-doctors-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .bangalore-doctor-tab {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .bangalore-doctors-content {
+    padding: 20px;
+  }
+
+  .bangalore-doctor-name {
+    font-size: 22px;
+  }
+
+  .bangalore-expertise-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+  .bangalore-doctors {
+    padding: 12px;
+  }
+
+  .bangalore-doctors-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .bangalore-doctors-tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .bangalore-doctor-tab {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .bangalore-doctors-content {
+    padding: 16px;
+  }
+
+  .bangalore-doctor-name {
+    font-size: 20px;
+  }
+
+  .bangalore-doctor-specialty {
+    font-size: 16px;
+  }
+
+  .bangalore-doctor-description {
+    font-size: 14px;
+  }
+
+  .bangalore-expertise-list {
+    grid-template-columns: 1fr;
+  }
+
+  .bangalore-expertise-item {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+.bng-clinic-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.bng-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .bng-clinic-image {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .bng-clinic-image {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .bng-clinic-image {
+    margin: 5px 0;
+  }
+}
