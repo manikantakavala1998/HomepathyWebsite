@@ -1,0 +1,82 @@
+.footer {
+    background-color: white;
+    width: 100%;
+}
+
+.footer .table {
+    width: 100%;
+    color: black;
+    box-shadow: inset 1px 1px 3px green;
+    margin-top: 3%;
+}
+
+.footer .table table {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.footer .table table tr td {
+    padding: 0.5%;
+    cursor: pointer;
+}
+
+.footer .table table .tablehead {
+    font-size: large;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.number a {
+    text-decoration: none;
+}
+
+.footer-logo {
+    width: 100px; /* Default size for the logo */
+    height: auto;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    /* Increase logo size on smaller screens */
+    .footer-logo {
+        width: 120px; /* Increase logo size for better visibility on small screens */
+    }
+
+    /* Adjust font size for the table headings */
+    .footer .table table .tablehead {
+        font-size: 0.9rem; /* Keep reducing font size */
+    }
+
+    .footer .table table tr td {
+        padding: 0.5%;
+        font-size: 0.9rem; /* Slightly reduce text size for better readability */
+    }
+
+    /* Make phone numbers a little smaller on smaller screens */
+    .number a {
+        font-size: 0.8rem; /* Slightly reduce font size of phone numbers */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further increase logo size for very small screens */
+    .footer-logo {
+        width: 100px; /* Increase logo size even more for tiny screens */
+    }
+
+    /* Further reduce font size for table headings */
+    .footer .table table .tablehead {
+        font-size: 0.5rem; /* Further reduce font size */
+    }
+
+    .footer .table table tr td {
+        font-size: 0.5rem; /* Further reduce text size */
+        padding: 0.4%;
+    }
+
+    /* Make phone numbers even smaller */
+    .number a {
+        font-size: 0.5rem; /* Further reduce font size of phone numbers */
+    }
+}

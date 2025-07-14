@@ -1,0 +1,142 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+   
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+/* Page container */
+.page-container {
+    display: flex;
+    background-image: url('../../../assets/images/BookConsultation.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-start; /* Align to top below header */
+    padding: 20px;
+    margin-top: 0%;
+}
+
+/* Form container styles */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Light transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Maximum width for larger screens */
+    width: 100%; /* Responsive width */
+}
+
+h2 {
+    text-align: center; /* Center title */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; /* Side heading color */
+}
+
+.name-fields {
+    display: flex;
+    justify-content: space-between; /* Space out name fields */
+}
+
+.name-fields input {
+    flex: 1; /* Allow inputs to grow */
+    margin-right: 10px; /* Space between name fields */
+}
+
+.name-fields input:last-child {
+    margin-right: 0; /* No margin for the last input */
+}
+
+.gender-options {
+    display: flex;
+    justify-content: space-between; /* Space out gender options */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Space between radio and label */
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray; /* Light gray for text boxes */
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.phone-row, .whatsapp-row {
+    display: flex;
+    justify-content: space-between; /* Space out phone and whatsapp inputs */
+}
+
+.phone-inputs, .whatsapp-inputs {
+    display: flex; /* Horizontal layout */
+    width: 100%;
+}
+
+.phone-inputs select, .whatsapp-inputs select {
+    width: 30%; /* Country code dropdown width */
+    margin-right: 10px; /* Space between select and input */
+}
+
+input[type="tel"], input[type="email"] {
+    flex: 1; /* Allow inputs to grow */
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+    height: 100px; /* Fixed height for text area */
+}
+
+.submit-buttonbtn {
+    background-color: #2f982f; 
+    color:white; /* Text color */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width */
+    font-weight: bold;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .name-fields {
+        flex-direction: column; /* Stack name fields on small screens */
+    }
+
+    .name-fields input {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    .gender-options {
+        flex-direction: column; /* Stack gender options on small screens */
+    }
+
+    .phone-row, .whatsapp-row {
+        flex-direction: column; /* Stack phone and whatsapp rows on small screens */
+    }
+
+    .phone-inputs, .whatsapp-inputs {
+        flex-direction: column; /* Stack inputs vertically on small screens */
+    }
+
+    .phone-inputs select, .whatsapp-inputs select {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+}

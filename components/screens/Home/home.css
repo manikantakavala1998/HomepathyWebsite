@@ -1,0 +1,753 @@
+/* Slider Styles */
+
+
+/* .marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+} */
+ 
+/* Slider Container */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+/* Slider Wrapper for Flex Display */
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+  width: 100%;
+}
+
+/* Individual Slide Styling */
+.slide {
+  min-width: 100%;
+  height: 550px;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* Slide Text Styling */
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.slide-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navigation Buttons */
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+/* Dots Navigation */
+.dots {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  z-index: 10;
+}
+
+.dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Responsive Icon Size */
+.iconss {
+  font-size: 40px;
+  color: black;
+}
+
+/* Responsive Styles */
+
+/* For screens below 1024px (Tablet) */
+@media (max-width: 1024px) {
+  .slide {
+    height: 400px;
+  }
+
+  .slide-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .slider-button {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+/* For screens below 768px (Mobile landscape) */
+@media (max-width: 768px) {
+  .slide {
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .slide-text {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .slide-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .slider-button {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .dot {
+    height: 8px;
+    width: 8px;
+  }
+}
+
+/* For screens below 480px (Mobile portrait) */
+@media (max-width: 480px) {
+  .slide {
+    height: 220px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .slide-text {
+    width: 80%;
+    padding: 5px;
+  }
+
+  .slide-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .slide-text h4 {
+    font-size: 0.9rem;
+  }
+
+  .slider-button {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .dot {
+    height: 6px;
+    width: 6px;
+  }
+}
+
+
+/* Icons Section - Horizontal Layout on Larger Screens */
+.icons-section {
+  display: flex;
+  justify-content: space-around; /* Space icons evenly across the row */
+  align-items: center;
+  background-color:white; /* Light green background */
+  padding: 10px 5px;
+  flex-wrap: wrap; /* Allows wrapping of icons on smaller screens */
+}
+
+.icon-item {
+  text-align: center;
+  flex-basis: 30%; /* Each icon takes up 30% of the width on larger screens */
+  margin: 2px 2px;
+}
+
+.icon-item p {
+  margin-top: 5px;
+  font-size: 1.0rem;
+  color: rgb(9, 2, 2); /* White text color */
+}
+
+/* Ensure Icons and text are responsive */
+@media (max-width: 1024px) {
+  .icon-item {
+    flex-basis: 40%; /* Icons take 40% width on medium screens */
+  }
+
+  .icon-item p {
+    font-size: 1rem;
+  }
+ 
+}
+
+@media (max-width: 768px) {
+  .icons-section {
+    flex-direction: column; /* Stack icons vertically on smaller screens */
+  }
+
+  .icon-item {
+    flex-basis: 100%;
+  }
+
+  .icon-item p {
+    font-size: 0.9rem;
+  }
+  
+}
+
+/* For screens below 480px (Mobile portrait) */
+@media (max-width: 480px) {
+  .icons-section {
+    padding: 2px; /* Adjust padding on mobile screens */
+  }
+
+  .icon-item {
+    flex-basis: 100%; /* Icons take full width */
+    margin: 2px 0; /* Ensure spacing is appropriate */
+  }
+
+  /* Reduce the anchor tag text size and remove icons' hover effect */
+  .icon-item a {
+    font-size: 0.2rem; /* Make anchor tags smaller */
+    display: block;
+    text-align: center;
+  }
+
+  .icon-item h2 {
+    font-size: 0.7rem; /* Reduce heading size */
+    margin: 1px 0; /* Adjust margin */
+  }
+
+  .icon-item p {
+    font-size: 0.6rem; /* Reduce text size for better fit on small screens */
+    margin: 1px 0; /* Adjust paragraph spacing */
+  }
+  .iconss{
+    color: black;
+    font-size: large;
+  }
+}
+.consultation-section {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Space out the items */
+  align-items: flex-start; /* Align items at the start vertically */
+  padding: 20px; /* Padding for the section */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.consultation-image img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for image */
+  /* overflow: hidden; */
+}
+
+.consultation-form {
+  flex: 1; /* Allow form to take up remaining space */
+  margin-left: 20px; /* Space between image and form */
+  background: white; /* White background for the form */
+  padding: 20px; /* Padding inside the form */
+  border-radius: 8px; /* Rounded corners for the form */
+}
+
+/* Center the heading and margin */
+.form-heading {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Margin for form group */
+.form-group {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+/* Label style */
+label {
+  display: block; /* Label on a new line */
+  margin-bottom: 5px; /* Space below labels */
+  color: black; /* Black color for text */
+}
+
+/* Input and textarea styles */
+input, textarea {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px; /* Padding for inputs */
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Darker text for readability *
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 5px; /* Space below inputs */
+  
+}
+
+/* Textarea specific styles */
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+  height: 80px; /* Fixed height for textarea */
+}
+
+/* Button style */
+.submit-button {
+  background-color: lightblue; /* Light blue background for button */
+  border: none; /* No border */
+  padding: 10px; /* Padding inside the button */
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Font size for button */
+  margin-left: 80%;
+}
+
+/* Error message style */
+.error {
+  color: red; /* Red color for error messages */
+  font-size: 12px; /* Smaller font for error messages */
+}
+
+
+/* Welcome Section Styling */
+.welcome-section {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+  background-color:white;
+  text-align: left; /* Left-align all text */
+}
+
+/* Main Heading - India's First Online & Offline Homeopathy Clinic */
+.main-heading {
+  text-align: center;
+  
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:green;
+  margin-bottom: 20px;
+
+}
+/* Side Heading - Experience Wellness */
+.side-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 1px;
+  position: relative;
+  padding-bottom: 5px; /* Adds space between text and the underline */
+}
+
+/* Simulated underline with pseudo-element */
+.side-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 11%;
+  height: 1px; /* Adjust thickness of the underline */
+  background-color: grey; /* Light grey color for the underline */
+  box-shadow: 0 1px 2px rgba(128, 128, 128, 0.03), 0 1px 5px rgba(128, 128, 128, 0.03); /* Extremely light grey shadow */
+}
+
+
+
+
+/* Welcome Text - Welcome to H-Cura */
+.welcome-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+  
+}
+
+/* Description Text */
+.description {
+  font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+  font-size: 1.0rem;
+  color: #333131;
+  line-height: 1.3;
+  overflow:hidden
+
+}
+
+/* Responsive Styles */
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 1.8rem;
+  }
+
+  .side-heading {
+    font-size: 0.9rem;
+  }
+
+  .welcome-text {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small screens (mobile devices, 480px and up) */
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .side-heading {
+    font-size: 0.8rem;
+  }
+
+  .welcome-text {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.name-fields,
+.age-phone-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Space between the fields */
+}
+
+.name-fields input,
+.age-phone-fields input {
+  flex: 1; /* Make inputs take equal space */ 
+ 
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+.consultation-form {
+  max-width: 500px; /* Limit max width for larger screens */
+  background: white; /* White background for form */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding inside form */
+  
+}
+
+.consultation-section{
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+}
+.consultation-image{
+  /* border: 1px solid black; */
+  width: 40%;
+  height: 79vh;
+}
+.consultation-form{
+  /* border: 1px solid black; */
+  width: 60%;
+  height: 79vh;
+}
+.form-group-horizontal {
+  display: flex;
+  gap: 20px; /* Space between age and phone number fields */
+  align-items: center;
+}
+
+.input-group {
+  flex: 1; /* Allows both fields to take up equal space */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+.input-group input {
+  width: 100%; /* Full width for each input within its container */
+  padding: 10px;
+  height: 40px; /* Set a fixed height for uniformity */
+  box-sizing: border-box; /* Ensures padding doesn’t affect width */
+ 
+  border-radius: 5px; /* Optional: Slight rounding for consistent look */
+  font-size: 16px; /* Ensures text is the same size in both fields */
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Darker text for readability */
+}
+/* Apply to all input fields in the form */
+form input[type="text"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Darker text for readability */
+}
+
+/* Placeholder styling for consistency */
+form input::placeholder
+{
+  color: #333;
+}
+form textarea::placeholder {
+  color: #999; /* Slightly darker grey for placeholders */
+}
+
+.consultation-image,
+.consultation-form{
+ height: 63vh;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .consultation-section {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
+    gap: 10px; /* Reduced gap between image and form on smaller screens */
+    padding: 9.5px; /* Adjust overall section padding */
+  }
+
+  .consultation-image {
+    margin-bottom: 10px; /* Reduced space below image when stacked */
+    height: 0%;
+  }
+
+  .consultation-form {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    width: 100%; /* Full width for form */
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation-section {
+    gap: 5px; /* Further reduce gap on very small screens */
+    padding: 5px; /* Smaller padding for the whole section */
+  }
+
+  .consultation-image,
+  .consultation-form {
+    width: 100%; /* Full width for both sections on smallest screens */
+  }
+}
+.description-text {
+  line-height: 1.6; /* Adjust this value as needed for spacing between lines */
+  font-size: 16px; /* Optional: adjust font size */
+}
+.featurecontent{
+  margin-bottom: 12px;
+}
+.features-section {
+  padding: 20px;
+
+  
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between; /* Space between cards */
+  flex-wrap: wrap; /* Wrap cards on smaller screens */
+  
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for the cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(13, 10, 10, 0.901);
+  padding: 10px;
+  margin: 9px;
+  flex: 1 1 20%; /* Flex-grow, flex-shrink, and flex-basis */
+  max-width: 250px; /* Minimum width for cards */
+  text-align: center;
+  transition: transform 0.2s;
+  min-height: 45vh;
+}
+
+.feature-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.feature-icon {
+  font-size: 60px; /* Icon size */
+  color: #4CAF50; /* Icon color */
+  margin-bottom: 10px; /* Spacing below icon */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+      flex: 1 1 45%; /* Adjust for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-card {
+      flex: 1 1 100%; /* Stack cards on small screens */
+  }
+}
+/* all about treatments images description *//
+/* Base Styles */
+.treatmentheading {
+  text-align: center;
+  padding: 20px;
+}
+
+.treatmentheading h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.treatmentheading h4 {
+  font-size: 1rem;
+  color: #666;
+}
+
+.ourtreatments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.treatment {
+  width: 15%; /* Four items per row on large screens */
+ text-align: center;
+  padding: 10px;
+  box-shadow: 2px 4px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.treatment img {
+  width: 100px;
+  height: 100px; /* Set a fixed height */
+  object-fit: cover; /* Ensures images fill the height without distortion */
+  border-radius: 8px;
+  /* border: 2px solid black; */
+}
+
+.treatment h1 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+
+.treatment button {
+  padding: 10px 20px;
+  background-color: #41abae;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .treatment {
+    width: 30%; /* Three items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .treatment {
+    width: 45%; /* Two items per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .treatment {
+    width: 29%; /* One item per row on extra small screens */
+  }
+
+  .treatmentheading h1 {
+    font-size: 1rem;
+  }
+
+  .treatmentheading h4 {
+    font-size: 0.4rem;
+  }
+  .treatment img{
+    height: 50px;
+    width: 50px;
+  }
+  .treatment h1{
+    font-weight: bold;
+    height: 6vh;
+    width: 23vw;
+    overflow:auto;
+  }
+}
