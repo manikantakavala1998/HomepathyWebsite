@@ -1,0 +1,1540 @@
+/* @font-face {
+    font-family: 'Familiar Pro';
+    src: url('../../fonts/FamiliarPro-Regular.woff2') format('woff2'),
+         url('../../fonts/FamiliarPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Familiar Pro', sans-serif; */
+}
+
+/* appointment btn */
+.main_navbar .navbar1 a {
+    text-decoration: none;
+}
+
+.popup-container1 {
+    position: fixed;
+    top: 0; /* Positioned at the top */
+    right: 0; /* Positioned at the right */
+    margin: 0px; /* Add some margin from the edges */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    z-index: 9999; /* Ensures it appears above all elements */
+    font-size: 14px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    animation: fade-in1 0.3s ease-in-out;
+}
+
+@keyframes fade-in1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Wrapper for both buttons to align horizontally */
+.appoint-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px; /* Space between the buttons */
+    overflow: hidden;
+    padding: 0px 20px 0px 0px;
+}
+
+/* Appointment Button */
+.appointment-button,
+.login-button {
+   
+    font-size: 1rem; /* Base font size for buttons */
+    padding: 5px 12px;
+    font-weight: bold;
+    border-radius:20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1ms ease, color 1ms ease;
+    
+}
+.main_navbar .navbar1 button{
+    padding: 10px;
+    margin-top: 9%;
+    border: none;
+    box-shadow: inset 2px 2px 13px green;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.main_navbar .login-button1{
+   border-color: #333 solid black; 
+    
+}
+
+/* Specific Styling for each button */
+.appointment-button {
+    /* border: 2px solid black; */
+    background-color: #519F45;
+    color: white;
+    animation: blinker .8s linear infinite;
+}
+
+.book button{
+    margin-left: 50px;
+}
+.book a{
+    color: white;
+}
+.login-button {
+    color: darkgreen;
+    background-color: transparent;
+    border: 2px solid rgb(227, 230, 226);
+}
+
+.appoint-buttons a{
+    text-decoration: none;
+
+}
+
+/* Hover effects */
+.appointment-button:hover {
+    background-color: #3e7d34;
+}
+
+.login-button:hover {
+    background-color: rgb(44, 157, 3);
+    color: white;
+}
+
+/* Animation for blinking effect */
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .appointment-button, .login-button {
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+}
+/* Base styles for large screens (desktop/laptop) */
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.marquee {
+    flex: 1;
+}
+
+.marquee-content {
+    text-align: center;
+}
+
+.fonts a {
+    margin: 0 10px;
+}
+
+.appoint-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appoint-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+/* Large screen adjustments */
+@media (min-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .scroll {
+        width: 100%;
+    }
+
+    .marquee {
+        flex: 2;
+    }
+
+    .fonts {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .appoint-buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    .appoint-buttons button {
+        font-size: 16px;
+    }
+}
+
+/* Adjustments for smaller laptop and tablet screens */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .scroll {
+        width: 100%;
+    }
+
+    .marquee {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .fonts {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .appoint-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .appoint-buttons button {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+/* Adjustments for smaller screens like mobile */
+@media (max-width: 768px) {
+    .fonts {
+        display: none; /* Hides social icons on mobile for simplicity */
+    }
+
+    .marquee-content {
+        font-size: 12px; /* Smaller font for mobile */
+    }
+
+    .appoint-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+/* Navbar adjustments */
+.navbar {
+height: 25px;
+padding: 0px 0px 0px 0px;
+overflow: visible; /* Ensure navbar doesn’t clip content */
+}
+
+/* Scroll Section Styles */
+.scroll {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: white;
+    z-index: 999;
+    top: 0;
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* border-bottom: 2px solid rgb(234, 218, 218); */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    
+}
+
+.scroll .marquee {
+    width: 60%;
+    padding: 0px 0px 0px 10px;
+    justify-content: center;
+    margin-top: 0.5%;
+}
+
+.scroll .marquee-content marquee {
+    color: black;
+    /* margin-top: 10px; /* Adds space above the button */
+   /* margin-bottom: 10px; Adds space below the button */
+    
+}
+
+.fonts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Social Icon Styles */
+.social-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+    color: black;
+}
+
+.social-icon.facebook,
+.social-icon.youtube,
+.social-icon.whatsapp,
+.social-icon.linkedIn {
+    color: black;
+}
+
+.social-icon:hover {
+    filter: brightness(0.8);
+}
+
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px  15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255), white);
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 12vh;
+    /* font-family: 'Familiar Pro', sans-serif; */
+    font-weight: bold;
+    color: #333;
+    transition: top 0.3s ease-in-out;
+    overflow: hidden;        /* Prevents scrolling */
+    max-height: 60px;
+    /* border: 2px solid black; */
+    
+}
+
+.content{
+    width: 50%;
+    margin-right: 30%;
+    margin-left: 2%;
+    }
+
+/* Logo Styles */
+.navigation img {
+    
+    max-height: 50px;
+    width: 150px;
+    align-items: center;
+    /* margin-bottom:0% ; */
+    /* border: 2px solid black; */
+    /* width: 30%; */
+
+    
+}
+/* Base styles for header on larger screens (desktop, laptop) */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns logo to the left by default on large screens */
+    width: auto;
+}
+
+.logo-img {
+    width: 150px; /* Adjust size as needed */
+    height: 50px;
+}
+
+/* Center the logo on all small screens (768px, 480px, 360px) */
+@media (max-width: 768px) {
+    .header {
+        justify-content: center; /* Center the entire header content */
+    }
+
+    .logo {
+        width: 120px; /* Full-width container for centering */
+        justify-content: center; /* Center the logo within its container */
+    }
+
+    .logo-img {
+        width:auto ;
+        height:auto;
+    }
+}
+
+/* Additional adjustments for very small screens (480px and below) */
+@media (max-width: 480px) {
+    .header {
+        padding: 8px 15px; /* Reduce padding if needed */
+    }
+    .logo {
+        width: 120px; /* Full-width container for centering */
+        justify-content: center; /* Center the logo within its container */
+    }
+
+
+    .logo-img {
+        width: auto; /* Adjust logo size to fit smaller screens */
+        height: auto;
+    }
+}
+
+/* Additional adjustments for extra small screens (360px and below) */
+@media (max-width: 360px) {
+    .header {
+        padding: 5px 10px; /* Further reduce padding if needed */
+    }
+    .logo {
+        width: 120px; /* Full-width container for centering */
+        justify-content: center; /* Center the logo within its container */
+    }
+
+
+    .logo-img {
+        width: auto;
+        height:auto;
+    }
+}
+
+
+/* Navigation Styles */
+.navigation {
+    display: flex;
+    opacity: 1;
+    max-height: none;
+    position: relative;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    /* font-family: 'Familiar Pro', sans-serif; */
+    font-weight: bold; 
+}
+
+/* Dropdown container styles */
+.about-us-container,
+.about-us-container1 {
+    position: relative;
+    display: inline-block; /* Align with other nav items */
+}
+
+/* Common dropdown styles */
+.dropdown-menu, .dropdown-menu1 {
+    position: fixed; /* Use fixed positioning relative to the viewport */
+    top: 80px; /* Set a constant top position of 12px */
+    transform: translateX(-20%); /* Perfectly center the dropdown */
+    background-color: white; /* Background color of the dropdown */
+    border: 1px solid #ccc; /* Border for the dropdown */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    z-index: 1000; /* Ensure it appears above other elements */
+    min-width: 100px; /* Ensure consistent width */
+    padding: 0;
+}
+
+/* Unique positioning for each dropdown */
+.dropdown-menu {
+    left: 51%; /* Position of About Us dropdown */
+    transform: translateX(-51%); /* Adjust position to truly center it */
+    width: fit-content;
+}
+
+.dropdown-menu1 {
+    left: 59%; /* Position of Treatments dropdown */
+    transform: translateX(-59%); /* Adjust position to truly center it */
+    
+}
+
+/* Common dropdown item styles */
+.dropdown-item, .dropdown-item1  {
+    padding: 10px 15px;
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Text color */
+}
+
+.dropdown-item:hover, .dropdown-item1:hover {
+    background-color: #ccc6c6; /* Change background on hover */
+}
+
+/* Styling for 'Our Clinics' dropdown */
+.our-clinics-container {
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .sub-dropdown {
+    display: block;
+    position: relative;
+    background-color: rgba(245, 241, 241, 0.947);
+    /* border: 2px solid #111010; */
+    box-shadow: 0 2px 10px rgba(240, 237, 237, 0.2);
+    width: auto;
+    z-index:1000;
+    margin: 2px 3px 2px 0px;
+
+  }
+  
+  .sub-dropdown-item {
+    padding: 2px 2px;
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  .sub-dropdown-item {
+    padding: 2px 5px; /* Padding for better touch target */
+    border-radius: 8px; /* Smooth rounded corners */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions without affecting layout */
+    height: 40px; /* Fixed height to ensure no size increase */
+    display: flex; /* Use flexbox for vertical centering */
+    align-items: center; /* Vertically center the text */
+    box-sizing: border-box; /* Prevent padding from affecting height */
+    position: relative; /* For the glow effect positioning */
+}
+
+.sub-dropdown-item:hover {
+    background: linear-gradient(135deg, rgba(217, 238, 217, 0.8), rgba(141, 230, 141, 0.8)); /* Subtle gradient background */
+    color: #006400; /* Dark green text color */
+    /* text-decoration: underline; Underline text on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    font-weight: bold; /* Make text bold on hover */
+    
+    /* New glowing border effect */
+    border: 2px solid #28a745; /* Green border for emphasis */
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.7); /* Green glowing shadow */
+    transform: translateY(0); /* Ensures no vertical movement */
+    overflow: hidden;
+}
+
+/* Optionally add a "pulse" effect */
+.sub-dropdown-item:hover::after {
+    content: ''; /* Adds an empty content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(40, 167, 69, 0.3); /* Light green pulse */
+    border-radius: 8px; /* Rounded corners to match item */
+    animation: pulse 1.5s infinite ease-in-out; /* Smooth pulse animation */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+}
+
+  
+  /* Hover effects */
+  .our-clinics-container:hover .sub-dropdown {
+    display: block;
+  }
+ 
+.nav-link {
+    padding: 6px 20px;
+    color: #4A4A4A;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.4s;
+    display: block;
+    font-weight: bold;
+    align-items: center;
+    overflow: hidden;
+
+}
+.nav-link:hover{
+    color: #054707;
+
+}
+
+.nav-link1 {
+    padding: 6px 20px;
+    color: #4A4A4A;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.4s;
+    display: block;
+    font-weight: bold;
+    align-items: center;
+    overflow: hidden;
+}
+.nav-link1:hover {
+    background: linear-gradient(90deg, #2E7D32, #4CAF50);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 15px rgba(46, 125, 50, 0.5);
+}
+
+
+/* Submenu container */
+.submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 100;
+    overflow: hidden; /* Remove overflow */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(0.95);
+    opacity: 0;
+    width: max-content; /* Ensure proper fit */
+}
+
+.submenu.open {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.submenu li {
+    padding: 10px 15px;
+    position: relative;
+}
+
+.submenu li:hover {
+    /* background: linear-gradient(90deg, #2E7D32, #81C784);  */
+    color: rgb(21, 21, 21);
+}
+
+/* Submenu link styles */
+.submenu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    transition: color 0.3s, transform 0.3s;
+    margin-left:0%;
+}
+
+.submenu li a:hover {
+    color: rgb(30, 29, 29);
+    transform: translateX(5px);
+}
+
+/* Nested submenu */
+.sub-submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 15px;
+    background: rgba(240, 240, 240, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 101;
+    overflow: hidden;
+    transform: scale(0.95);
+    opacity: 0;
+    
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.submenu li:hover .sub-submenu {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.sub-submenu li {
+    padding: 5px 12px;
+    /* border: 2px solid black; */
+}
+
+.sub-submenu li:hover {
+    background: linear-gradient(90deg, #4CAF50, #81C784);
+    color: white;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-link {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+
+    .submenu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        transform: none;
+        opacity: 1;
+    }
+
+    .submenu li {
+        padding: 8px 10px;
+    }
+
+    .submenu li a {
+        font-size: 14px;
+    }
+
+    .sub-submenu {
+        position: static;
+        margin: 5px 0 0;
+        box-shadow: none;
+        border-radius: 0;
+        transform: none;
+        opacity: 1;
+    }
+
+    .sub-submenu li {
+        padding: 8px;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Remove horizontal scrollbars */
+}
+
+/* Toggle Button (Hamburger) */
+.menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    z-index: 1100;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+/* Adjust font size and position for smaller screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        font-size: 24px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-toggle {
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+
+/* Side Navigation Styles */
+.side-navigation {
+    position: fixed;
+    top: 55px;
+    right: -250px;
+    width: 200px;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    /* font-family: 'Familiar Pro', sans-serif; */
+}
+
+.close-menu {
+    font-size: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333;
+}
+
+.side-navigation.open {
+    right: 0;
+    height: 50%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .scroll {
+        display: none;
+    }
+
+    .header {
+        top: 0;
+        margin-top: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        opacity: 0;
+        max-height: 0;
+    
+    }
+
+    .navigation.open {
+        display: block;
+        opacity: 1;
+        max-height: 300px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(76, 175, 80, 0.5));
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .side-navigation {
+        height: 100%;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        opacity: 1;
+        max-height: none;
+        width: auto;
+        box-shadow: none;
+    }
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 300px;
+        opacity: 1;
+    }
+}
+/* General styles for the header */
+.navbar {
+    position: relative;
+}
+/* Popup Overlay Styles */
+.popup-overlay {
+    position: fixed;
+    top: 25%;
+    left: 68%; /* Default position for larger screens */
+    width: 25%; /* Default width for larger screens */
+    height: 50%; /* Default height for larger screens */
+    /* background: rgba(219, 215, 215, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it is above other elements */
+    overflow: hidden;
+}
+
+/* Popup Container Styles */
+.popup-container {
+    background: rgb(246, 246, 245);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    
+}
+.popup-container p{
+    /* border: 2px solid black; */
+    font-size: small;
+    margin: 10px;
+}
+/* Close Popup Button Styles */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 1024px) {
+    .popup-overlay {
+        left: 50%; /* Adjust the position for tablets or smaller desktops */
+        width: 40%; /* Adjust the width */
+        height: auto; /* Auto height to fit content */
+        top: 10%; /* Adjust the top positioning */
+        transform: translateX(-50%); /* Center horizontally */
+    }
+
+    .popup-container {
+        width: 100%; /* Make the container full width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .close-popup {
+        top: 5px; /* Adjust close button for medium screens */
+        right: 5px;
+    }
+}
+
+/* Responsive adjustments for small screens (e.g., tablets, large phones) */
+@media (max-width: 768px) {
+    .popup-overlay {
+        left: 2%; /* Move popup to the right side on smaller screens */
+        width: 50%; /* Adjust width */
+        height: auto; /* Adjust height to fit content */
+        top: 12%; /* Adjust top positioning */
+        transform: translateX(0); /* Center horizontally */
+        
+
+    }
+
+    .popup-container {
+        width: 100%; /* Make the container full-width */
+        padding: 10px; /* Adjust padding */
+        position: relative;
+    }
+
+    .close-popup {
+        top: 5px; /* Adjust close button for smaller screens */
+        right: 5px;
+    }
+}
+
+/* Responsive adjustments for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .popup-overlay {
+        left: 0; /* Ensure it's still on the right side */
+        width: 50%; /* Adjust width further for very small screens */
+        height: auto; /* Auto height for better content fit */
+        top: 3%; /* Adjust positioning to avoid too much space */
+    }
+
+    .popup-container {
+        padding: 8px; /* Reduce padding for very small screens */
+        position: relative;
+        width: fit-content;
+    }
+
+    .close-popup {
+        top: 5px; /* Adjust close button for very small screens */
+        right: 5px;
+    }
+}
+
+/* For extremely small screens, adjust width and padding */
+@media (max-width: 360px) {
+    .popup-overlay {
+        width: 80%; /* Even more reduced width for extra small screens */
+        top: 5%; /* Adjust the top to make it fit properly */
+    }
+
+    .popup-container {
+        padding: 5px; /* Further reduce padding */
+    }
+}
+
+
+/* Reopen Popup Button Styles */
+.reopen-popup-button {
+    position: fixed;
+    left: 95%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1001; /* Ensures it is above other elements */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    transition: background-color 0.3s;
+}
+.reopen-popup-button img{
+    width: 100px;
+    height: 60px;
+}
+
+
+/* Hover effect for the reopen button */
+
+.reopen-popup-button{
+    background-color: transparent;
+}
+
+
+.offer-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.reopen-popup-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* padding: 10px 10px; */
+    /* background: #007bff; */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 13%;
+    width: 10%;
+    overflow: hidden;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #519F45;
+    --text-color: #333;
+    --background-color: white;
+}
+
+.popup-container img{
+    height: 32vh;
+    width: 90%;
+    border: 2px solid black !important;
+}
+
+.offerbtn button{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px ;
+    background-color: rgb(10, 154, 10);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.offerbtn button:hover{
+background-color: yellowgreen;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 480px) {
+    .popup-overlay {
+        left:0%;
+        top: 15%;
+        width: 100%;
+        height: 50%;
+        /* background: rgba(0, 0, 0, 0.5); */
+       /* Ensures it is above other elements */
+    }
+
+}
+
+
+
+/* Success Message Styles */
+.success-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    color: greenyellow;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    text-align: center;
+    position: fixed;
+    top: 50%; /* Center the message vertically */
+    left: 30%; /* Center the message horizontally */
+    transform: translate(-50%, -50%); /* Adjust for true center */
+    z-index: 1001; /* Ensure it appears above other content */
+    width: 50%; /* Ensure it's responsive, 80% of screen width */
+    max-width: 600px; /* Maximum width for larger screens */
+    min-width: 300px; /* Ensure a minimum width */
+    opacity: 0; /* Initially hidden */
+    animation: blastAnimation 10s forwards, fadeOut 1s 9s forwards; /* Animation for 10 seconds */
+}
+
+/* Tick Icon Styles */
+.success-message .tick-icon {
+    font-size: 2em;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Keyframes for "blast" effect (celebration) */
+@keyframes blastAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(1.2); /* Slightly increase size */
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5); /* Larger size for burst effect */
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for fade-out effect after the blast */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0); /* Shrink out */
+    }
+}
+
+/* Confetti - Adding multiple elements to simulate celebration */
+@keyframes confettiEffect {
+    0% {
+        transform: translateY(-100%) rotate(45deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+/* Confetti element styles */
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6701;
+    opacity: 0;
+    animation: confettiEffect 2s ease-in-out infinite;
+    z-index: 1002; /* Ensure confetti stays above content */
+    border-radius: 50%; /* Round shape for confetti */
+}
+
+/* Different delay times for each confetti */
+.confetti:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.confetti:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.confetti:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.confetti:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+/* Confetti for different screen sizes */
+
+/* Large Screens */
+@media (min-width: 1024px) {
+    .confetti {
+        left: calc(50% + 100px); /* Confetti starts a bit to the right */
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .confetti {
+        left: calc(50% + 50px); /* Slight adjustment for medium screens */
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .confetti {
+        left: calc(50% - 50px); /* Adjust for smaller screens */
+    }
+
+    /* Success message font size adjustment for small screens */
+    .success-message {
+        font-size: 1.2em; /* Smaller font size for smaller screens */
+        padding: 15px;
+        left: 55%; /* Shift more towards the right */
+    }
+}
+
+/* Specific adjustments for 770px and 480px screens */
+@media (max-width: 770px) {
+    .success-message {
+        font-size: 1.1em; /* Smaller font size */
+        width: 20%; /* Reduced width */
+        left: 20%; /* Shift more to the right */
+        padding: 12px; /* Smaller padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .success-message {
+        font-size: 1em; /* Even smaller font size */
+        width: 20%; /* Reduced width */
+        left: 10%; /* Shift even more to the right */
+        padding: 10px; /* Smaller padding */
+    }
+}
+
+/* Form Overlay Styles */
+.form-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it appears above other content */
+    border: 2px solid black;
+    position: fixed;
+
+}
+
+/* Form Container Styles */
+.form-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Responsive width */
+    max-width: 500px; /* Maximum width for larger screens */
+    overflow: hidden;
+    position:fixed;
+    margin-top: 1%;
+    border: 2px solid black;
+    padding: 2% 2%;
+}
+
+/* Form Heading */
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Form Field Styles */
+.form-container label {
+    display: block;
+    margin-bottom: 0px;
+    font-size: 1em;
+    color: #555;
+}
+
+.form-container input[type="text"],
+.form-container input[type="tel"],
+.form-container input[type="email"] {
+    width: 100%; /* Full width for inputs */
+    padding: 5px;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Submit Button Styles */
+.form-container button[type="submit"] {
+    background-color: #28a745; /* Green background for submit */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Close Button Styles */
+.form-container button[type="button"] {
+    background-color: #dc3545; /* Red background for close */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.form-container button[type="button"]:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+
+/* For Medium Screens (Tablets and smaller desktops) */
+@media (max-width: 1024px) {
+    .form-container {
+        max-width: 70%; /* Adjust form width for medium screens */
+    
+    }
+
+    .form-container h2 {
+        font-size: 1.3em; /* Adjust heading size */
+    }
+
+    .form-container label,
+    .form-container input[type="text"],
+    .form-container input[type="tel"],
+    .form-container input[type="email"],
+    .form-container button[type="submit"],
+    .form-container button[type="button"] {
+        font-size: 0.9em; /* Adjust text and button sizes */
+    }
+
+    .form-container button[type="submit"],
+    .form-container button[type="button"] {
+        padding: 12px; /* Adjust padding */
+    }
+}
+
+/* For Small Screens (Mobile Devices) */
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 90%; /* Further adjust form width for smaller screens */
+    }
+
+    .form-container h2 {
+        font-size: 1.2em; /* Slightly smaller heading size */
+    }
+
+    .form-container label,
+    .form-container input[type="text"],
+    .form-container input[type="tel"],
+    .form-container input[type="email"],
+    .form-container button[type="submit"],
+    .form-container button[type="button"] {
+        font-size: 0.85em; /* Adjust font sizes */
+    }
+
+    .form-container button[type="submit"],
+    .form-container button[type="button"] {
+        padding: 10px; /* Adjust button padding */
+    }
+}
+
+/* For Very Small Screens (e.g., Small Mobile Phones) */
+@media (max-width: 480px) {
+    .form-container {
+        max-width: 95%; /* Max width adjustment for very small screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .form-container h2 {
+        font-size: 1.1em; /* Further reduce heading size */
+    }
+
+    .form-container label,
+    .form-container input[type="text"],
+    .form-container input[type="tel"],
+    .form-container input[type="email"],
+    .form-container button[type="submit"],
+    .form-container button[type="button"] {
+        font-size: 0.8em; /* Smaller text for small screens */
+    }
+
+    .form-container button[type="submit"],
+    .form-container button[type="button"] {
+        padding: 8px; /* Reduce button padding */
+    }
+}
+
+.offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust as needed */
+    overflow: hidden;
+    margin-top: 1%;
+    }
+  
+  
+  .offer-text {
+    font-size: 25px;
+    font-weight:100px ;
+    color: #ff6701; /* Text color */
+    /* font-family: 'Marker Felt', fantasy; */
+    animation: slideUpDown 2s ease-in-out infinite;
+    text-shadow: 
+        -1px -1px 0 hsl(56, 95%, 52%),  /* Top left shadow */
+        1px -1px 0 hsl(56, 95%, 52%),   /* Top right shadow */
+        -1px 1px 0 hsl(56, 95%, 52%),   /* Bottom left shadow */
+        1px 1px 0 hsl(56, 95%, 52%);    /* Bottom right shadow */
+}
+
+.offer-gif {
+    width: 60px; /* Adjust width as needed */
+    height: 70px;
+    margin-top: 4px;
+}
+
+/* Hide the new offer text on small screens */
+@media (max-width: 768px) {
+    .offer-text {
+        display: none; /* Hides the new offer text */
+    }
+}
+  
+
+/* Left-aligned "NEW OFFER" text */
+.offertext1 {
+    position: absolute; /* Allow positioning relative to the header */
+    top: 40%; /* Vertically center within the header */
+    left: 10px; /* Move to the left side of the header */
+    transform: translateY(-50%); /* Perfect vertical centering */
+    height: 50px;
+   
+    overflow-x: visible; /* Make sure the text doesn't overflow */
+   
+}
+
+/* Text style for 'NEW OFFER' */
+
+
+/* Button styles */
+.reopen-popup-button1 {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* No padding */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.offer-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Keyframes for sliding effect (left and right) */
+@keyframes slideLeftRight {
+    0% {
+      transform: translateX(0); /* Start at the original position */
+    }
+    50% {
+      transform: translateX(5px); /* Move to the right */
+    }
+    100% {
+      transform: translateX(0); /* Return to original position */
+    }
+}
+
+/* Reduced Glow effect keyframes */
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 3px #ff6701, 0 0 6px #ff6701, 0 0 9px #ff6701; /* Softer glow */
+    }
+    100% {
+        text-shadow: 0 0 6px #ff6701, 0 0 12px #ff6701, 0 0 18px #ff6701; /* Less intense glow */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .offertext1 {
+        font-size: 1.5rem; /* Slightly smaller font for smaller screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .offertext1 {
+        font-size: 1.5rem; /* Larger text for bigger screens */
+    }
+}
+
