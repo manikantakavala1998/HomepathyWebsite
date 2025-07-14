@@ -1,0 +1,125 @@
+.main1{
+    font-family:Arial;
+  
+}
+/* Ensure that the main content starts below the header */
+.main-content {
+     /* Adjust this value to match the height of your header */
+    padding: 75px 10px 10px 10px; /* Optional padding for better spacing */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    font-family:Arial;
+  
+}
+
+/* Small line between header and main content */
+.header-line {
+    height: 2px; /* Fixed height for the line */
+    background-color: #fff; /* Color of the line */
+    width: 100%; /* Full width */
+    font-family:Arial;
+   
+}
+
+/* Header section responsiveness */
+header {
+    width: 100%;
+    padding: 10px 20px; /* Ensures there is space around the content */
+    font-family:Arial;
+    
+}
+
+@media (max-width: 768px) {
+    /* For screens smaller than 768px (tablets, mobile devices in landscape mode) */
+    .main-content {
+        margin-top: 20px; /* Reduce margin if header shrinks on smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+        font-family:Arial;
+     
+    }
+
+    .header-line {
+        margin-top: 0px; /* Slightly reduce the space between header and main content */
+        font-family:Arial;
+       
+    }
+
+    header {
+        padding: 10px 15px; /* Reduce header padding for smaller screens */
+        font-family:Arial;
+       
+    }
+}
+
+@media (max-width: 480px) {
+    /* For small screens like mobile devices */
+    .main-content {
+        margin-top: 20px; /* Further reduce the margin if necessary */
+        padding: 10px; /* Less padding for smaller screens */
+        font-family:Arial;
+       
+    }
+
+    .header-line {
+        margin-top: 0px; /* Even smaller gap on very small screens */
+        font-family:Arial;
+     
+    }
+
+    header {
+        padding: 10px 10px; /* Tighten padding for mobile */
+        font-family:Arial;
+        
+    }
+
+    /* Optional: Adjust header font size for smaller screens */
+    header h1, header h2 {
+        font-size: 1.2rem; /* Adjust header font size */
+        font-family:Arial;
+        
+    }
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: #333; /* Footer background */
+    color: #fff; /* Text color in footer */
+    text-align: center;
+    font-family:Arial;
+    
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px; /* Adjust footer padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px; /* Further reduce padding on very small screens */
+    }
+}
+
+/* Additional tweaks for WhatsApp chatbot if necessary */
+@media (max-width: 768px) {
+    .whatsapp-chatbot {
+        bottom: 10px;
+        right: 10px;
+        width: 90%; /* More width for chatbot on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-chatbot {
+        bottom: 5px;
+        right: 5px;
+        width: 100%; /* Full width for chatbot on small screens */
+    }
+}
+.main1{
+    padding: 0px 0px 0px 0px;
+}
+
+
+  
